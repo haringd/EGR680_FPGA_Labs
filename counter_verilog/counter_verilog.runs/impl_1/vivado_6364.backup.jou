@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Sep  3 19:37:55 2018
+# Process ID: 6364
+# Current directory: C:/FPGA_EGR680/counter_verilog/counter_verilog.runs/impl_1
+# Command line: vivado.exe -log counter_verilog.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter_verilog.tcl -notrace
+# Log file: C:/FPGA_EGR680/counter_verilog/counter_verilog.runs/impl_1/counter_verilog.vdi
+# Journal file: C:/FPGA_EGR680/counter_verilog/counter_verilog.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source counter_verilog.tcl -notrace
