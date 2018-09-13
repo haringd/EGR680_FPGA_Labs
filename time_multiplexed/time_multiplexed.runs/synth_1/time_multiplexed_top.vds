@@ -1,0 +1,303 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Sep 13 17:27:21 2018
+# Process ID: 16780
+# Current directory: C:/FPGA_EGR680/time_multiplexed/time_multiplexed.runs/synth_1
+# Command line: vivado.exe -log time_multiplexed_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source time_multiplexed_top.tcl
+# Log file: C:/FPGA_EGR680/time_multiplexed/time_multiplexed.runs/synth_1/time_multiplexed_top.vds
+# Journal file: C:/FPGA_EGR680/time_multiplexed/time_multiplexed.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source time_multiplexed_top.tcl -notrace
+Command: synth_design -top time_multiplexed_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg400'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg400'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17592 
+WARNING: [Synth 8-2611] redeclaration of ansi port clk_out is not allowed [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/clk_divider.v:8]
+WARNING: [Synth 8-2611] redeclaration of ansi port seg0 is not allowed [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:13]
+WARNING: [Synth 8-2611] redeclaration of ansi port seg1 is not allowed [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:14]
+WARNING: [Synth 8-2611] redeclaration of ansi port cat0 is not allowed [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port cat1 is not allowed [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:16]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 315.926 ; gain = 85.445
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'time_multiplexed_top' [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/time_multiplexed_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/clk_divider.v:1]
+WARNING: [Synth 8-6014] Unused sequential element clk_temp_reg was removed.  [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/clk_divider.v:15]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/clk_divider.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:1]
+WARNING: [Synth 8-5788] Register cat0_reg in module decoder is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:36]
+WARNING: [Synth 8-5788] Register cat1_reg in module decoder is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:70]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (2#1) [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/decoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'time_multiplexed_top' (3#1) [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/sources_1/new/time_multiplexed_top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 340.727 ; gain = 110.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 340.727 ; gain = 110.246
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/constrs_1/new/time_multiplexed_pins.xdc]
+Finished Parsing XDC File [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/constrs_1/new/time_multiplexed_pins.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/FPGA_EGR680/time_multiplexed/time_multiplexed.srcs/constrs_1/new/time_multiplexed_pins.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/time_multiplexed_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/time_multiplexed_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 660.410 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  14 Input      7 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  14 Input      7 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\clk_div/clk_out_reg )
+INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[0]' (FDCE) to 'dec/seg1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[4]' (FDCE) to 'dec/seg0_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dec/cat1_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dec/cat0_reg )
+WARNING: [Synth 8-3332] Sequential element (clk_div/clk_out_reg) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/shift_reg[1]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/shift_reg[0]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[6]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[5]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[3]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[2]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[1]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[0]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[6]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[5]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[4]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[3]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[2]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[1]) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/cat0_reg) is unused and will be removed from module time_multiplexed_top.
+WARNING: [Synth 8-3332] Sequential element (dec/cat1_reg) is unused and will be removed from module time_multiplexed_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |    16|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    16|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 660.410 ; gain = 110.246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 660.410 ; gain = 429.930
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 660.410 ; gain = 437.691
+INFO: [Common 17-1381] The checkpoint 'C:/FPGA_EGR680/time_multiplexed/time_multiplexed.runs/synth_1/time_multiplexed_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 660.410 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 13 17:28:01 2018...
