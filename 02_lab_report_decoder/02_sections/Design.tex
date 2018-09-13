@@ -1,7 +1,7 @@
 \section{Design}\label{sec: Design}
 In this section the design and decisions that where made to achieve it are discussed.
 
-\subsection{Part 1 - Behavioral Modeling of a Seven-Segment Display}\label{sub: Behavioral Modeling of a Seven-Segment Display}
+\subsection{Part I - Behavioral Modeling of a Seven-Segment Display}\label{sub: Behavioral Modeling of a Seven-Segment Display}
 Verilog is used to describe a decoder that shall control a seven-segment display with two switches and one button. The given task is as followed:
 \\
 \\
@@ -33,12 +33,13 @@ be on at any given time.
 \\
 \\
 To realize the constrained file the PYNQ reference manual was used to allocate the right pins for the switches and buttons, figure \ref{fig: PYNQ_BasicIO} shows the basic I/O pins assignment of the PYNQ development board.
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{01_images/PYNQ_BasicIO.png}
 	\caption{Schematic PYNQ Basic I/O. \cite{PYNG_RM}}
 	\label{fig: PYNQ_BasicIO}
 \end{figure}
+The one of solution to part II is two concatenated case statements the first to check for the buttons and the second to switch the right seven-segment display to show the number as defined by the two switches SW0 and SW1. The used code is listed in the following three listening \ref{lst: decoder part II}, \ref{lst: decoder top level part II}, and \ref{lst: decoder Constrains part II}.
 %
 %The maximum current of the directional coupler can be calculated as follow
 

@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -19,10 +19,9 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module decoder_top(
     input clk,
-    input rst,
+    //input rst,
     input SW0,
     input SW1,
     input BTN0,
@@ -35,18 +34,6 @@ module decoder_top(
     output [6:0] seg1
     );
 
-decoder dec1(SW0, SW1, BTN0, clk, rst, seg0, ~BTN0); 
-//     decoder(
-//       input SW0,
-//       input SW1,
-//       input BTN0,
-//       input clk,
-//       input rst,
-//       output [6:0] seg,
-//       output digit
-//       );
-always @(BTN0 or BTN1) 
-    begin
-    if (BTN0) dec1;
-end
+/* Intaniate modules */
+decoder dec1(SW0, SW1, BTN0, BTN1,BTN2,BTN3,clk, seg0,seg1, cat0,cat1 ); 
 endmodule
