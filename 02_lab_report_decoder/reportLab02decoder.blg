@@ -1,9 +1,15 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: reportLab02decoder.aux
-A level-1 auxiliary file: 02_sections/Introduction.aux
-A level-1 auxiliary file: 02_sections/Design.aux
-A level-1 auxiliary file: 02_sections/Simulation.aux
-A level-1 auxiliary file: 02_sections/Conclusion.aux
-I found no \citation commands---while reading file reportLab02decoder.aux
-I found no \bibdata command---while reading file reportLab02decoder.aux
-I found no \bibstyle command---while reading file reportLab02decoder.aux
-(There were 3 error messages)
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'reportLab02decoder.blg'
+[44] biber-MSWIN64:313> INFO - === 
+[83] Biber.pm:371> INFO - Reading 'reportLab02decoder.bcf'
+[202] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
+[222] Biber.pm:3976> INFO - Processing section 0
+[243] Biber.pm:4136> INFO - Looking for bibtex format file 'reportLab02decoder.bib' for section 0
+[246] bibtex.pm:1500> INFO - LaTeX decoding ...
+[254] bibtex.pm:1316> INFO - Found BibTeX data source 'reportLab02decoder.bib'
+[275] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[275] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[275] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[275] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[281] bbl.pm:617> INFO - Writing 'reportLab02decoder.bbl' with encoding 'UTF-8'
+[281] bbl.pm:720> INFO - Output to reportLab02decoder.bbl

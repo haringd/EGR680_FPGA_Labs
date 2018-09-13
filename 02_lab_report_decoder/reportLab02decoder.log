@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  12 SEP 2018 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  12 SEP 2018 23:41
 entering extended mode
 **./reportLab02decoder.tex
 (reportLab02decoder.tex
@@ -785,7 +785,7 @@ Package biblatex Info: ... file 'reportLab02decoder.bbl' found.
  (reportLab02decoder.bbl)
 Package biblatex Info: Reference section=0 on input line 49.
 Package biblatex Info: Reference segment=0 on input line 49.
-<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=43, 969.6225pt x 755.82375pt>
+<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=47, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
@@ -820,21 +820,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 (02_sections/Design.tex
-<01_images/Vivado_lab2_part1_table1.png, id=75, 336.50719pt x 157.33781pt>
+<01_images/Vivado_lab2_part1_table1.png, id=80, 336.50719pt x 157.33781pt>
 File: 01_images/Vivado_lab2_part1_table1.png Graphic file (type png)
 <use 01_images/Vivado_lab2_part1_table1.png>
 Package pdftex.def Info: 01_images/Vivado_lab2_part1_table1.png  used on input 
 line 15.
 (pdftex.def)             Requested size: 281.85587pt x 131.78592pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--32
+
+ []
+
+<01_images/PYNQ_BasicIO.png, id=81, 393.72093pt x 200.24812pt>
+File: 01_images/PYNQ_BasicIO.png Graphic file (type png)
+<use 01_images/PYNQ_BasicIO.png>
+Package pdftex.def Info: 01_images/PYNQ_BasicIO.png  used on input line 35.
+(pdftex.def)             Requested size: 281.85587pt x 143.35048pt.
 ) [4
 
 
- <./01_images/Vivado_lab2_part1_table1.png>]
+ <./01_images/Vivado_lab2_part1_table1.png> <./01_images/PYNQ_BasicIO.png>]
 \openout2 = `02_sections/Simulation.aux'.
 
-
 (02_sections/Simulation.tex
-<01_images/Vivado_lab1_BS.PNG, id=84, 973.38657pt x 417.05812pt>
+<01_images/Vivado_lab1_BS.PNG, id=95, 973.38657pt x 417.05812pt>
 File: 01_images/Vivado_lab1_BS.PNG Graphic file (type png)
 <use 01_images/Vivado_lab1_BS.PNG>
 Package pdftex.def Info: 01_images/Vivado_lab1_BS.PNG  used on input line 9.
@@ -853,7 +862,7 @@ Package pdftex.def Info: 01_images/Vivado_lab1_BS.PNG  used on input line 9.
 \openout2 = `02_sections/Appendix.aux'.
 
  (02_sections/Appendix.tex
-<01_images/Vivado_LanguageTemplates.png, id=97, 902.6222pt x 573.64313pt>
+<01_images/Vivado_LanguageTemplates.png, id=108, 902.6222pt x 573.64313pt>
 File: 01_images/Vivado_LanguageTemplates.png Graphic file (type png)
 <use 01_images/Vivado_LanguageTemplates.png>
 Package pdftex.def Info: 01_images/Vivado_LanguageTemplates.png  used on input 
@@ -912,31 +921,31 @@ Overfull \hbox (46.84398pt too wide) in paragraph at lines 106--109
  []
 
 ) [9]
-
-LaTeX Warning: Empty bibliography on input line 63.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+ [10
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
-(reportLab02decoder.aux (02_sections/Introduction.aux) (02_sections/Design.aux)
-(02_sections/Simulation.aux) (02_sections/Conclusion.aux)
-(02_sections/Appendix.aux))
+ (reportLab02decoder.aux (02_sections/Introduction.aux)
+(02_sections/Design.aux) (02_sections/Simulation.aux)
+(02_sections/Conclusion.aux) (02_sections/Appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `reportLab02decoder.out' has not changed.
-(rerunfilecheck)             Checksum: BA4C28988B9F05999566DB3079664F51;663.
+(rerunfilecheck)             Checksum: DDD7305B6516EAA03E79ECB5234E944F;767.
 Package logreq Info: Writing requests to 'reportLab02decoder.run.xml'.
 \openout1 = `reportLab02decoder.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 17141 strings out of 492973
- 283228 string characters out of 3126692
- 778678 words of memory out of 3000000
- 20632 multiletter control sequences out of 15000+200000
+ 17344 strings out of 492973
+ 287316 string characters out of 3126692
+ 779169 words of memory out of 3000000
+ 20829 multiletter control sequences out of 15000+200000
  8063 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,44p,964b,2023s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,50p,964b,2023s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/f
@@ -944,9 +953,9 @@ onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/schwa/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/schwa/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/schwa
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on reportLab02decoder.pdf (9 pages, 297230 bytes).
+Output written on reportLab02decoder.pdf (10 pages, 392062 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

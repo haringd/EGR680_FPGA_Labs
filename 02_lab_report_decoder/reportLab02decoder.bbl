@@ -1,0 +1,42 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{PYNG_RM}{report}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labeltitlesource}{title}
+      \field{title}{{PYNQ-Z1 Board Reference Manual}}
+      \field{type}{techreport}
+      \field{year}{2017}
+      \verb{file}
+      \verb ::
+      \endverb
+      \verb{urlraw}
+      \verb www.pynq.io.
+      \endverb
+      \verb{url}
+      \verb www.pynq.io.
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

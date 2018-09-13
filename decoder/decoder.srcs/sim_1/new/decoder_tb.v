@@ -53,7 +53,5 @@ initial begin
     BTN0 = 0; 
     
 end
-
 initial #1000 $finish;
-
 endmodule

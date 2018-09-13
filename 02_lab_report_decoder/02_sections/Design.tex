@@ -4,6 +4,7 @@ In this section the design and decisions that where made to achieve it are discu
 \subsection{Part 1 - Behavioral Modeling of a Seven-Segment Display}\label{sub: Behavioral Modeling of a Seven-Segment Display}
 Verilog is used to describe a decoder that shall control a seven-segment display with two switches and one button. The given task is as followed:
 \\
+\\
 In this part, you will simulate a pattern decoder using the buttons, switches, and a single seven-segment display.
 Using switches, SW0 and SW1 as the pattern input, write a Verilog program that takes the binary input
 combinations of the switches and displays the decimal value of the binary switch combination on the seven-segment
@@ -19,6 +20,25 @@ display.
 
 As software package to implement the decoder in Verilog Vivado 2017.2 is used. 
 
+\subsection{Part II - Hardware Implementation \& Modular Design}\label{sub: Hardware Implementation Modular Design}
+For the second part a hierarchical design is achieved including the implementation and generation of a bit stream to use hardware or more specific the PYNQ development board. Therfore the folowing task is given:
+\\
+\\
+In this part, you will modify your code from Part I. Instead of only using one button and one switch, you will
+design your Verilog code to display on four seven-segment displays by pressing the four buttons on the PYNQ
+board. Each seven-segment display will correspond to one button (i.e., BTN0 lights up the right-most seven-segment
+display and BTN1 will light up the adjacent seven-segment display and so on). Make sure that when a
+button is released, the corresponding seven-segment display turns OFF. Only one seven-segment display should
+be on at any given time.
+\\
+\\
+To realize the constrained file the PYNQ reference manual was used to allocate the right pins for the switches and buttons, figure \ref{fig: PYNQ_BasicIO} shows the basic I/O pins assignment of the PYNQ development board.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.6\textwidth]{01_images/PYNQ_BasicIO.png}
+	\caption{Schematic PYNQ Basic I/O. \cite{PYNG_RM}}
+	\label{fig: PYNQ_BasicIO}
+\end{figure}
 %
 %The maximum current of the directional coupler can be calculated as follow
 

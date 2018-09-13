@@ -1,10 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Design}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Part 1 - Behavioral Modeling of a Seven-Segment Display}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Simulation}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Part I: behavioral simulation of decoder}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 6
-\BOOKMARK [1][-]{section.5}{Appendix}{}% 7
-\BOOKMARK [2][-]{subsection.5.1}{Lesson Learned}{section.5}% 8
-\BOOKMARK [2][-]{subsection.5.2}{Part I:Decoder module}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.3}{Part I: behavioral simulation of decoder code test bench}{section.5}% 10
+\BOOKMARK [2][-]{subsection.2.2}{Part II - Hardware Implementation \046 Modular Design}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Simulation}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Part I: behavioral simulation of decoder}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 7
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Lesson Learned}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Part I:Decoder module}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.3}{Part I: Behavioral simulation of decoder code test bench}{section.5}% 11
