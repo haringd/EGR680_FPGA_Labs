@@ -18,10 +18,11 @@ end
 else
 begin
     
-   clk_temp = clk_temp + 1;
-   if (clk_temp >= 100000) 
+   clk_temp <= clk_temp + 1;
+   if (clk_temp >= 500000) 
    begin
    clk_out <= ~clk_out;
+   clk_temp <= 0;
    end
 end // else rst
    clk_out <= clk_out;
