@@ -1,7 +1,7 @@
 \section{Design}\label{sec: Design}
-In this section the design and decisions that where made to achieve it are discussed.
+In this section the design and decisions that where made to achieve the laboratory are discussed.
 
-\subsection{Part I - Behavioral Modeling of a Seven-Segment Display}\label{sub: Behavioral Modeling of a Seven-Segment Display}
+\subsection{Part I - Behavioral Modeling of a Seven-Segment Display}\label{subsec: Behavioral Modeling of a Seven-Segment Display}
 Verilog is used to describe a decoder that shall control a seven-segment display with two switches and one button. The given task is as followed:
 \\
 \\
@@ -20,7 +20,7 @@ display.
 
 As software package to implement the decoder in Verilog Vivado 2017.2 is used. 
 
-\subsection{Part II - Hardware Implementation \& Modular Design}\label{sub: Hardware Implementation Modular Design}
+\subsection{Part II - Hardware Implementation \& Modular Design}\label{subsec: Hardware Implementation Modular Design}
 For the second part a hierarchical design is achieved including the implementation and generation of a bit stream to use hardware or more specific the PYNQ development board. Therfore the folowing task is given:
 \\
 \\
@@ -39,169 +39,38 @@ To realize the constrained file the PYNQ reference manual was used to allocate t
 	\caption{Schematic PYNQ Basic I/O. \cite{PYNG_RM}}
 	\label{fig: PYNQ_BasicIO}
 \end{figure}
-The one of solution to part II is two concatenated case statements the first to check for the buttons and the second to switch the right seven-segment display to show the number as defined by the two switches SW0 and SW1. The used code is listed in the following three listening \ref{lst: decoder part II}, \ref{lst: decoder top level part II}, and \ref{lst: decoder Constrains part II}.
-%
-%The maximum current of the directional coupler can be calculated as follow
+The one of solution to part II is two concatenated case statements. The first case is used to check for the button press and the second to switch the seven-segment display to show the number as defined by the two switches SW0 and SW1. The used code is listed in the following three listening \ref{lst: decoder part II}, \ref{lst: decoder top level part II}, and \ref{lst: decoder Constrains part II}.
 
-%
-%The used schematic is shown in figure \ref{fig: Schematic directional coupler} which is based on two transformers T1 and T2.
-%
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=\textwidth]{images/RFDG_p107_Coupler_Schematic.jpg}
-%	\caption{Schematic directional coupler \cite{Vizmuller1995}}
-%	\label{fig: Schematic directional coupler}
-%\end{figure}
-%
-%As design a multi core ferrite made of Material 67 was chosen as basis to wind the coupler.
-%\begin{itemize}
-% \item \begin{description}
-% 	\item [Mfr.:] Fair-Rite
-% 	\item [Mfr. \#:] 2867000102
-% 	\item [Description] Ferrite Toroids / Ferrite Rings 67 MULIT APERTURE 13.3mm 13.4mm 7.5mm
-% \end{description}
-%\end{itemize}
-%The wire used to wrap the coupler is AWG 22 magnet wire. According to tables on the Internet there is a current rating range from 0.9 A up to 5 A, so it is not unreasonable to not assume that it will be ok to operate the coupler on 50 W power.
-%\begin{itemize}
-%	\item \begin{description}
-%	\item[Mfr.:] CNC Tech
-%	\item[Mfr. \#:] 600222
-%	\item [Description] MW35-C HY 22AWG 1KG/2.2LBS SPOOL
-%	\item [Digi-Key Part Number]	1175-1687-ND	
-%\end{description}
-%\end{itemize}
-%
-%From the the Fair-Rite web page following information is available shown in figure \ref{fig: 67 Material Ferrite Toroid } which shows the complex permeability vs frequency and permeability vs temperature.
-%
-%\begin{figure}[htbp]
-%	\centering
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth ]{images/Ferrite-Torroit-67-Perm-vs-Freq2.jpg}
-%		\caption{67 Material Characteristics}
-%	\end{subfigure}
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth]{images/Ferrite-Torroit-67-Perm-vs-Temp.jpg}
-%		\caption{67 Material Characteristics}
-%	\end{subfigure}
-%	\caption{67 Material Ferrite Toroid \cite{fair_rite_07182018} }
-%	\label{fig: 67 Material Ferrite Toroid }
-%\end{figure}
-%
-%The steps to apply the windings are shown in figure \ref{fig: Directional coupler construction }.
-%\begin{description}
-%	\item[Step 1] On each hole of the multi toroid 9 windings are winded with magnet wire AWG 22. On one side, does not matter which one due to symmetry, the wires are desolated with sand paper and twisted together.
-%	\item[Step 2] The two open wire ends are desolated with sand paper and crossed.
-%	\item[Step 3] A single wire is first desolated on one side and pushed trough one of the openings, it does not matter which is chosen due to symmetry. and twisted together with the already existing wire that was crossed in the previous step.
-%	\item[Step 4] Do the same as in step 3 on the opposite hole and desolate both wires. The finished coupler is shown in Step 4.
-%\end{description}
-%\begin{figure}[htbp]
-%	\centering
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=0.4\textwidth, angle=270]{images/DC_Construction_001}
-%		\caption{Step 1}
-%	\end{subfigure}
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=0.8\textwidth]{images/DC_Construction_002}
-%		\caption{Step 2}
-%	\end{subfigure}
-%	\begin{subfigure}[b]{0.4\textwidth}
-%	\centering
-%	\includegraphics[width=0.6\textwidth, angle=90]{images/DC_Construction_003}
-%	\caption{Step 3}
-%	\end{subfigure}
-%	\begin{subfigure}[b]{0.4\textwidth}
-%	\centering
-%	\includegraphics[width=0.4\textwidth, angle=270]{images/DC_Construction_004}
-%	\caption{Step 4}
-%\end{subfigure}
-%	\caption{Directional coupler construction }
-%	\label{fig: Directional coupler construction }
-%\end{figure}
-%
-%\newpage
-%\subsection{RF Trace width 2 and 4 layer board design} \label{sub: RF Trace width 2 and 4 layer board design}
-%\begin{figure}[htbp]
-%	\centering
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth]{images/pcbtracewidth_60mils_h}
-%		\caption{2 layer board substrate height 60 mil}
-%	\end{subfigure}
-%	\begin{subfigure}[b]{0.4\textwidth}
-%		\centering
-%		\includegraphics[width=\textwidth]{images/pcbtracewidth_10mils_h}
-%		\caption{4 layer board substrate height 10 mil}
-%	\end{subfigure}
-%	\caption{RF Trace width}
-%\end{figure}
-%
-%Is used as power detector
-%s
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=\textwidth]{images/LTC5507_RF_POWER_DETECTOR}
-%	\caption{Schematic and capacitor formula of the LTC5507 RF power detector}
-%\end{figure}
-%
-%\newpage
-%\subsection{Impedance matching strategy} \label{sub: Impedance matching strategy}
-%The impedance matching needs to be based on the Standing Wave Ratio (SWR) measurement that is derived form the incident voltage wave and the reflected voltage wave.???
-%
-%\begin{equation}
-%|\Gamma_0| = \frac{|V^-|}{|V^+|}
-%\end{equation}
-%
-%\begin{equation}
-%SWR = \frac{|V_{max}|} {|V_{min}|} = \frac{1+|\Gamma_0|} {1-|\Gamma_0|}
-%\end{equation}
-%The minimum voltage divided by the maximum voltage results in the reflection coefficient.
-%
-%
-%
-%Diodes - Variable Capacitance (Varicaps, Varactors)  not used because of temperature influence.
-% 
-% 
-%\subsection{Link budget RF detector} \label{sub: Link budget RF detector}
-%A link budget was made to figure out the necessary attenuation so that the requirements of a power range of 1 W to 50 W is met. The link budget, see figure \ref{fig: Link budget RF power detector}, shows that an attenuation of 13 dB is required. 
-%
-%For attenuation a PI-attenuator can be used which is composed out of resistors. Resistors aren't an issue here because the attenuator is not placed in the main RF path instead between coupled port of the directional coupler and RF power detector. For a impedance of Z0 equal to 50 $\Omega$ and $G_{Atten}$ equal to 13 dB, R1 is equal to 78.8447 $\Omega$ and R2 is equal to 106.0741 $\Omega$.
-%\begin{verbatim}
-%% IN                       OUT
-%% Z0 ----+-----/\/\/\-----+------ Z0
-%%        |       R2       |  
-%%        >                >
-%%        >  R1            > R1
-%%        >                >
-%%        |                |
-%%       ---              ---
-%%       ///              ///
-%\end{verbatim}
-%
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=\textwidth]{images/linkbudget_rf_detector_002.jpg}
-%	\caption{Link budget RF power detector}\label{fig: Link budget RF power detector}
-%\end{figure}
-%
-%\subsection{Series-Shunt PIN Diode RF Switch} \label{sub: Series-Shunt PIN Diode RF Switch}
-%As RF switch a PIN Diode was chosen. The decision was based on the diodes capability of temperature handling, the frequency range, and the power. A good deal of information does the document THE PIN DIODE CIRCUIT DESIGNERS’ HANDBOOK from Microsemi in Watertown, MA provide, which is saved under the path ../01\_Documentation/04\_PIN\_Diode. 
-%
-%The function of a series-shunt PIN Diode can be explained as if the switch is closed the a negative voltage bias is applied to the bias port so that the series diode is (reversed biased) conducting and the shunt diode is (forward biased) and not conducting. To have the switch open the voltage polarity is positive applied. The described behavior is shown in figure \ref{fig: Series-shunt PIN diode switch measurements 001}. The x-axis is the applied bias voltage. The left y-axis is the power in dBm for either the input signal applied from the signal generator or the output signal measured with the spectrum analyzer. The left y-axis is the current drawn from the power supply in mA.   
-%
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=\textwidth]{../04_PIN_Diode/07312018_PIN_Diode_SMP1352_001.pdf}
-%	\caption{Series-shunt PIN diode switch measurements 001.}\label{fig: Series-shunt PIN diode switch measurements 001}
-%\end{figure}
-%
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=\textwidth]{../04_PIN_Diode/08012018_PIN_Diode_SMP1352_002.pdf}
-%	\caption{Series PIN diode switch measurements 002.}\label{fig: Series PIN diode switch measurements 002}
-%\end{figure}
+\subsection{Part III - Laboratory Exercise}\label{subsec: Part III - Laboratory Exercise}
+The third part of the lab combines part one and part two to a final design that uses a modified decoder version of part two and a clock divider to print out the words, PYNQ, FPGA, IS, and COOL with the seven-segment display. The clock divider is used to slow down the 125 MHz clock to 125 Hz, the relation ship of clock divider an decoder is shown in figure \ref{fig: Vivado_lab2_part3_block_diagram}. Switches SW0 and SW1 defines which word will be shown on the displays if the button BTN0 is pressed, as shown in figure \ref{fig: Vivado_lab2_part3_InAndOutTable}. The task is described as followed in the lab report: \\   
+\\
+In this part, you will create a time multiplexed seven-segment decoder using the block diagram shown in Figure
+8 as a guide. You will need to create a multiplexer in order to display more than one seven-segment
+simultaneously. Design the multiplexer to enable each digit for 8ms, or a 125Hz refresh rate. Remember, these
+Pmods have a shared digit select pin. Most multi-digit displays would have a separate digit select pin for each
+digit. Table 3 shows the required outputs for the required input combinations.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{01_images/Vivado_lab2_part3_block_diagram.PNG}
+	\caption{Part III block diagram. \cite{PYNG_RM}}
+	\label{fig: Vivado_lab2_part3_block_diagram}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{01_images/Vivado_lab2_part3_InAndOutTable.PNG}
+	\caption{Part III inputs and outputs. \cite{PYNG_RM}}
+	\label{fig: Vivado_lab2_part3_InAndOutTable}
+\end{figure}
 
+The clock divider is realized with a counter that counts up until the divider ratio is reached of 500,000 as calculated with equation \ref{eq: div ratio}.
+
+\begin{equation} \label{eq: div ratio}
+	Divider\ ratio = \frac{f_1}{f_2 * 2} = \frac{125 MHz}{125 Hz * 2} = 500,000
+\end{equation}
+Therefore, a clk\_temp register is used to count up until the counter value equal or great than 500,000 is reached. In the top module the divided clk\_out of the clk\_divider is wired into the decoder. The reason is why the clock needs to be divided at the first placed is that a two fast clock would prevent the viability of the seven-segment displays. 
+The decoder is time multiplexed because each seven-segment display has a common carriage line to display ever a number on display A or display B. Therefor, a time multiplexer was written which is clock depended that each display one after another.
+The time multiplexer is realized with a case statement and a two bit value that iterates trough and each case displays one character of a word. 
+\\ 
+\\
+Further improvements that would increase the code quality and re-usability of the  modules would be to change the clk\_divider module that the divider ratio is given as input to the clock divider. 

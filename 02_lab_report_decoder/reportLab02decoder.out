@@ -2,13 +2,12 @@
 \BOOKMARK [1][-]{section.2}{Design}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Part I - Behavioral Modeling of a Seven-Segment Display}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Part II - Hardware Implementation \046 Modular Design}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Simulation}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Part I: behavioral simulation of decoder}{section.3}% 6
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 7
-\BOOKMARK [1][-]{section.5}{Appendix}{}% 8
-\BOOKMARK [2][-]{subsection.5.1}{Lesson Learned}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.2}{Part I:Decoder module}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.3}{Part I: Behavioral simulation of decoder code test bench}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.4}{Part II: Decoder module}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.5}{Part II: Decoder Top Level}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.6}{Part II: Decoder Constrains}{section.5}% 14
+\BOOKMARK [2][-]{subsection.2.3}{Part III - Laboratory Exercise}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Simulation}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Part I: behavioral simulation of decoder}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Part III: behavioral simulation of the Time Multiplexer}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 9
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 10
+\BOOKMARK [2][-]{subsection.5.1}{Lesson Learned}{section.5}% 11
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Vivado Language Templates}{subsection.5.1}% 12
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Clock divider not working}{subsection.5.1}% 13
