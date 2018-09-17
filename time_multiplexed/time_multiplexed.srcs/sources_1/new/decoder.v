@@ -33,7 +33,7 @@ shift = shift + 1;
 case (shift)
    2'b00 :  
    begin
-     cat0 <= 1'b0;
+     cat0 <= 1'b1;
      case ({SW1, SW0, BTN0}) //case statement
      3'b000 : seg0 =  7'b0000000;//  OFF 
      3'b001 : seg0 =  7'b1110011;// (P)YNQ
@@ -50,7 +50,7 @@ case (shift)
     
    2'b01 :  
      begin    
-    cat0 <= 1'b1;
+    cat0 <= 1'b0;
     case ({SW1, SW0, BTN0}) //case statement
     3'b000 : seg0 =  7'b0000000;//  OFF 
     3'b001 : seg0 =  7'b1110010;// P(Y)NQ
@@ -67,7 +67,7 @@ case (shift)
     
    2'b10 :  
       begin      
-    cat1 <= 1'b0;
+    cat1 <= 1'b1;
     case ({SW1, SW0, BTN0}) //case statement
     3'b000 : seg1 =  7'b0000000;//  OFF 
     3'b001 : seg1 =  7'b0110111;// P(Y)NQ
@@ -84,7 +84,7 @@ case (shift)
        
    2'b11 :  
       begin      
-    cat1 <= 1'b1;
+    cat1 <= 1'b0;
     case ({SW1, SW0, BTN0}) //case statement
     3'b000 : seg1 =  7'b0000000;//  OFF 
     3'b001 : seg1 =  7'b1100111;// P(Y)NQ

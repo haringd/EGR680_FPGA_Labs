@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../time_multiplexed.srcs/sources_1/new/clk_divider.v"
+verilog xil_defaultlib  "../../../time_multiplexed.srcs/sources_1/new/decoder.v"
+verilog xil_defaultlib  "../../../time_multiplexed.srcs/sources_1/new/time_multiplexed_top.v"
+verilog xil_defaultlib  "../../../time_multiplexed.srcs/sim_1/new/clk_div_tp.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
