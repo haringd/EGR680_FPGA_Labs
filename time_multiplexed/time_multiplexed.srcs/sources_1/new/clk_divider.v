@@ -23,17 +23,17 @@ begin
    //if (clk_temp >= 2) // Used for testbench
    begin
    clk_out <= ~clk_out; // no clue why this line does not toggle the clk_out
-   if (clk_out == 0) 
-   begin
-   clk_out=1;
-   end 
-   else
-   begin
-   clk_out=0;
-   end
+//   if (clk_out == 0) 
+//   begin
+//   clk_out=1;
+//   end 
+//   else
+//   begin
+//   clk_out=0;
+//   end
    clk_temp <= 0;
    end
 end // else rst
-   clk_out <= clk_out;
+   //clk_out <= clk_out; // could this lane of HDL be causong the problem of the not working clk divider? Yes, it is!!!
 end // always
 endmodule
