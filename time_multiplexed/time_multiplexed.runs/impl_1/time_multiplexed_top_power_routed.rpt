@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Sun Sep 16 22:01:44 2018
+| Date             : Mon Sep 17 18:04:56 2018
 | Host             : DESKTOP-50SCECT running 64-bit major release  (build 9200)
 | Command          : report_power -file time_multiplexed_top_power_routed.rpt -pb time_multiplexed_top_power_summary_routed.pb -rpx time_multiplexed_top_power_routed.rpx
 | Design           : time_multiplexed_top

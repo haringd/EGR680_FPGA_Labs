@@ -1,0 +1,66 @@
+\documentclass[]{article}
+
+% Packages
+\usepackage{import}
+\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{wasysym}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\renewcommand{\arraystretch}{1.5} % sets the hight of the table row relative to the default hight
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+	showstringspaces=false,
+	commentstyle=\color{red},
+	keywordstyle=\color{blue}
+}
+\usepackage{caption}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage[final]{pdfpages}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[english]{babel}
+\usepackage{float}
+%\usepackage{natbib}
+\usepackage[
+backend=biber,
+style=ieee,
+citestyle=numeric 
+]{biblatex}
+\addbibresource{reportLab02decoder.bib}
+
+
+
+% Title Page
+\title{ \includegraphics[scale=0.2]{01_images/gvsu_logo_marktop_SEPCEC_K_R.png}
+		\linebreak 	\linebreak \linebreak
+		EGR680 High Level Implementation on FPGA
+		\linebreak \linebreak 
+		Laboratory 03
+		\linebreak \linebreak 
+		State Machine Design
+		\linebreak \linebreak \linebreak
+		Professor: Dr. C. Parikh
+		}
+\author{Student: Dimitri Häring } %\thanks{Thanks } }
+\date{September 17, 2018}
+
+\begin{document}
+\maketitle
+\newpage
+%\begin{abstract}
+%\end{abstract}
+
+\tableofcontents
+\pagebreak
+% content
+\input{02_sections/Introduction}
+\input{02_sections/Design}
+\input{02_sections/Simulation}
+\input{02_sections/Conclusion} 
+\input{02_sections/Appendix}
+\printbibliography
+\end{document}          
+
