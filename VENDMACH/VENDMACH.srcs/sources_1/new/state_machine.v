@@ -1,12 +1,12 @@
 `timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: GVSU
+// Engineer: D. Häring
 // 
 // Create Date: 17.09.2018 23:14:32
 // Design Name: 
 // Module Name: state_machine
-// Project Name: 
+// Project Name: VENDMACH
 // Target Devices: 
 // Tool Versions: 
 // Description: 
@@ -58,7 +58,19 @@
        | IF value > Yogurt   |                                             |
        | & coin_val > 20     |------------------->------------------->-----+
        | Display 'y' by BTN2 |                                           
-       +---------------------+                                           
+       +---------------------+            
+       
+       
+       Example code moor machine out of lecture FPGA class Fall 2018
+       --------------------------------------------------------------
+       module moore_detector (input x, rst, clk, output z);
+       parameter reset=2'b0, got1=2'b01, got10=2'b10, got101=2'b11;
+       reg [1:0] current;
+       always @( posedge clk ) begin
+       ...........................
+       end
+       assign z = (current==got101) ? 1 : 0;
+       endmodule                               
 *********************************************************************************/
 
 `define RESET   3'b000
@@ -70,11 +82,27 @@
 `define YOGURT  3'b110
 
 module state_machine(
-
+    input clk,
+    input rst
     );
-    
-reg [2:0] state;
+    // parameter reset=2'b0, got1=2'b01, got10=2'b10, got101=2'b11; 
+    // parameter could be used instead of `define
+    reg [2:0] current;
+    //reg [2:0] state;
 
-  
-    
+    always @( posedge clk or negedge rst) begin
+    //...........................
+    if( rst ) current <= `RESET;
+    else begin
+    case (current)
+    `RESET : begin
+        end
+    default: begin
+    current <= `RESET;  end
+    endcase
+    end // else synchrones rst
+    end // always
+    // Output logic
+    // assign z = (current==got101) ? 1 : 0;
+      
 endmodule
