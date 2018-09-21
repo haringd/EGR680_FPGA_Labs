@@ -73,36 +73,93 @@
        endmodule                               
 *********************************************************************************/
 
-`define RESET   3'b000
-`define IDLE    3'b001
-`define DELAY   3'b010
-`define COIN    3'b011
-`define GUM     3'b100
+`define RESET   3'b000 // 0
+`define IDLE    3'b001 // 1
+`define DELAY   3'b010 // 2
+`define COIN    3'b011 // 3
+`define GUM     3'b100 // 4
 `define APPLE   3'b101
 `define YOGURT  3'b110
 
 module state_machine(
     input clk,
-    input rst
+    input rst,
+    input DIME,
+    input NICKEL,
+    input GUM,
+    output reg [6:0] seg0,
+    output reg [6:0] seg1,
+    output reg [3:0] ledout
     );
     // parameter reset=2'b0, got1=2'b01, got10=2'b10, got101=2'b11; 
     // parameter could be used instead of `define
     reg [2:0] current;
-    //reg [2:0] state;
+    reg [2:0] nxtState;
+    reg [2:0] coin_val;
 
     always @( posedge clk or negedge rst) begin
     //...........................
+    nxtState = current; 
     if( rst ) current <= `RESET;
     else begin
     case (current)
     `RESET : begin
+        current <= `IDLE;
         end
+    `IDLE : 
+    begin
+        seg0 = 7'b0000000; 
+        seg1 = 7'b0000000; 
+        if ( NICKEL || DIME ) begin
+        current = `COIN;
+        end
+    end
+    `DELAY : begin
+        #10; // 3s delay
+        current <= `RESET;
+    end
+    `COIN : begin
+        if ( GUM) begin
+        current <= GUM;
+        end
+    end
     default: begin
     current <= `RESET;  end
     endcase
     end // else synchrones rst
     end // always
     // Output logic
-    // assign z = (current==got101) ? 1 : 0;
-      
+    // assign z = (current==got101) ? 1 : 0;    
+    
+//    always @(negedge GUM)
+//    case (current)
+//    `IDLE: begin
+////    if (D) next_state = five;
+////    else if (N) next_state = ten;
+////    else next_state = zero;
+////    open = 0;
+//    seg0 <= 7'b0000000; 
+//    end
+//   `RESET: begin
+////    if (!Reset) next_state = fifteen;
+////    else next_state = zero;
+////    open = 1;
+//    end
+//   endcase
+   
+   
+   always @( negedge NICKEL )
+   begin
+   if ( coin_val > 20 ) begin
+       current <= `COIN;
+       coin_val = coin_val + 5;
+   end
+   end
+      always @( negedge DIME )
+   begin
+   if ( coin_val > 20 ) begin
+       current <= `COIN;
+       coin_val = coin_val + 10;
+   end
+   end // if ( coin_val >= 20 ) begin
 endmodule

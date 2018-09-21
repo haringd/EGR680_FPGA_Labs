@@ -1,0 +1,170 @@
+19:54:19 INFO  : Registering command handlers for SDK TCF services
+19:54:19 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA_EGR680\UART_app\UART_app.sdk\temp_xsdb_launch_script.tcl
+19:54:23 INFO  : XSCT server has started successfully.
+19:54:23 INFO  : Successfully done setting XSCT server connection channel  
+19:54:32 INFO  : Successfully done setting SDK workspace  
+19:54:32 INFO  : Processing command line option -hwspec C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper.hdf.
+20:03:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:03:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:07:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:07:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:08:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:08:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:10:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:10:28 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+20:10:28 INFO  : 'jtag frequency' command is executed.
+20:10:28 INFO  : Sourcing of 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:10:28 INFO  : Context for 'APU' is selected.
+20:10:28 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:10:28 INFO  : 'configparams force-mem-access 1' command is executed.
+20:10:28 INFO  : Context for 'APU' is selected.
+20:10:28 INFO  : 'stop' command is executed.
+20:10:29 INFO  : 'ps7_init' command is executed.
+20:10:29 INFO  : 'ps7_post_config' command is executed.
+20:10:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:10:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:10:31 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+20:10:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/UART_app/UART_app.sdk/HELLO_WORLD/Debug/HELLO_WORLD.elf
+----------------End of Script----------------
+
+20:11:43 INFO  : ps7_init is completed.
+20:11:43 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:11:48 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+20:12:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:12:08 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+20:12:08 INFO  : 'jtag frequency' command is executed.
+20:12:08 INFO  : Sourcing of 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:12:08 INFO  : Context for 'APU' is selected.
+20:12:08 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:12:08 INFO  : 'configparams force-mem-access 1' command is executed.
+20:12:08 INFO  : Context for 'APU' is selected.
+20:12:08 INFO  : 'stop' command is executed.
+20:12:08 ERROR : AP transaction error, DAP status f0000021
+20:12:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+20:14:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:14:47 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+20:14:47 INFO  : 'jtag frequency' command is executed.
+20:14:47 INFO  : Sourcing of 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:14:47 INFO  : Context for 'APU' is selected.
+20:14:47 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:14:47 INFO  : 'configparams force-mem-access 1' command is executed.
+20:14:47 INFO  : Context for 'APU' is selected.
+20:14:47 INFO  : 'stop' command is executed.
+20:14:47 INFO  : 'ps7_init' command is executed.
+20:14:47 INFO  : 'ps7_post_config' command is executed.
+20:14:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:14:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:14:50 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+20:14:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/UART_app/UART_app.sdk/HELLO_WORLD/Debug/HELLO_WORLD.elf
+----------------End of Script----------------
+
+20:18:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:03 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+20:20:03 INFO  : 'jtag frequency' command is executed.
+20:20:03 INFO  : Sourcing of 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:20:03 INFO  : Context for 'APU' is selected.
+20:20:03 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:20:03 INFO  : 'configparams force-mem-access 1' command is executed.
+20:20:04 INFO  : Context for 'APU' is selected.
+20:20:04 INFO  : 'stop' command is executed.
+20:20:04 INFO  : 'ps7_init' command is executed.
+20:20:04 INFO  : 'ps7_post_config' command is executed.
+20:20:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:20:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:20:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:20:06 ERROR : Memory write error at 0x100000. APB AP transaction error, DAP status f0000021
+20:20:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/UART_app/UART_app.sdk/HELLO_WORLD/Debug/HELLO_WORLD.elf
+----------------End of Script----------------
+
+20:22:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:22:06 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+20:22:06 INFO  : 'jtag frequency' command is executed.
+20:22:06 INFO  : Sourcing of 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:22:06 INFO  : Context for 'APU' is selected.
+20:22:06 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:22:06 INFO  : 'configparams force-mem-access 1' command is executed.
+20:22:06 INFO  : Context for 'APU' is selected.
+20:22:06 INFO  : 'stop' command is executed.
+20:22:06 ERROR : AP transaction error, DAP status f0000021
+20:22:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/UART_app/UART_app.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
