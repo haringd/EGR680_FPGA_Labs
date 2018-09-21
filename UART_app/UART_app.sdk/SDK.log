@@ -168,3 +168,4 @@ stop
 ps7_init
 ----------------End of Script----------------
 
+20:42:57 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

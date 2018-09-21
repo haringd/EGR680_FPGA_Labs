@@ -12,14 +12,25 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
-      <Cursor1Time time="626794000fs"></Cursor1Time>
+      <ZoomEndTime time="1634529148fs"></ZoomEndTime>
+      <Cursor1Time time="533632000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="136"></NameColumnWidth>
-      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+      <NameColumnWidth column_width="130"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
+   <WVObjectSize size="15" />
+   <wave_markers>
+      <marker time="250000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/state_machine_tb/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/state_machine_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
    <wvobject fp_name="/state_machine_tb/NICKEL" type="logic">
       <obj_property name="ElementShortName">NICKEL</obj_property>
       <obj_property name="ObjectShortName">NICKEL</obj_property>
@@ -32,37 +43,17 @@
       <obj_property name="ElementShortName">GUM</obj_property>
       <obj_property name="ObjectShortName">GUM</obj_property>
    </wvobject>
-   <wvobject fp_name="/state_machine_tb/CLOCK" type="logic">
-      <obj_property name="ElementShortName">CLOCK</obj_property>
-      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   <wvobject fp_name="/state_machine_tb/sm/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/state_machine_tb/RESET" type="logic">
-      <obj_property name="ElementShortName">RESET</obj_property>
-      <obj_property name="ObjectShortName">RESET</obj_property>
+   <wvobject fp_name="/state_machine_tb/sm/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/state_machine_tb/cat0" type="logic">
-      <obj_property name="ElementShortName">cat0</obj_property>
-      <obj_property name="ObjectShortName">cat0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/state_machine_tb/cat1" type="logic">
-      <obj_property name="ElementShortName">cat1</obj_property>
-      <obj_property name="ObjectShortName">cat1</obj_property>
-   </wvobject>
-   <wvobject fp_name="/state_machine_tb/seg0" type="array">
-      <obj_property name="ElementShortName">seg0[6:0]</obj_property>
-      <obj_property name="ObjectShortName">seg0[6:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/state_machine_tb/seg1" type="array">
-      <obj_property name="ElementShortName">seg1[6:0]</obj_property>
-      <obj_property name="ObjectShortName">seg1[6:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/state_machine_tb/ledout" type="logic">
-      <obj_property name="ElementShortName">ledout</obj_property>
-      <obj_property name="ObjectShortName">ledout</obj_property>
-   </wvobject>
-   <wvobject fp_name="/state_machine_tb/sm/coin_val" type="array">
-      <obj_property name="ElementShortName">coin_val[2:0]</obj_property>
-      <obj_property name="ObjectShortName">coin_val[2:0]</obj_property>
+   <wvobject fp_name="/state_machine_tb/sm/ledout" type="array">
+      <obj_property name="ElementShortName">ledout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/state_machine_tb/sm/current" type="array">
       <obj_property name="ElementShortName">current[2:0]</obj_property>
@@ -71,5 +62,26 @@
    <wvobject fp_name="/state_machine_tb/sm/nxtState" type="array">
       <obj_property name="ElementShortName">nxtState[2:0]</obj_property>
       <obj_property name="ObjectShortName">nxtState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/state_machine_tb/sm/coin_val" type="array">
+      <obj_property name="ElementShortName">coin_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">coin_val[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/state_machine_tb/sm/seg01" type="array">
+      <obj_property name="ElementShortName">seg01[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg01[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/state_machine_tb/sm/seg02" type="array">
+      <obj_property name="ElementShortName">seg02[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg02[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/state_machine_tb/sm/seg11" type="array">
+      <obj_property name="ElementShortName">seg11[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg11[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/state_machine_tb/sm/seg12" type="array">
+      <obj_property name="ElementShortName">seg12[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg12[6:0]</obj_property>
    </wvobject>
 </wave_config>

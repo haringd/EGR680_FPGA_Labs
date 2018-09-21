@@ -87,15 +87,19 @@ module state_machine(
     input DIME,
     input NICKEL,
     input GUM,
-    output reg [6:0] seg0,
-    output reg [6:0] seg1,
+    output reg [6:0] seg01, 
+    output reg [6:0] seg02, 
+    output reg [6:0] seg11, 
+    output reg [6:0] seg12,
     output reg [3:0] ledout
     );
     // parameter reset=2'b0, got1=2'b01, got10=2'b10, got101=2'b11; 
     // parameter could be used instead of `define
     reg [2:0] current;
     reg [2:0] nxtState;
-    reg [2:0] coin_val;
+//    reg [2:0] coin_val;
+   // integer coin_val;
+    reg [31:0] coin_val;
 
     always @( posedge clk or negedge rst) begin
     //...........................
@@ -105,11 +109,14 @@ module state_machine(
     case (current)
     `RESET : begin
         current <= `IDLE;
+        coin_val <= 0;
         end
     `IDLE : 
     begin
-        seg0 = 7'b0000000; 
-        seg1 = 7'b0000000; 
+        seg01 = 7'b0000000; 
+        seg02 = 7'b0000000; 
+        seg11 = 7'b0000000; 
+        seg12 = 7'b0000000; 
         if ( NICKEL || DIME ) begin
         current = `COIN;
         end
@@ -119,12 +126,14 @@ module state_machine(
         current <= `RESET;
     end
     `COIN : begin
+        
         if ( GUM) begin
-        current <= GUM;
+        nxtState <= GUM;
+        coin_val <= coin_val +1;
         end
     end
     default: begin
-    current <= `RESET;  end
+    nxtState <= `RESET;  end
     endcase
     end // else synchrones rst
     end // always
@@ -151,15 +160,19 @@ module state_machine(
    always @( negedge NICKEL )
    begin
    if ( coin_val > 20 ) begin
-       current <= `COIN;
-       coin_val = coin_val + 5;
+       nxtState <= `COIN;
+       coin_val <= coin_val;
+   end else begin
+    coin_val <= coin_val + 5;
    end
    end
-      always @( negedge DIME )
+   always @( negedge DIME )
    begin
    if ( coin_val > 20 ) begin
-       current <= `COIN;
-       coin_val = coin_val + 10;
-   end
+       nxtState <= `COIN;
+       coin_val <= coin_val;
+   end else begin
+        coin_val <= coin_val + 10;
+       end
    end // if ( coin_val >= 20 ) begin
 endmodule

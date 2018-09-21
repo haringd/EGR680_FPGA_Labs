@@ -1,6 +1,6 @@
 ## Clock signal 125 MHz
 set_property -dict { PACKAGE_PIN H16  IOSTANDARD LVCMOS33 } [get_ports { CLOCK }];
-create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { RESET }];
+create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { CLOCK }];
 
 ## Pmod A
 set_property -dict { PACKAGE_PIN Y18  IOSTANDARD LVCMOS33 } [get_ports { seg0[0] }];
@@ -32,8 +32,8 @@ set_property -dict { PACKAGE_PIN M14  IOSTANDARD LVCMOS33 } [get_ports { CHANGE[
 set_property -dict { PACKAGE_PIN D19  IOSTANDARD LVCMOS33 } [get_ports { GUM }];        # BTN0
 set_property -dict { PACKAGE_PIN D20  IOSTANDARD LVCMOS33 } [get_ports { APPLE }];      # BTN1
 set_property -dict { PACKAGE_PIN L20  IOSTANDARD LVCMOS33 } [get_ports { YOGURT }];     # BTN2
-set_property -dict { PACKAGE_PIN L19  IOSTANDARD LVCMOS33 } [get_ports { rst }];        # BTN3
+set_property -dict { PACKAGE_PIN L19  IOSTANDARD LVCMOS33 } [get_ports { RESET }];        # BTN3
 
 ## Switches
-set_property -dict { PACKAGE_PIN M20  IOSTANDARD LVCMOS33 } [get_ports { NICKLE }];     # SW0
+set_property -dict { PACKAGE_PIN M20  IOSTANDARD LVCMOS33 } [get_ports { NICKEL }];     # SW0
 set_property -dict { PACKAGE_PIN M19  IOSTANDARD LVCMOS33 } [get_ports { DIME }];       # SW1

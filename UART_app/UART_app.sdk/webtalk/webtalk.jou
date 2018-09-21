@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Thu Sep 20 20:42:53 2018
+# Process ID: 17848
+# Current directory: C:/FPGA_EGR680/UART_app/UART_app.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/FPGA_EGR680/UART_app/UART_app.sdk/webtalk/webtalk.log
+# Journal file: C:/FPGA_EGR680/UART_app/UART_app.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

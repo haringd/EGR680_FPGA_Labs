@@ -2,6 +2,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA_EGR680/VENDMACH/VENDMACH.sr
 INFO: [VRFC 10-311] analyzing module state_machine
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sim_1/new/state_machine_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module state_machine_tb
-INFO: [VRFC 10-2458] undeclared symbol ledout, assumed default net type wire [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sim_1/new/state_machine_tb.v:31]
+INFO: [VRFC 10-2458] undeclared symbol ledout, assumed default net type wire [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sim_1/new/state_machine_tb.v:35]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGA_EGR680/VENDMACH/VENDMACH.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
