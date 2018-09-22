@@ -14,42 +14,42 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg400'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg400'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14572 
+INFO: Helper process launched with PID 23180 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 307.238 ; gain = 76.754
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 307.184 ; gain = 76.551
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'vendmach_top' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/vendmach_top.v:1]
 INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/clk_divider.v:1]
 WARNING: [Synth 8-5788] Register clk_temp_reg in module clk_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/clk_divider.v:15]
 WARNING: [Synth 8-5788] Register clk_out_reg in module clk_divider is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/clk_divider.v:16]
 INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/clk_divider.v:1]
-INFO: [Synth 8-638] synthesizing module 'decoder' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:1]
-WARNING: [Synth 8-5788] Register cat0_reg in module decoder is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:33]
-WARNING: [Synth 8-5788] Register cat1_reg in module decoder is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:45]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (2#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:1]
-INFO: [Synth 8-638] synthesizing module 'state_machine' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:84]
-WARNING: [Synth 8-6014] Unused sequential element nxtState_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:106]
-WARNING: [Synth 8-6014] Unused sequential element coin_val_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:112]
-WARNING: [Synth 8-6014] Unused sequential element nxtState_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:163]
-WARNING: [Synth 8-6014] Unused sequential element coin_val_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:162]
-WARNING: [Synth 8-6014] Unused sequential element nxtState_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:172]
-WARNING: [Synth 8-6014] Unused sequential element coin_val_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:171]
-WARNING: [Synth 8-5788] Register seg01_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:116]
-WARNING: [Synth 8-5788] Register seg02_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:117]
-WARNING: [Synth 8-5788] Register seg11_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:118]
-WARNING: [Synth 8-5788] Register seg12_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:119]
-WARNING: [Synth 8-3848] Net ledout in module/entity state_machine does not have driver. [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:94]
-INFO: [Synth 8-256] done synthesizing module 'state_machine' (3#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:84]
-INFO: [Synth 8-256] done synthesizing module 'vendmach_top' (4#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/vendmach_top.v:1]
-WARNING: [Synth 8-3331] design state_machine has unconnected port ledout[3]
-WARNING: [Synth 8-3331] design state_machine has unconnected port ledout[2]
-WARNING: [Synth 8-3331] design state_machine has unconnected port ledout[1]
-WARNING: [Synth 8-3331] design state_machine has unconnected port ledout[0]
+INFO: [Synth 8-638] synthesizing module 'ascii2seg' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/ascii2seg.v:56]
+WARNING: [Synth 8-5788] Register seg_reg in module ascii2seg is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/ascii2seg.v:65]
+INFO: [Synth 8-256] done synthesizing module 'ascii2seg' (2#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/ascii2seg.v:56]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:55]
+WARNING: [Synth 8-5788] Register cat0_reg in module decoder is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:87]
+WARNING: [Synth 8-5788] Register cat1_reg in module decoder is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:99]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (3#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v:55]
+INFO: [Synth 8-638] synthesizing module 'state_machine' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:85]
+WARNING: [Synth 8-6014] Unused sequential element nxtState_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:108]
+WARNING: [Synth 8-6014] Unused sequential element nxtState_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:189]
+WARNING: [Synth 8-6014] Unused sequential element coin_val_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:188]
+WARNING: [Synth 8-6014] Unused sequential element nxtState_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:198]
+WARNING: [Synth 8-6014] Unused sequential element coin_val_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:197]
+WARNING: [Synth 8-5788] Register char01_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:123]
+WARNING: [Synth 8-5788] Register char02_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:124]
+WARNING: [Synth 8-5788] Register char11_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:125]
+WARNING: [Synth 8-5788] Register char12_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:126]
+WARNING: [Synth 8-5788] Register ledout_reg in module state_machine is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:127]
+INFO: [Synth 8-256] done synthesizing module 'state_machine' (4#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:85]
+INFO: [Synth 8-256] done synthesizing module 'vendmach_top' (5#1) [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/vendmach_top.v:1]
+WARNING: [Synth 8-3331] design state_machine has unconnected port DIME
+WARNING: [Synth 8-3331] design state_machine has unconnected port NICKEL
 WARNING: [Synth 8-3331] design state_machine has unconnected port GUM
 WARNING: [Synth 8-3331] design vendmach_top has unconnected port APPLE
 WARNING: [Synth 8-3331] design vendmach_top has unconnected port YOGURT
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 346.316 ; gain = 115.832
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 346.512 ; gain = 115.879
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -59,7 +59,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 346.316 ; gain = 115.832
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 346.512 ; gain = 115.879
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -75,33 +75,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 673.766 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 673.711 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "clk_temp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "clk_out" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'seg02_reg[6:0]' into 'seg01_reg[6:0]' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:117]
-INFO: [Synth 8-4471] merging register 'seg11_reg[6:0]' into 'seg01_reg[6:0]' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:118]
-INFO: [Synth 8-4471] merging register 'seg12_reg[6:0]' into 'seg01_reg[6:0]' [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:119]
-WARNING: [Synth 8-6014] Unused sequential element seg02_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:117]
-WARNING: [Synth 8-6014] Unused sequential element seg11_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:118]
-WARNING: [Synth 8-6014] Unused sequential element seg12_reg was removed.  [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v:119]
+INFO: [Synth 8-5544] ROM "seg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -118,17 +113,17 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                7 Bit    Registers := 3     
-	                3 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   4 Input      7 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
-	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -146,6 +141,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 4     
+Module ascii2seg 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module decoder 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -160,13 +161,10 @@ Detailed RTL Component Info :
 Module state_machine 
 Detailed RTL Component Info : 
 +---Registers : 
-	                7 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      2 Bit        Muxes := 2     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
-	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -182,33 +180,68 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3331] design vendmach_top has unconnected port CHANGE[3]
-WARNING: [Synth 8-3331] design vendmach_top has unconnected port CHANGE[2]
-WARNING: [Synth 8-3331] design vendmach_top has unconnected port CHANGE[1]
-WARNING: [Synth 8-3331] design vendmach_top has unconnected port CHANGE[0]
+WARNING: [Synth 8-3331] design vendmach_top has unconnected port NICKEL
+WARNING: [Synth 8-3331] design vendmach_top has unconnected port DIME
 WARNING: [Synth 8-3331] design vendmach_top has unconnected port GUM
 WARNING: [Synth 8-3331] design vendmach_top has unconnected port APPLE
 WARNING: [Synth 8-3331] design vendmach_top has unconnected port YOGURT
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm/current_reg[2] )
-INFO: [Synth 8-3886] merging instance 'sm/seg01_reg[0]' (FDE) to 'sm/seg01_reg[1]'
-INFO: [Synth 8-3886] merging instance 'sm/seg01_reg[1]' (FDE) to 'sm/seg01_reg[2]'
-INFO: [Synth 8-3886] merging instance 'sm/seg01_reg[2]' (FDE) to 'sm/seg01_reg[3]'
-INFO: [Synth 8-3886] merging instance 'sm/seg01_reg[3]' (FDE) to 'sm/seg01_reg[4]'
-INFO: [Synth 8-3886] merging instance 'sm/seg01_reg[4]' (FDE) to 'sm/seg01_reg[5]'
-INFO: [Synth 8-3886] merging instance 'sm/seg01_reg[5]' (FDE) to 'sm/seg01_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm/seg01_reg[6] )
-INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[0]' (FDCE) to 'dec/seg1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[6]' (FD) to 'sm/char01_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[7]' (FD) to 'sm/char01_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[0]' (FDE) to 'sm/char01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[4]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[3]' (FDE) to 'sm/char01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[2]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[5]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char12_reg[1]' (FDE) to 'sm/char01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[6]' (FD) to 'sm/char01_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[7]' (FD) to 'sm/char01_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[0]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[4]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[3]' (FDE) to 'sm/char01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[2]' (FDE) to 'sm/char01_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[5]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char11_reg[1]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[6]' (FD) to 'sm/char01_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[7]' (FD) to 'sm/char02_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[0]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[4]' (FDE) to 'sm/char01_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[3]' (FDE) to 'sm/char01_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[2]' (FDE) to 'sm/char01_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[5]' (FDE) to 'sm/char02_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char01_reg[1]' (FDE) to 'sm/char02_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[6]' (FD) to 'sm/char02_reg[7]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[7]' (FD) to 'sm/ledout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[0]' (FDE) to 'sm/char02_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[4]' (FDE) to 'sm/char02_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[3]' (FDE) to 'sm/char02_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[2]' (FDE) to 'sm/ledout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sm/char02_reg[5]' (FDE) to 'sm/char02_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sm/char02_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm/ledout_reg[0] )
+INFO: [Synth 8-3886] merging instance 'sm/ledout_reg[1]' (FD) to 'sm/ledout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sm/ledout_reg[2]' (FD) to 'sm/ledout_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sm/ledout_reg[3] )
+INFO: [Synth 8-3886] merging instance 'aseg11/seg_reg[0]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg12/seg_reg[1]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg11/seg_reg[1]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg12/seg_reg[2]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg11/seg_reg[2]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg11/seg_reg[3]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg12/seg_reg[5]' (FDC) to 'aseg12/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg12/seg_reg[6]' (FDC) to 'aseg11/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg11/seg_reg[6]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg02/seg_reg[0]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg01/seg_reg[1]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg02/seg_reg[1]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg01/seg_reg[2]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg02/seg_reg[3]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'aseg02/seg_reg[4]' (FDC) to 'aseg02/seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[0]' (FDCE) to 'dec/seg1_reg[3]'
 INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[1]' (FDCE) to 'dec/seg1_reg[6]'
 INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[2]' (FDCE) to 'dec/seg1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[3]' (FDCE) to 'dec/seg1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[4]' (FDCE) to 'dec/seg1_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dec/seg1_reg[5]' (FDCE) to 'dec/seg1_reg[6]'
 INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[0]' (FDCE) to 'dec/seg0_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[1]' (FDCE) to 'dec/seg0_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[2]' (FDCE) to 'dec/seg0_reg[6]'
 INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[3]' (FDCE) to 'dec/seg0_reg[6]'
 INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[4]' (FDCE) to 'dec/seg0_reg[6]'
-INFO: [Synth 8-3886] merging instance 'dec/seg0_reg[5]' (FDCE) to 'dec/seg0_reg[6]'
 WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[31]) is unused and will be removed from module vendmach_top.
 WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[30]) is unused and will be removed from module vendmach_top.
 WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[29]) is unused and will be removed from module vendmach_top.
@@ -241,14 +274,43 @@ WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[3]) is unused 
 WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[2]) is unused and will be removed from module vendmach_top.
 WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[1]) is unused and will be removed from module vendmach_top.
 WARNING: [Synth 8-3332] Sequential element (clk_div1/clk_temp_reg[0]) is unused and will be removed from module vendmach_top.
-WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[6]) is unused and will be removed from module vendmach_top.
-WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[6]) is unused and will be removed from module vendmach_top.
-WARNING: [Synth 8-3332] Sequential element (sm/current_reg[2]) is unused and will be removed from module vendmach_top.
-WARNING: [Synth 8-3332] Sequential element (sm/current_reg[1]) is unused and will be removed from module vendmach_top.
-WARNING: [Synth 8-3332] Sequential element (sm/current_reg[0]) is unused and will be removed from module vendmach_top.
-WARNING: [Synth 8-3332] Sequential element (sm/seg01_reg[6]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg01/seg_reg[6]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg01/seg_reg[5]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg01/seg_reg[4]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg01/seg_reg[3]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg01/seg_reg[0]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg02/seg_reg[5]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg02/seg_reg[2]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg11/seg_reg[5]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg11/seg_reg[4]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg12/seg_reg[4]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg12/seg_reg[3]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (aseg12/seg_reg[0]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg0_reg[5]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (dec/seg1_reg[4]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (sm/ledout_reg[0]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (sm/char02_reg[1]) is unused and will be removed from module vendmach_top.
+WARNING: [Synth 8-3332] Sequential element (sm/ledout_reg[3]) is unused and will be removed from module vendmach_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 673.711 ; gain = 443.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|ascii2seg    | seg        | 256x7         | LUT            | 
+|vendmach_top | aseg01/seg | 256x7         | LUT            | 
+|vendmach_top | aseg02/seg | 256x7         | LUT            | 
+|vendmach_top | aseg11/seg | 256x7         | LUT            | 
+|vendmach_top | aseg12/seg | 256x7         | LUT            | 
++-------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -260,13 +322,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -278,7 +340,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -302,7 +364,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -315,7 +377,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -327,25 +389,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -358,34 +420,34 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |BUFG  |     2|
-|2     |LUT1  |     3|
-|3     |LUT2  |     1|
-|4     |LUT3  |     2|
-|5     |FDCE  |     3|
-|6     |FDRE  |     2|
-|7     |IBUF  |     2|
-|8     |OBUF  |    16|
-|9     |OBUFT |     4|
-+------+------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     2|
+|2     |LUT1 |     3|
+|3     |LUT2 |     4|
+|4     |LUT3 |     2|
+|5     |FDCE |    10|
+|6     |FDRE |     2|
+|7     |IBUF |     2|
+|8     |OBUF |    20|
++------+-----+------+
 
 Report Instance Areas: 
 +------+-----------+------------+------+
 |      |Instance   |Module      |Cells |
 +------+-----------+------------+------+
-|1     |top        |            |    35|
-|2     |  clk_div1 |clk_divider |     2|
-|3     |  dec      |decoder     |     9|
+|1     |top        |            |    45|
+|2     |  aseg02   |ascii2seg   |     2|
+|3     |  clk_div1 |clk_divider |     2|
+|4     |  dec      |decoder     |    17|
 +------+-----------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 673.766 ; gain = 443.281
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 673.766 ; gain = 115.832
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.766 ; gain = 443.281
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 673.711 ; gain = 115.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 673.711 ; gain = 443.078
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -394,9 +456,9 @@ INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-44 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+81 Infos, 74 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 673.766 ; gain = 451.047
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 673.711 ; gain = 451.348
 INFO: [Common 17-1381] The checkpoint 'C:/FPGA_EGR680/VENDMACH/VENDMACH.runs/synth_1/vendmach_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 673.766 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Sep 21 01:00:44 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 673.711 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 22 16:40:03 2018...

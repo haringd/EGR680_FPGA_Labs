@@ -1,6 +1,6 @@
 ## Clock signal 125 MHz
-set_property -dict { PACKAGE_PIN H16  IOSTANDARD LVCMOS33 } [get_ports { CLOCK }];
-create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { CLOCK }];
+set_property -dict { PACKAGE_PIN H16  IOSTANDARD LVCMOS33 } [get_ports { clk }];
+create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { clk }];
 
 ## Pmod A
 set_property -dict { PACKAGE_PIN Y18  IOSTANDARD LVCMOS33 } [get_ports { seg0[0] }];

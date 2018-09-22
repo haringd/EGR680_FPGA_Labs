@@ -1,6 +1,6 @@
 set_property SRC_FILE_INFO {cfile:C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/constrs_1/new/vendmach_pins.xdc rfile:../../../VENDMACH.srcs/constrs_1/new/vendmach_pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN H16  IOSTANDARD LVCMOS33 } [get_ports { CLOCK }];
+set_property -dict { PACKAGE_PIN H16  IOSTANDARD LVCMOS33 } [get_ports { clk }];
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN Y18  IOSTANDARD LVCMOS33 } [get_ports { seg0[0] }];
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

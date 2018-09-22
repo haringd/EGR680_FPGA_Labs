@@ -3,6 +3,8 @@
 # 
 
 set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config  -ruleid {1}  -id {Synth 8-1717}  -string {{ERROR: [Synth 8-1717] cannot access memory seg directly [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/vendmach_top.v:21]}}  -suppress 
 create_project -in_memory -part xc7z020clg400-1
 
@@ -16,6 +18,7 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/FPGA_EGR680/VENDMACH/VENDMACH.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/ascii2seg.v
   C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/clk_divider.v
   C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/decoder.v
   C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/state_machine.v
