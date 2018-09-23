@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vendmach_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="vendmach_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="574599000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="114"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/vendmach_top_tb/NICKEL" type="logic">
+      <obj_property name="ElementShortName">NICKEL</obj_property>
+      <obj_property name="ObjectShortName">NICKEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/DIME" type="logic">
+      <obj_property name="ElementShortName">DIME</obj_property>
+      <obj_property name="ObjectShortName">DIME</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/GUM" type="logic">
+      <obj_property name="ElementShortName">GUM</obj_property>
+      <obj_property name="ObjectShortName">GUM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/APPLE" type="logic">
+      <obj_property name="ElementShortName">APPLE</obj_property>
+      <obj_property name="ObjectShortName">APPLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/YOGURT" type="logic">
+      <obj_property name="ElementShortName">YOGURT</obj_property>
+      <obj_property name="ObjectShortName">YOGURT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/CLOCK" type="logic">
+      <obj_property name="ElementShortName">CLOCK</obj_property>
+      <obj_property name="ObjectShortName">CLOCK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/cat0" type="logic">
+      <obj_property name="ElementShortName">cat0</obj_property>
+      <obj_property name="ObjectShortName">cat0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/cat1" type="logic">
+      <obj_property name="ElementShortName">cat1</obj_property>
+      <obj_property name="ObjectShortName">cat1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/CHANGE" type="array">
+      <obj_property name="ElementShortName">CHANGE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CHANGE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/seg0" type="array">
+      <obj_property name="ElementShortName">seg0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/seg1" type="array">
+      <obj_property name="ElementShortName">seg1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seg1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/NICKEL" type="logic">
+      <obj_property name="ElementShortName">NICKEL</obj_property>
+      <obj_property name="ObjectShortName">NICKEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/DIME" type="logic">
+      <obj_property name="ElementShortName">DIME</obj_property>
+      <obj_property name="ObjectShortName">DIME</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/GUM" type="logic">
+      <obj_property name="ElementShortName">GUM</obj_property>
+      <obj_property name="ObjectShortName">GUM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/APPLE" type="logic">
+      <obj_property name="ElementShortName">APPLE</obj_property>
+      <obj_property name="ObjectShortName">APPLE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/YOGURT" type="logic">
+      <obj_property name="ElementShortName">YOGURT</obj_property>
+      <obj_property name="ObjectShortName">YOGURT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/char01" type="array">
+      <obj_property name="ElementShortName">char01[7:0]</obj_property>
+      <obj_property name="ObjectShortName">char01[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/char02" type="array">
+      <obj_property name="ElementShortName">char02[7:0]</obj_property>
+      <obj_property name="ObjectShortName">char02[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/char11" type="array">
+      <obj_property name="ElementShortName">char11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">char11[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/char12" type="array">
+      <obj_property name="ElementShortName">char12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">char12[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/ledout" type="array">
+      <obj_property name="ElementShortName">ledout[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ledout[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/coin_val" type="array">
+      <obj_property name="ElementShortName">coin_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">coin_val[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/nickel_add" type="logic">
+      <obj_property name="ElementShortName">nickel_add</obj_property>
+      <obj_property name="ObjectShortName">nickel_add</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/dime_add" type="logic">
+      <obj_property name="ElementShortName">dime_add</obj_property>
+      <obj_property name="ObjectShortName">dime_add</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_idle" type="array">
+      <obj_property name="ElementShortName">p_idle[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_idle[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_delay" type="array">
+      <obj_property name="ElementShortName">p_delay[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_delay[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_coin" type="array">
+      <obj_property name="ElementShortName">p_coin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_coin[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_gum" type="array">
+      <obj_property name="ElementShortName">p_gum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_gum[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_apple" type="array">
+      <obj_property name="ElementShortName">p_apple[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_apple[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_yogurt" type="array">
+      <obj_property name="ElementShortName">p_yogurt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_yogurt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vendmach_top_tb/vm_t/sm/p_vent" type="array">
+      <obj_property name="ElementShortName">p_vent[31:0]</obj_property>
+      <obj_property name="ObjectShortName">p_vent[31:0]</obj_property>
+   </wvobject>
+</wave_config>

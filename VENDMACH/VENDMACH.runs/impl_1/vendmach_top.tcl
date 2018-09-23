@@ -45,7 +45,6 @@ proc step_failed { step } {
 set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config  -ruleid {1}  -id {Synth 8-1717}  -string {{ERROR: [Synth 8-1717] cannot access memory seg directly [C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/sources_1/new/vendmach_top.v:21]}}  -suppress 
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -128,24 +127,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force vendmach_top.mmi }
-  write_bitstream -force vendmach_top.bit 
-  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
-  catch {file copy -force debug_nets.ltx vendmach_top.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

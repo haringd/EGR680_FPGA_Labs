@@ -1,7 +1,9 @@
+`timescale 1ns / 1ns
+
 module clk_divider(
     input clk,
     input rst,
-    input div_val,
+    input [31:0] div_val,
     output reg clk_out
     );
 

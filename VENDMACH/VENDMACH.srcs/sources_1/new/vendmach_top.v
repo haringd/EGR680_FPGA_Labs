@@ -1,3 +1,4 @@
+`timescale 1ns / 1ns
 module vendmach_top(
     input NICKEL,
     input DIME,
@@ -29,7 +30,6 @@ wire [7:0] char12;
     ascii2seg aseg11(clk, RESET, char11, seg11);
     ascii2seg aseg12(clk, RESET, char12, seg12);
     decoder dec(seg01, seg02, seg11, seg12, RESET, clk_seg, seg0, seg1, cat0, cat1);
-    state_machine sm(clk, RESET, DIME, NICKEL, GUM, char01, char02, char11, char12, CHANGE);
-    
-    
+    state_machine sm(clk, RESET, DIME, NICKEL, GUM, APPLE, YOGURT, char01, char02, char11, char12, CHANGE);
+      
 endmodule

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1537648764">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1537672763">
   <File Type="RDS-PROPCONSTRS" Name="vendmach_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="vendmach_top.tcl"/>
   <File Type="RDS-RDS" Name="vendmach_top.vds"/>
