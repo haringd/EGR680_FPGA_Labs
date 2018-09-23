@@ -51,7 +51,7 @@ cat0  /  |    |                |           cat1  /  |    |                |
        2'b10 : seg0 =  7'b1011011;//2
        2'b11 : seg0 =  7'b1001111;//3              
 *********************************************************************************/
-
+`timescale 1ns / 1ns
 module decoder(
     input [6:0] seg01, 
     input [6:0] seg02, 
@@ -67,46 +67,38 @@ module decoder(
 
 reg [1:0] shift = 2'b00;
 
-always @(posedge clk or negedge rst)
-begin
-
-if (rst)
-begin
+always @(posedge clk or negedge rst) begin
+if (rst) begin
   seg0 = 7'b0000000;
   seg1 = 7'b0000000;
   shift = 2'b00;
-end
-else
-begin
-
+end else begin
 shift = shift + 1;
 
 case (shift)
-   2'b00 :  
-   begin
+   2'b00 :     begin
      cat0 <= 1'b1;
      seg0 =  seg01;
-     end
-    
-   2'b01 :  
-     begin    
+     end  
+   2'b01 :     begin    
     cat0 <= 1'b0;
     seg0 =  seg02;
     end    
     
-   2'b10 :  
-      begin      
+   2'b10 :     begin      
     cat1 <= 1'b1;
    seg1 =  seg11;
    end    
        
-   2'b11 :  
-      begin      
+   2'b11 :     begin      
     cat1 <= 1'b0;
     seg1 =  seg12;
    end     
+   default: begin
+     seg0 = 7'b0000000;
+     seg1 = 7'b0000000;
+     end
    endcase           
-end
 end // else rst
-
+end // always
 endmodule
