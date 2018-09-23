@@ -4,13 +4,13 @@ shwows a lot of errors and warnings which takes forever to solve. Here
 is a list of use full links to some of the errors. The links are ordered 
 according to the evility.
 
-[https://wiki.nus.edu.sg/pages/viewpage.action?pageId=167808307]([Place 
+[https://wiki.nus.edu.sg/pages/viewpage.action?pageId=167808307]( [Place 
 30-574] Poor placement for routing between an I/O pin and BUFG)
 
-[https://forums.xilinx.com/t5/Implementation/ERROR-Common-17-69-Command-failed-Placer-could-not-place-all/td-p/595398](ERROR: 
+[https://forums.xilinx.com/t5/Implementation/ERROR-Common-17-69-Command-failed-Placer-could-not-place-all/td-p/595398]( ERROR: 
 [Common 17-69] Command failed: Placer could not place all instances)
 
-[https://www.xilinx.com/support/answers/64452.html](Vivado 
+[https://www.xilinx.com/support/answers/64452.html]( Vivado 
 Implementation - Error:[Place 30-574] Poor placement for routing 
 between an I/O pin and BUFG)
 
