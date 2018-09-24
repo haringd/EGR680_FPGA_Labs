@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Sep 23 21:36:46 2018
+# Process ID: 15836
+# Current directory: C:/FPGA_EGR680/VENDMACH/VENDMACH.runs/impl_1
+# Command line: vivado.exe -log vendmach_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vendmach_top.tcl -notrace
+# Log file: C:/FPGA_EGR680/VENDMACH/VENDMACH.runs/impl_1/vendmach_top.vdi
+# Journal file: C:/FPGA_EGR680/VENDMACH/VENDMACH.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vendmach_top.tcl -notrace

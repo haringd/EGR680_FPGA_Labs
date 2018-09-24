@@ -23,9 +23,9 @@
 **********************************************************************************
 	                       001                                  000
        +---------------------+               +---------------------+
-       |                     |               |                     |
-       | Idle                |<--------------| Reset               |<------+
-       | Display OFF         |               | BTN3                |       |
+       | Idle                |               |                     |
+       | Display "VENT"      |<--------------| Reset               |<------+
+       |                     |               | BTN3                |       |
        +---------------------+               +---------------------+-      |
            |                                                               |
            |                                                               |
@@ -40,7 +40,7 @@
            |              004                                              |       007
        +---------------------+                                  +---------------------+
        | IF value > Gum      |                                  | Vend                |
-       | & coin_val > 10     |--------------------------------->| Display "VENT"      |
+       | & coin_val > 10     |--------------------------------->|                     |
        | Display 'g' by BTN0 |                                  | Disp returned cents |
        +---------------------+                                  +---------------------+
            |                                                              / \ 
@@ -72,6 +72,10 @@
        assign z = (current==got101) ? 1 : 0;
        endmodule              
        
+       Intel example
+       --------------------------------------------------------------
+       // URL: https://www.intel.com/content/www/us/en/programmable/ ...
+       // support/support-resources/design-examples/design-software/verilog.html#using
        statem.v
        
        module statem(clk, in, reset, out);
@@ -123,15 +127,6 @@
        endmodule                 
 *********************************************************************************/
 
-//`define RESET   4'b0000 // 0
-//`define IDLE    4'b0001 // 1
-//`define DELAY   4'b0010 // 2
-//`define COIN    4'b0011 // 3
-//`define GUM     4'b0100 // 4
-//`define APPLE   4'b0101 // 5
-//`define YOGURT  4'b0110 // 6
-//`define VENT    4'b0111 // 7
-
 module state_machine(
     input clk,
     input rst,
@@ -146,76 +141,85 @@ module state_machine(
     output reg [7:0] char12,
     output reg [3:0] ledout
     );
-    parameter p_idle=0, p_delay=1, p_coin=2, p_gum=3, p_apple=4, p_yogurt=5, p_vent=6; 
-    // parameter could be used instead of `define
-        
-    reg [2:0] state = 3'b000;
-    //reg [2:0] nextState = 3'b001;
-//    reg [2:0] coin_val;
-   // integer coin_val;
-    integer coin_val = 0;
-    reg nickel_add=0;
-    reg dime_add=0;
     
-    always @( state ) begin
+    parameter p_idle=3'b000, p_delay=3'b001, p_coin=3'b010, p_gum=3'b011, p_apple=3'b100, p_yogurt=3'b101, p_vent=3'b110; 
+
+    reg [2:0] state;  
+    initial state = p_idle;
+    integer coin_val = 0;
+    integer delay3s = 0;
+    integer modulo = 0;
+    reg nickel_add = 0;
+    reg dime_add = 0;
+    reg bt_gum = 0;
+    reg bt_apple = 0;
+    reg bt_yogurt = 0;
+    
+    always @( state ) begin : Output
     case (state)
         p_idle : begin
-            char01 = " ";
-            char02 = " ";
-            char11 = " ";
-            char12 = " ";
-            ledout = 0;
+            char01 <= "V";
+            char02 <= "E";
+            char11 <= "N";
+            char12 <= "T";
+            ledout <= 4'b0000; 
         end
     p_delay : begin
-        #10; // 3s delay
     end
-    p_coin : begin      
-
-        
+    p_coin : begin       
+        char01 <= " ";
+        char02 <= " ";
         case (coin_val) 
             0: begin
-                char11 = "0";
-                char12 = "0";
+                char11 <= "0";
+                char12 <= "0";
                 end 
             5: begin
-                char11 = "0";
-                char12 = "5";
+                char11 <= "0";
+                char12 <= "5";
                 end 
             10: begin
-                char11 = "1";
-                char12 = "0";
+                char11 <= "1";
+                char12 <= "0";
                 end 
             15: begin
-                char11 = "1";
-                char12 = "5";
+                char11 <= "1";
+                char12 <= "5";
                 end 
             20: begin
-                char11 = "2";
-                char12 = "0";
+                char11 <= "2";
+                char12 <= "0";
                 end 
             default: begin
-                char11 = "9";
-                char12 = "9";
+                char11 <= "9";
+                char12 <= "9";
                 end
         endcase
     end
     p_gum : begin        
-        char01 = "G";
-        char02 = " ";
-        ledout <= coin_val%10;
+        char01 <= "G";
+        char02 <= " ";
+        modulo <= 10;      
+        end
+    p_apple : begin        
+        char01 <= "A";
+        char02 <= " ";
+        modulo <= 15;       
+        end
+    p_yogurt : begin        
+        char01 <= "Y";
+        char02 <= " ";
+        modulo <= 20; 
         end
     p_vent : begin  
-        char01 = "V";
-        char02 = "E";
-        char11 = "N";
-        char12 = "T";      
+        ledout <= coin_val % modulo;  
     end
     default: begin
-        char01 = "D";
-        char02 = "E";
-        char11 = "F";
-        char12 = "U";   
-        ledout = 8; 
+//        char01 <= "D";
+//        char02 <= "E";
+//        char11 <= "F";
+//        char12 <= "U";   
+//        ledout <= 4'b1111; 
     end
     endcase
     end // always
@@ -225,90 +229,80 @@ module state_machine(
      always @( posedge clk or negedge rst) begin
      //...........................
  //    nxtState = current; 
-     if( rst ) state <= p_idle;
-     else begin
+     if( rst ) begin
+        state <= p_idle;
+        coin_val <= 0; 
+     end else begin
      case (state)
      p_idle : begin
-//         if(nickel_add) state <= p_coin;
-//         else if ( dime_add ) state <= p_coin;
-//         else state <= p_idle;
-          coin_val <= 0;
-          state <= p_coin;
+         if( nickel_add ) state <= p_coin;
+         else if ( dime_add ) state <= p_coin;
+         else state <= p_idle;
          end
-     p_delay : begin
-         //#10; // 3s delay
-         
+     p_delay : begin // 3s delay
+         if (delay3s <= 375000000 ) delay3s <= delay3s +1;
+         else  begin
+         delay3s <= 0;
          state <= p_idle;
+         end
      end
      p_coin : begin        
-        if ( nickel_add )       coin_val <= coin_val + 5;
-        else if ( dime_add )    coin_val <= coin_val + 10;
-        else                    coin_val <= coin_val + 0;
      
-         if ( GUM ) state <= p_gum;
-         else if (APPLE) state <= p_apple;
-         else if (YOGURT) state <= p_yogurt;
+         if ( coin_val >= 20 )   coin_val <= coin_val;
+         else if ( nickel_add )  coin_val <= coin_val + 5; //else if ( nickel_add )  coin_val <= coin_val + 5; NICKEL
+         else if ( dime_add )    coin_val <= coin_val + 10; //else if ( dime_add )    coin_val <= coin_val + 10;
+         else                    coin_val <= coin_val;
+
+        
+         if ( bt_gum ) state <= p_gum;
+         else if (bt_apple ) state <= p_apple;
+         else if (bt_yogurt) state <= p_yogurt;
          else  state <= p_coin;
      end
      p_gum : begin        
-         if ( coin_val >= 10) state <= p_vent;        
-         else state <= p_gum;
+         if ( coin_val >= 10) state <= p_vent;         
+         else state <= p_coin;
      end
      p_vent : begin     
          state <= p_delay;
      end
      default: begin
-     state <= p_idle;  end
+     //state <= p_idle;  
+     end
      endcase
      end // else synchrones rst
-     end // always 
+end // always 
    
- reg deb1, deb2, deb3, deb4;  
-   // counter or shift reg to debounce
-//     always @( negedge NICKEL )
-//     begin
-//         if (state==p_idle || state == p_coin) nickel_add = 1;
-//         else nickel_add = 0;
-//     end 
+ reg deb1, deb2, deb3, deb4, deb5, deb6, deb7, deb8, deb9, deb10;  
+ 
+ //   Edge detector for incoming signals
      always @( posedge clk )
        begin
        deb1 <= NICKEL;
        deb2 <= deb1;
-       if (deb1 == 1 && deb2 == 0) nickel_add = 1;
-       else nickel_add = 0;
+       if (deb1 == 1 && deb2 == 0) nickel_add <= 1;
+       else nickel_add <= 0;
        
        deb3 <= DIME;
        deb4 <= deb3;
-       if (deb3 == 1 && deb4 == 0) dime_add = 1;
-       else dime_add = 0;
-       end 
-//     always @( negedge DIME )
-//     begin
-//         if (state==p_idle || state == p_coin) dime_add = 1;
-//         else dime_add = 0;
-//     end    
-   
-//   always @( negedge NICKEL )
-//   begin
-//   nextState <= p_gum;
-//   if ( coin_val >= 20 ) begin
-//       //coin_val <= coin_val;
-//   end else begin
-//     nickel_add = 1;
-//   end
-//   end
-   
-//   always @( negedge DIME )
-//   begin
-//   nextState <= p_gum;
-//   if ( coin_val >= 20 ) begin
-//      // coin_val <= coin_val;
-//   end else begin
-//        coin_val <= coin_val + 10;
-//        dime_add = 1;
-//       end
-//   end // if ( coin_val >= 20 ) begin
-
+       if (deb3 == 1 && deb4 == 0) dime_add <= 1;
+       else dime_add <= 0;
+       
+       deb5 <= GUM;
+       deb6 <= deb5;
+       if (deb5 == 1 && deb6 == 0) bt_gum <= 1;
+       else bt_gum <= 0;
+       
+       deb7 <= APPLE;
+       deb8 <= deb7;
+       if (deb7 == 1 && deb8 == 0) bt_apple <= 1;
+       else bt_apple <= 0;
+       
+       deb9 <= YOGURT;
+       deb10 <= deb9;
+       if (deb9 == 1 && deb10 == 0) bt_yogurt <= 1;
+       else bt_yogurt <= 0;
+     end  // always
 
 endmodule
 

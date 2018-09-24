@@ -2,6 +2,7 @@
 set_property -dict { PACKAGE_PIN H16  IOSTANDARD LVCMOS33 } [get_ports { clk }];
 create_clock -add -name sys_clk_pin -period 8.00 -waveform {0 4} [get_ports { clk }];
 #set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets RESET_IBUF];
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets rst_IBUF];
 
 ## Pmod A
 set_property -dict { PACKAGE_PIN Y18  IOSTANDARD LVCMOS33 } [get_ports { seg0[0] }];

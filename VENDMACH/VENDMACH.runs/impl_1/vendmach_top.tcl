@@ -42,15 +42,56 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+
+start_step init_design
+set ACTIVE_STEP init_design
+set rc [catch {
+  create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
+  create_project -in_memory -part xc7z020clg400-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir C:/FPGA_EGR680/VENDMACH/VENDMACH.cache/wt [current_project]
+  set_property parent.project_path C:/FPGA_EGR680/VENDMACH/VENDMACH.xpr [current_project]
+  set_property ip_output_repo C:/FPGA_EGR680/VENDMACH/VENDMACH.cache/ip [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet C:/FPGA_EGR680/VENDMACH/VENDMACH.runs/synth_1/vendmach_top.dcp
+  read_xdc C:/FPGA_EGR680/VENDMACH/VENDMACH.srcs/constrs_1/new/vendmach_pins.xdc
+  link_design -top vendmach_top -part xc7z020clg400-1
+  close_msg_db -file init_design.pb
+} RESULT]
+if {$rc} {
+  step_failed init_design
+  return -code error $RESULT
+} else {
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force vendmach_top_opt.dcp
+  catch { report_drc -file vendmach_top_drc_opted.rpt }
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
 
 start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
-  open_checkpoint vendmach_top_opt.dcp
-  set_property webtalk.parent_dir C:/FPGA_EGR680/VENDMACH/VENDMACH.cache/wt [current_project]
   implement_debug_core 
   place_design 
   write_checkpoint -force vendmach_top_placed.dcp
@@ -87,6 +128,24 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
+  unset ACTIVE_STEP 
+}
+
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+  catch { write_mem_info -force vendmach_top.mmi }
+  write_bitstream -force vendmach_top.bit 
+  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
+  catch {file copy -force debug_nets.ltx vendmach_top.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 
