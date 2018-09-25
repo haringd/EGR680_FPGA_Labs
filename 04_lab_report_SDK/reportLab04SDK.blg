@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'reportLab04SDK.blg'
+[48] biber-MSWIN64:313> INFO - === 
+[121] Biber.pm:371> INFO - Reading 'reportLab04SDK.bcf'
+[244] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[256] Utils.pm:193> WARN - The file 'reportLab04SDK.bcf' does not contain any citations!
+[267] bbl.pm:617> INFO - Writing 'reportLab04SDK.bbl' with encoding 'UTF-8'
+[267] bbl.pm:720> INFO - Output to reportLab04SDK.bbl
+[272] Biber.pm:110> INFO - WARNINGS: 1
