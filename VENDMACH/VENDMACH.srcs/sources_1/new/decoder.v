@@ -68,7 +68,7 @@ module decoder(
 reg [1:0] shift = 2'b00;
 
 always @(posedge clk or negedge rst) begin
-if (rst) begin
+if (!rst) begin
   seg0 = 7'b0000000;
   seg1 = 7'b0000000;
   shift = 2'b00;

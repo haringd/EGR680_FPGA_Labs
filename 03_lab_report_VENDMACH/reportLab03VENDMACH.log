@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  17 SEP 2018 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  24 SEP 2018 19:59
 entering extended mode
 **./reportLab03VENDMACH.tex
 (reportLab03VENDMACH.tex
@@ -662,7 +662,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count326
 \@quotereset=\count327
-(reportLab03VENDMACH.aux)
+(reportLab03VENDMACH.aux (02_sections/Appendix.aux))
 \openout1 = `reportLab03VENDMACH.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -790,7 +790,7 @@ Package biblatex Info: ... file 'reportLab03VENDMACH.bbl' found.
  (reportLab03VENDMACH.bbl)
 Package biblatex Info: Reference section=0 on input line 50.
 Package biblatex Info: Reference segment=0 on input line 50.
-<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=39, 969.6225pt x 755.82375pt>
+<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=75, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
@@ -820,6 +820,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 (02_sections/Introduction.tex) (02_sections/Design.tex
+Overfull \hbox (92.6961pt too wide) in paragraph at lines 2--4
+\OT1/cmr/m/n/10 lab 03 can be re-viewed on-line un-der the flow-ing link []http
+://github.com/haringd/EGR680[]FPGA[]Labs/tree/master/VENDMACH[]. 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 5--11
 
  []
@@ -830,24 +836,34 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 13.
-<01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG, id=66, 430.60875pt x 341
-.77687pt>
+<01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG, id=113, 430.60875pt x 34
+1.77687pt>
 File: 01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG Graphic file (type p
 ng)
 <use 01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG>
 Package pdftex.def Info: 01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG  
 used on input line 35.
 (pdftex.def)             Requested size: 328.82707pt x 260.99953pt.
-)
-(02_sections/Simulation.tex) (02_sections/Conclusion.tex [3])
-(02_sections/Appendix.tex
-<01_images/Vivado_LanguageTemplates.png, id=75, 902.6222pt x 573.64313pt>
+
+[3] [4 <./01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG>] [5] [6])
+(02_sections/Simulation.tex
+<01_images/Simulation_state_machine.PNG, id=145, 993.7125pt x 517.18219pt>
+File: 01_images/Simulation_state_machine.PNG Graphic file (type png)
+<use 01_images/Simulation_state_machine.PNG>
+Package pdftex.def Info: 01_images/Simulation_state_machine.PNG  used on input 
+line 10.
+(pdftex.def)             Requested size: 469.75502pt x 244.48825pt.
+) (02_sections/Conclusion.tex) [7 <./01_images/Simulation_state_machine.PNG>]
+\openout2 = `02_sections/Appendix.aux'.
+
+ (02_sections/Appendix.tex
+<01_images/Vivado_LanguageTemplates.png, id=156, 902.6222pt x 573.64313pt>
 File: 01_images/Vivado_LanguageTemplates.png Graphic file (type png)
 <use 01_images/Vivado_LanguageTemplates.png>
 Package pdftex.def Info: 01_images/Vivado_LanguageTemplates.png  used on input 
 line 9.
 (pdftex.def)             Requested size: 281.85587pt x 179.13173pt.
- [4 <./01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG>] [5]
+
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -862,7 +878,9 @@ File: lstlang3.sty 2018/09/02 1.7 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 16.
+ [8
 
+ <./01_images/Vivado_LanguageTemplates.png>]
 Overfull \hbox (261.04356pt too wide) in paragraph at lines 36--38
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
@@ -870,31 +888,30 @@ Overfull \hbox (261.04356pt too wide) in paragraph at lines 36--38
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-)
+) [9]
 
 LaTeX Warning: Empty bibliography on input line 64.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-[6 <./01_images/Vivado_LanguageTemplates.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
- (reportLab03VENDMACH.aux)
+(reportLab03VENDMACH.aux (02_sections/Appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `reportLab03VENDMACH.out' has not changed.
-(rerunfilecheck)             Checksum: C8B34B9175E7E4541593E66A6BB2D9BE;539.
+(rerunfilecheck)             Checksum: 0AE47BF04B407A01276B31432E487F1F;1302.
 Package logreq Info: Writing requests to 'reportLab03VENDMACH.run.xml'.
 \openout1 = `reportLab03VENDMACH.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 17178 strings out of 492973
- 282683 string characters out of 3126692
- 765110 words of memory out of 3000000
- 20783 multiletter control sequences out of 15000+200000
+ 17228 strings out of 492973
+ 283918 string characters out of 3126692
+ 761080 words of memory out of 3000000
+ 20812 multiletter control sequences out of 15000+200000
  9345 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,42p,965b,1664s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,44p,965b,2022s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/f
@@ -904,11 +921,13 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/schw
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 :/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr17.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/wasy/wasy10.pfb>
-Output written on reportLab03VENDMACH.pdf (6 pages, 333245 bytes).
+amsfonts/cm/cmr7.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/schwa/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/wasy/wasy10.pfb>
+Output written on reportLab03VENDMACH.pdf (9 pages, 412666 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 59 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 

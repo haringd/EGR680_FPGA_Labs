@@ -49,9 +49,15 @@ initial #200 NICKEL = 1;
 initial #300 NICKEL = 0;
 initial #400 DIME = 1;
 initial #500 DIME = 0;
+
 initial #600 GUM = 1;
 initial #700 GUM = 0;
 
+//initial #600 APPLE = 1;
+//initial #700 APPLE = 0;
+
+//initial #600 YOGURTUM = 1;
+//initial #700 YOGURT = 0;
 
 initial #1000 $finish;
 endmodule

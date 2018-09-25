@@ -32,7 +32,7 @@ module debounce(
  
     always @( posedge clk_slow or negedge rst )
       begin
-          if (rst) begin
+          if (!rst) begin
               deb1 <=0; 
               deb2 <=0; 
               out <=0; 

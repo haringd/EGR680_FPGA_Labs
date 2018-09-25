@@ -1,6 +1,6 @@
 \section{Design}\label{sec: Design}
 In this section the design and decisions that where made to achieve the laboratory are discussed.
-
+The code for lab 03 can be reviewed online under the flowing link \href{https://github.com/haringd/EGR680_FPGA_Labs/tree/master/VENDMACH}{http://github.com/haringd/EGR680\_FPGA\_Labs/tree/master/VENDMACH}.
 \subsection{Vending machine specification}\label{subsec: Vending machine specification}
 Verilog is used to describe a decoder that shall control a seven-segment display with two switches and one button. The given task is as followed:
 \\ \\
@@ -30,15 +30,29 @@ The machine has three outputs:
 \end{description}
 
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{01_images/Vivado_lab3_DesignSpec3_ModuleOverview.PNG}
 	\caption{VENDMACH top level module.}
 	\label{fig: Vivado_lab3_DesignSpec3_ModuleOverview}
 \end{figure}
 
-The above specification leads to the following table.
-\begin{table}[ht]
+\subsection{Vending machine design description}\label{subsec: Vending machine design description}
+The above specification leads to the following table truth tables which can be used as aid to implement the logic in HDL. Table \ref{tab: VENDMACH allowed coins.} shows the logic relation between switch an coin. Table \ref{tab: VENDMACH products and prices.} shows the relation ship between button and product. 
+\subsubsection{Display}\label{subsubsec: Display}
+The knowledge that different values at different displays have to be shown lead to the idea of using an ASCII to seven-segment converter (ascii2seg) as separate module so in the state machine the actual out put can be represented as ASCII character. The ascii2seg output is routed in to the decoder that is based on a four to two MUX. The decoder is synchronized with a slower clk signal otherwise the display would not be visible. The state machine module has four character outputs theretofore the ascii2seg converter is build as module and used four times between state machine module and decoder.
+\subsubsection{De-bounce}\label{subsubsec: De-bounce}
+Input signals on the PYNQ-Z1 board are realized with switches and buttons that according to testing are not hardware de-bounced. This means that a button or switch has a ringing while the element switches from off to on state or from on state to off state. This can be easily encountered in software with a de-bouncer. The de-bouncer is realized with an two bit shift register and a state comparison between synchronized input and synchronized output that determines the output logic. To make it a denouncer the clock has to be slower then the ringing period of the switched element, so it uses a slow clock. The de-bouncer is implemented as module which allows the instantiation of the module for as many signals as have to be de-bounced. Notice, that because the de-bounce module uses a synchronous reset the reset button can not be de-bounced with it.
+
+\subsubsection{Edge detector}\label{subsubsec: Edge detector}
+After an input signal is de-bounced usually an edge detector is switched in serious that is build as the same as the de-bouncer but operates on the system clock to account for the faster switching past of the state machine (SM). Due to the fact that the Edge detector has the same clock as the SM it was implemented in the state machine file as in depended process in a synchronous always statement.
+
+\subsubsection{3 s Delay}\label{subsubsec: 3s Delay}
+A 3 s delay is used to keep the state after the vending process was successful that the display does not switch immediately to idle state. Therefor a simple counter was used to count up for $375*10^6$ ticks for a 125 MHz system clock used in the state machine. 
+
+\subsubsection{State Machine}\label{subsubsec: State Machine}
+The state machine is implemented in Moore Machine with an case statement synchronized on the the state value used for output logic. A second case statement is used to implement the logic flow depended on the given input states. The drawn  a bit simplified state machine is shown in figure \ref{fig: VNEDMACH state machine} therefore it can be easily used in the file as header which helps a lot by development on small screens. 
+\begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|| c | c | c | c | c ||} 
 			\hline
@@ -49,10 +63,10 @@ The above specification leads to the following table.
 			
 		\end{tabular}
 	\end{center}
-	\caption{VENDMACH allowed coins.}
+	\caption{VENDMACH allowed coins.}\label{tab: VENDMACH allowed coins.}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|| c | c | c | c | c ||} 
 			\hline
@@ -60,117 +74,69 @@ The above specification leads to the following table.
 			\hline\hline
 			Gum  	& 10 \cent	& g		\\ \hline
 			Apple 	& 15 \cent	& A  	\\ \hline
-			Yogurt 	& 20 \cent	& y  	\\ \hline
-			
+			Yogurt 	& 20 \cent	& y  	\\ \hline		
 		\end{tabular}
 	\end{center}
-	\caption{VENDMACH products and prices.}
+	\caption{VENDMACH products and prices.} \label{tab: VENDMACH products and prices.}
 \end{table}
-
-\begin{figure}
+\newpage
+\subsection{Vending machine State Machine}\label{subsec: Vending machine State Machin}
+\begin{figure}[H]
 	\begin{verbatim}       
-	                       000                                  001
-       +---------------------+               +---------------------+
-       |                     |               |                     |
-       | Idle                |<--------------| Reset               |<------+
-       | Display OFF         |               | BTN3                |       |
-       +---------------------+               +---------------------+-      |
-           |                                                               |
-           |                                                               |
-           |              003                                              |       002
-       +---------------------+ Add to coin_val                  +---------------------+
-       |                     |---------------+                  | Delay               |
-       | Coin entered show   |               |                  | 3s                  |
-       | coin_val on Pmod A  |<--------------+                  |                     |
-       +---------------------+                                  +---------------------+
-           |                                                              / \ 
-           |                                                             / | \
-           |              004                                              |       007
-       +---------------------+                                  +---------------------+
-       | IF value > Gum      |                                  | Vend                |
-       | & coin_val > 10     |--------------------------------->| Display "VENT"      |
-       | Display 'g' by BTN0 |                                  | Disp returned cents |
-       +---------------------+                                  +---------------------+
-           |                                                              / \ 
-           |                                                             / | \
-           |              005                                              |
-       +---------------------+                                             |
-       | IF value > Apple    |                                             |
-       | & coin_val > 15     |------------------->------------------->-----+
-       | Display 'A' by BTN1 |                                             |
-       +---------------------+                                             |
-           |                                                               |
-           |                                                               |
-           |              006                                              |
-       +---------------------+                                             |
-       | IF value > Yogurt   |                                             |
-       | & coin_val > 20     |------------------->------------------->-----+
-       | Display 'y' by BTN2 |                                           
-       +---------------------+                                           
+/*********************************************************************************
+** FSM State machine                                                            **
+**********************************************************************************
+                   000                                  
++---------------------+               +---------------------+
+| Idle                |               |                     |
+| Display "VENT"      |<--------------| Reset               |<------+
+|                     |               | BTN3                |       |
++---------------------+               +---------------------+-      |
+    |                                                               |
+    |                                                               |
+    |              002                                              |       001
++---------------------+ Add to coin_val                  +---------------------+
+|                     |---------------+                  | Delay               |
+| Coin entered show   |               |                  | 3s                  |
+| coin_val on Pmod A  |<--------------+                  |                     |
++---------------------+                                  +---------------------+
+    |                                                              / \ 
+    |                                                             / | \
+    |              003                                              |       006
++---------------------+                                  +---------------------+
+| IF value > Gum      |                                  | Vend                |
+| & coin_val > 10     |--------------------------------->|                     |
+| Display 'g' by BTN0 |                                  | Disp returned cents |
++---------------------+                                  +---------------------+
+   |                                                               / \ 
+   |                                                              / | \
+   |              004                                               |
++---------------------+                                             |
+| IF value > Apple    |                                             |
+| & coin_val > 15     |------------------->------------------->-----+
+| Display 'A' by BTN1 |                                             |
++---------------------+                                             |
+    |                                                               |
+    |                                                               |
+    |              005                                              |
++---------------------+                                             |
+| IF value > Yogurt   |                                             |
+| & coin_val > 20     |------------------->------------------->-----+
+| Display 'y' by BTN2 |                                           
++---------------------+            
 
 	\end{verbatim}
-	\caption{VNEDMACH state machine.}
+	\caption{VNEDMACH state machine.}\label{fig: VNEDMACH state machine}
 \end{figure}
-%\begin{figure}[htbp]
-%	\centering
-%	\includegraphics[width=1.0\textwidth]{01_images/Vivado_lab3_DesignSpec2.PNG}
-%	\caption{VENDMACH Design Specification}
-%	\label{fig: Vivado_lab3_DesignSpec2}
-%\end{figure}
 
-As software package to implement the decoder in Verilog Vivado 2017.2 is used. 
-%
-%\subsection{Part II - Hardware Implementation \& Modular Design}\label{subsec: Hardware Implementation Modular Design}
-%For the second part a hierarchical design is achieved including the implementation and generation of a bit stream to use hardware or more specific the PYNQ development board. Therfore the folowing task is given:
-%\\
-%\\
-%In this part, you will modify your code from Part I. Instead of only using one button and one switch, you will
-%design your Verilog code to display on four seven-segment displays by pressing the four buttons on the PYNQ
-%board. Each seven-segment display will correspond to one button (i.e., BTN0 lights up the right-most seven-segment
-%display and BTN1 will light up the adjacent seven-segment display and so on). Make sure that when a
-%button is released, the corresponding seven-segment display turns OFF. Only one seven-segment display should
-%be on at any given time.
-%\\
-%\\
-%To realize the constrained file the PYNQ reference manual was used to allocate the right pins for the switches and buttons, figure \ref{fig: PYNQ_BasicIO} shows the basic I/O pins assignment of the PYNQ development board.
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=0.6\textwidth]{01_images/PYNQ_BasicIO.png}
-%	\caption{Schematic PYNQ Basic I/O. \cite{PYNG_RM}}
-%	\label{fig: PYNQ_BasicIO}
-%\end{figure}
-%The one of solution to part II is two concatenated case statements. The first case is used to check for the button press and the second to switch the seven-segment display to show the number as defined by the two switches SW0 and SW1. The used code is listed in the following three listening \ref{lst: decoder part II}, \ref{lst: decoder top level part II}, and \ref{lst: decoder Constrains part II}.
-%
-%\subsection{Part III - Laboratory Exercise}\label{subsec: Part III - Laboratory Exercise}
-%The third part of the lab combines part one and part two to a final design that uses a modified decoder version of part two and a clock divider to print out the words, PYNQ, FPGA, IS, and COOL with the seven-segment display. The clock divider is used to slow down the 125 MHz clock to 125 Hz, the relation ship of clock divider an decoder is shown in figure \ref{fig: Vivado_lab2_part3_block_diagram}. Switches SW0 and SW1 defines which word will be shown on the displays if the button BTN0 is pressed, as shown in figure \ref{fig: Vivado_lab2_part3_InAndOutTable}. The task is described as followed in the lab report: \\   
-%\\
-%In this part, you will create a time multiplexed seven-segment decoder using the block diagram shown in Figure
-%8 as a guide. You will need to create a multiplexer in order to display more than one seven-segment
-%simultaneously. Design the multiplexer to enable each digit for 8ms, or a 125Hz refresh rate. Remember, these
-%Pmods have a shared digit select pin. Most multi-digit displays would have a separate digit select pin for each
-%digit. Table 3 shows the required outputs for the required input combinations.
-%
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=1.0\textwidth]{01_images/Vivado_lab2_part3_block_diagram.PNG}
-%	\caption{Part III block diagram. \cite{PYNG_RM}}
-%	\label{fig: Vivado_lab2_part3_block_diagram}
-%\end{figure}
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=0.5\textwidth]{01_images/Vivado_lab2_part3_InAndOutTable.PNG}
-%	\caption{Part III inputs and outputs. \cite{PYNG_RM}}
-%	\label{fig: Vivado_lab2_part3_InAndOutTable}
-%\end{figure}
-%
-%The clock divider is realized with a counter that counts up until the divider ratio is reached of 500,000 as calculated with equation \ref{eq: div ratio}.
-%
-%\begin{equation} \label{eq: div ratio}
-%	Divider\ ratio = \frac{f_1}{f_2 * 2} = \frac{125 MHz}{125 Hz * 2} = 500,000
-%\end{equation}
-%Therefore, a clk\_temp register is used to count up until the counter value equal or great than 500,000 is reached. In the top module the divided clk\_out of the clk\_divider is wired into the decoder. The reason is why the clock needs to be divided at the first placed is that a two fast clock would prevent the viability of the seven-segment displays. 
-%The decoder is time multiplexed because each seven-segment display has a common carriage line to display ever a number on display A or display B. Therefor, a time multiplexer was written which is clock depended that each display one after another.
-%The time multiplexer is realized with a case statement and a two bit value that iterates trough and each case displays one character of a word. 
-%\\ 
-%\\
-Further improvements that would increase the code quality and re-usability of the  modules would be to change the clk\_divider module that the divider ratio is given as input to the clock divider. 
+\subsection{Recommended improvements for future work}\label{subsec: Recommended improvements for future work}
+\begin{enumerate}
+	\item It is highly recommended for the development process that simulation and original hardware is used simultaneously if possible. A lot of time was lost due to a simple bug that most likely would have been found easily if in early design states would have used the hardware as well instead of simulation. Furthermore, the module initialization should be done with labels so that the order of the module input signals does not matter.
+	\item The Edge detector should be implemented as independent module.
+	\item Decide if a signal shall be set with blocking or non blocking statement, but do not mix those among another.
+\end{enumerate}
+
+
+
+
+

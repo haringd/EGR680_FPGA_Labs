@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Sun Sep 23 23:25:22 2018
+| Date             : Mon Sep 24 20:04:03 2018
 | Host             : DESKTOP-50SCECT running 64-bit major release  (build 9200)
 | Command          : report_power -file vendmach_top_power_routed.rpt -pb vendmach_top_power_summary_routed.pb -rpx vendmach_top_power_routed.rpx
 | Design           : vendmach_top
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.154 |
-| Dynamic (W)              | 0.032 |
+| Total On-Chip Power (W)  | 0.137 |
+| Dynamic (W)              | 0.015 |
 | Device Static (W)        | 0.122 |
 | Effective TJA (C/W)      | 11.5  |
-| Max Ambient (C)          | 83.2  |
-| Junction Temperature (C) | 26.8  |
+| Max Ambient (C)          | 83.4  |
+| Junction Temperature (C) | 26.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,16 +49,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.010 |     1519 |       --- |             --- |
-|   LUT as Logic |     0.008 |      933 |     53200 |            1.75 |
-|   CARRY4       |     0.002 |      242 |     13300 |            1.82 |
-|   Register     |    <0.001 |      232 |    106400 |            0.22 |
+| Clocks         |     0.003 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      694 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      307 |     53200 |            0.58 |
+|   CARRY4       |    <0.001 |       48 |     13300 |            0.36 |
+|   Register     |    <0.001 |      242 |    106400 |            0.23 |
 |   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |     0.008 |     1246 |       --- |             --- |
-| I/O            |     0.012 |       27 |       125 |           21.60 |
+| Signals        |    <0.001 |      454 |       --- |             --- |
+| I/O            |     0.011 |       27 |       125 |           21.60 |
 | Static Power   |     0.122 |          |           |                 |
-| Total          |     0.154 |          |           |                 |
+| Total          |     0.137 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.020 |      0.008 |
+| Vccint    |       1.000 |     0.012 |       0.005 |      0.008 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.019 |
 | Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -81,7 +81,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.017 |       0.000 |      0.017 |
+| Vccpint   |       1.000 |     0.016 |       0.000 |      0.016 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -98,7 +98,7 @@ Table of Contents
 | User Input Data             | Confidence | Details                                                | Action                                                                                                             |
 +-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 | Design implementation state | High       | Design is routed                                       |                                                                                                                    |
-| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
 | I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
 | Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
 | Device models               | High       | Device models are Production                           |                                                                                                                    |
@@ -144,7 +144,7 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| vendmach_top |     0.032 |
+| vendmach_top |     0.015 |
 |   aseg01     |    <0.001 |
 |   aseg02     |    <0.001 |
 |   aseg11     |    <0.001 |
@@ -157,7 +157,7 @@ Table of Contents
 |   debNICKLE  |    <0.001 |
 |   debYOGURT  |    <0.001 |
 |   dec        |    <0.001 |
-|   sm         |     0.018 |
+|   sm         |     0.002 |
 +--------------+-----------+
 
 

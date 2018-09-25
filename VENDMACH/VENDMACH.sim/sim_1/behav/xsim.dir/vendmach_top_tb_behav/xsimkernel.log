@@ -1,7 +1,7 @@
-Running: xsim.dir/vendmach_top_tb_behav/xsimk.exe -simmode gui -wdb vendmach_top_tb_behav.wdb -simrunnum 0 -socket 59141
+Running: xsim.dir/vendmach_top_tb_behav/xsimk.exe -simmode gui -wdb vendmach_top_tb_behav.wdb -simrunnum 0 -socket 62570
 Design successfully loaded
-Design Loading Memory Usage: 5700 KB (Peak: 5700 KB)
+Design Loading Memory Usage: 5716 KB (Peak: 5716 KB)
 Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 6388 KB (Peak: 6388 KB)
-Simulation CPU Usage: 15 ms
+Simulation Memory Usage: 14388 KB (Peak: 14388 KB)
+Simulation CPU Usage: 4343 ms

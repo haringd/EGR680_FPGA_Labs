@@ -61,7 +61,7 @@ module ascii2seg(
     );
         
     always @(posedge clk or negedge rst)
-    if(rst) begin
+    if(!rst) begin
         seg = 7'b0000000; 
     end else begin                                                   
           case (char)                                    

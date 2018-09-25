@@ -36,3 +36,8 @@ end // else rst
 //clk_out <= clk_out; // could this lane of HDL be causong the problem of the not working clk divider? Yes, it is!!!
 
 \end{lstlisting}
+
+\subsubsection{Implementation Error [Place 30-574] Poor placement for routing between an I/O pin and BUFG} \label{subsubsec: Poor placement for routing between an I/O pin and BUFG}
+\href{https://wiki.nus.edu.sg/pages/viewpage.action?pageId=167808307}{Poor placement for routing between an I/O pin and BUFG} is a state where a clk signal is routed to anon clock net or a non clock signal is routed to clock net like a posedge or negedge clk signal.
+Now it seems this clock placement error that occurs by implementing the project is somewhat related to the decoder. As the decoder module is commented out of the top level block the error is not there any more. Still the source or what pin shall causing the issue could not be located at first.
+The issue was that the in the decoder initialization the clk and rst pin where switched.

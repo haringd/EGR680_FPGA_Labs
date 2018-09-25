@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Sun Sep 23 23:25:21 2018
+| Date         : Mon Sep 24 20:04:03 2018
 | Host         : DESKTOP-50SCECT running 64-bit major release  (build 9200)
 | Command      : report_methodology -file vendmach_top_methodology_drc_routed.rpt -rpx vendmach_top_methodology_drc_routed.rpx
 | Design       : vendmach_top
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 58
+             Violations found: 63
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell   | 33         |
 | TIMING-18 | Warning  | Missing input or output delay | 1          |
-| TIMING-20 | Warning  | Non-clocked latch             | 24         |
+| TIMING-20 | Warning  | Non-clocked latch             | 29         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -236,92 +236,117 @@ Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch sm/char02_reg[2] cannot be properly analyzed as its control pin sm/char02_reg[2]/G is not reached by a timing clock
+The latch sm/char02_reg[0] cannot be properly analyzed as its control pin sm/char02_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch sm/char02_reg[5] cannot be properly analyzed as its control pin sm/char02_reg[5]/G is not reached by a timing clock
+The latch sm/char02_reg[1] cannot be properly analyzed as its control pin sm/char02_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch sm/char11_reg[0] cannot be properly analyzed as its control pin sm/char11_reg[0]/G is not reached by a timing clock
+The latch sm/char02_reg[2] cannot be properly analyzed as its control pin sm/char02_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
 Non-clocked latch  
-The latch sm/char11_reg[1] cannot be properly analyzed as its control pin sm/char11_reg[1]/G is not reached by a timing clock
+The latch sm/char02_reg[3] cannot be properly analyzed as its control pin sm/char02_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#11 Warning
 Non-clocked latch  
-The latch sm/char11_reg[2] cannot be properly analyzed as its control pin sm/char11_reg[2]/G is not reached by a timing clock
+The latch sm/char02_reg[5] cannot be properly analyzed as its control pin sm/char02_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#12 Warning
 Non-clocked latch  
-The latch sm/char11_reg[3] cannot be properly analyzed as its control pin sm/char11_reg[3]/G is not reached by a timing clock
+The latch sm/char11_reg[0] cannot be properly analyzed as its control pin sm/char11_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#13 Warning
 Non-clocked latch  
-The latch sm/char11_reg[5] cannot be properly analyzed as its control pin sm/char11_reg[5]/G is not reached by a timing clock
+The latch sm/char11_reg[1] cannot be properly analyzed as its control pin sm/char11_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#14 Warning
 Non-clocked latch  
-The latch sm/char12_reg[0] cannot be properly analyzed as its control pin sm/char12_reg[0]/G is not reached by a timing clock
+The latch sm/char11_reg[2] cannot be properly analyzed as its control pin sm/char11_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#15 Warning
 Non-clocked latch  
-The latch sm/char12_reg[2] cannot be properly analyzed as its control pin sm/char12_reg[2]/G is not reached by a timing clock
+The latch sm/char11_reg[3] cannot be properly analyzed as its control pin sm/char11_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#16 Warning
 Non-clocked latch  
-The latch sm/char12_reg[3] cannot be properly analyzed as its control pin sm/char12_reg[3]/G is not reached by a timing clock
+The latch sm/char11_reg[5] cannot be properly analyzed as its control pin sm/char11_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#17 Warning
 Non-clocked latch  
-The latch sm/ledout_reg[0] cannot be properly analyzed as its control pin sm/ledout_reg[0]/G is not reached by a timing clock
+The latch sm/char12_reg[0] cannot be properly analyzed as its control pin sm/char12_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#18 Warning
 Non-clocked latch  
-The latch sm/ledout_reg[1] cannot be properly analyzed as its control pin sm/ledout_reg[1]/G is not reached by a timing clock
+The latch sm/char12_reg[2] cannot be properly analyzed as its control pin sm/char12_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#19 Warning
 Non-clocked latch  
-The latch sm/ledout_reg[2] cannot be properly analyzed as its control pin sm/ledout_reg[2]/G is not reached by a timing clock
+The latch sm/char12_reg[3] cannot be properly analyzed as its control pin sm/char12_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#20 Warning
 Non-clocked latch  
-The latch sm/ledout_reg[3] cannot be properly analyzed as its control pin sm/ledout_reg[3]/G is not reached by a timing clock
+The latch sm/gay_disp_reg[0] cannot be properly analyzed as its control pin sm/gay_disp_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#21 Warning
 Non-clocked latch  
-The latch sm/modulo_reg[0] cannot be properly analyzed as its control pin sm/modulo_reg[0]/G is not reached by a timing clock
+The latch sm/gay_disp_reg[1] cannot be properly analyzed as its control pin sm/gay_disp_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#22 Warning
 Non-clocked latch  
-The latch sm/modulo_reg[1] cannot be properly analyzed as its control pin sm/modulo_reg[1]/G is not reached by a timing clock
+The latch sm/gay_disp_reg[2] cannot be properly analyzed as its control pin sm/gay_disp_reg[2]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#23 Warning
 Non-clocked latch  
-The latch sm/modulo_reg[2] cannot be properly analyzed as its control pin sm/modulo_reg[2]/G is not reached by a timing clock
+The latch sm/ledout_reg[0] cannot be properly analyzed as its control pin sm/ledout_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#24 Warning
 Non-clocked latch  
-The latch sm/modulo_reg[4] cannot be properly analyzed as its control pin sm/modulo_reg[4]/G is not reached by a timing clock
+The latch sm/ledout_reg[1] cannot be properly analyzed as its control pin sm/ledout_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch sm/ledout_reg[2] cannot be properly analyzed as its control pin sm/ledout_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch sm/ledout_reg[3] cannot be properly analyzed as its control pin sm/ledout_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch sm/modulo_reg[0] cannot be properly analyzed as its control pin sm/modulo_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch sm/modulo_reg[2] cannot be properly analyzed as its control pin sm/modulo_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch sm/modulo_reg[3] cannot be properly analyzed as its control pin sm/modulo_reg[3]/G is not reached by a timing clock
 Related violations: <none>
 
 

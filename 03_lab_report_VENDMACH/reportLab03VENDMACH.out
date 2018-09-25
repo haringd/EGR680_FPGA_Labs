@@ -1,9 +1,18 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Design}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Vending machine specification}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Simulation}{}% 4
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 5
-\BOOKMARK [1][-]{section.5}{Appendix}{}% 6
-\BOOKMARK [2][-]{subsection.5.1}{Lesson Learned}{section.5}% 7
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Vivado Language Templates}{subsection.5.1}% 8
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Clock divider not working}{subsection.5.1}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Vending machine design description}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Display}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{De-bounce}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Edge detector}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.4}{3 s Delay}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.5}{State Machine}{subsection.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Vending machine State Machine}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Recommended improvements for future work}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Simulation}{}% 12
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 13
+\BOOKMARK [1][-]{section.5}{Appendix}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Lesson Learned}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Vivado Language Templates}{subsection.5.1}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Clock divider not working}{subsection.5.1}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Implementation Error [Place 30-574] Poor placement for routing between an I/O pin and BUFG}{subsection.5.1}% 18

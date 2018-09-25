@@ -21,7 +21,7 @@
 /*********************************************************************************
 ** FSM State machine                                                            **
 **********************************************************************************
-	                       001                                  000
+	                       000                                  
        +---------------------+               +---------------------+
        | Idle                |               |                     |
        | Display "VENT"      |<--------------| Reset               |<------+
@@ -29,7 +29,7 @@
        +---------------------+               +---------------------+-      |
            |                                                               |
            |                                                               |
-           |              003                                              |       002
+           |              002                                              |       001
        +---------------------+ Add to coin_val                  +---------------------+
        |                     |---------------+                  | Delay               |
        | Coin entered show   |               |                  | 3s                  |
@@ -37,7 +37,7 @@
        +---------------------+                                  +---------------------+
            |                                                              / \ 
            |                                                             / | \
-           |              004                                              |       007
+           |              003                                              |       006
        +---------------------+                                  +---------------------+
        | IF value > Gum      |                                  | Vend                |
        | & coin_val > 10     |--------------------------------->|                     |
@@ -45,7 +45,7 @@
        +---------------------+                                  +---------------------+
            |                                                              / \ 
            |                                                             / | \
-           |              005                                              |
+           |              004                                              |
        +---------------------+                                             |
        | IF value > Apple    |                                             |
        | & coin_val > 15     |------------------->------------------->-----+
@@ -53,7 +53,7 @@
        +---------------------+                                             |
            |                                                               |
            |                                                               |
-           |              006                                              |
+           |              005                                              |
        +---------------------+                                             |
        | IF value > Yogurt   |                                             |
        | & coin_val > 20     |------------------->------------------->-----+
@@ -154,6 +154,7 @@ module state_machine(
     reg bt_gum = 0;
     reg bt_apple = 0;
     reg bt_yogurt = 0;
+    reg [2:0]gay_disp = 0;
     
     always @( state ) begin : Output
     case (state)
@@ -162,9 +163,27 @@ module state_machine(
             char02 <= "E";
             char11 <= "N";
             char12 <= "T";
-            ledout <= 4'b0000; 
+            ledout <= 4'b0000;
+            modulo <= 0;
+            gay_disp <= 3'b000;
         end
     p_delay : begin
+        case (gay_disp) 
+            3'b001: begin
+                char02 <= "G";
+                end
+            3'b010: begin
+                char02 <= "A";
+            end
+            3'b100: begin
+                char02 <= "Y";
+            end            
+        endcase
+        char01 <= "_";
+        char11 <= char11;
+        char12 <= char12;
+        ledout <= ledout;
+        modulo <= 0;
     end
     p_coin : begin       
         char01 <= " ";
@@ -195,31 +214,122 @@ module state_machine(
                 char12 <= "9";
                 end
         endcase
+        ledout <= 4'b0000;
     end
     p_gum : begin        
         char01 <= "G";
         char02 <= " ";
-        modulo <= 10;      
+        gay_disp <= 3'b001;
+        modulo <= 10;   
+        case (coin_val) 
+            0: begin
+                char11 <= "0";
+                char12 <= "0";
+                end 
+            5: begin
+                char11 <= "0";
+                char12 <= "5";
+                end 
+            10: begin
+                char11 <= "1";
+                char12 <= "0";
+                end 
+            15: begin
+                char11 <= "1";
+                char12 <= "5";
+                end 
+            20: begin
+                char11 <= "2";
+                char12 <= "0";
+                end 
+            default: begin
+                char11 <= "9";
+                char12 <= "9";
+                end
+        endcase
+        ledout <= 4'b0000;   
         end
     p_apple : begin        
         char01 <= "A";
         char02 <= " ";
-        modulo <= 15;       
+        gay_disp <= 3'b010;
+        modulo <= 15;    
+        case (coin_val) 
+            0: begin
+                char11 <= "0";
+                char12 <= "0";
+                end 
+            5: begin
+                char11 <= "0";
+                char12 <= "5";
+                end 
+            10: begin
+                char11 <= "1";
+                char12 <= "0";
+                end 
+            15: begin
+                char11 <= "1";
+                char12 <= "5";
+                end 
+            20: begin
+                char11 <= "2";
+                char12 <= "0";
+                end 
+            default: begin
+                char11 <= "9";
+                char12 <= "9";
+                end
+        endcase
+        ledout <= 4'b0000;   
         end
     p_yogurt : begin        
         char01 <= "Y";
         char02 <= " ";
+        gay_disp <= 3'b100;
         modulo <= 20; 
+        case (coin_val) 
+            0: begin
+                char11 <= "0";
+                char12 <= "0";
+                end 
+            5: begin
+                char11 <= "0";
+                char12 <= "5";
+                end 
+            10: begin
+                char11 <= "1";
+                char12 <= "0";
+                end 
+            15: begin
+                char11 <= "1";
+                char12 <= "5";
+                end 
+            20: begin
+                char11 <= "2";
+                char12 <= "0";
+                end 
+            default: begin
+                char11 <= "9";
+                char12 <= "9";
+                end
+        endcase
+        ledout <= 4'b0000;
         end
     p_vent : begin  
-        ledout <= coin_val % modulo;  
+        char01 <= char01;
+        char02 <= char02;
+        char11 <= char11;
+        char12 <= char12;
+        ledout <= coin_val - modulo;  
     end
     default: begin
-//        char01 <= "D";
-//        char02 <= "E";
-//        char11 <= "F";
-//        char12 <= "U";   
-//        ledout <= 4'b1111; 
+        char01 <= "D";
+        char02 <= "E";
+        char11 <= "F";
+        char12 <= "U";   
+        ledout <= 4'b1111; 
+        modulo <= 0;
+        gay_disp <= 3'b000;
     end
     endcase
     end // always
@@ -229,20 +339,28 @@ module state_machine(
      always @( posedge clk or negedge rst) begin
      //...........................
  //    nxtState = current; 
-     if( rst ) begin
+     if( !rst ) begin
         state <= p_idle;
         coin_val <= 0; 
      end else begin
      case (state)
      p_idle : begin
+         
+         if ( coin_val >= 20 )   coin_val <= coin_val;
+         else if ( nickel_add )  coin_val <= coin_val + 5; //else if ( nickel_add )  coin_val <= coin_val + 5; NICKEL
+         else if ( dime_add )    coin_val <= coin_val + 10; //else if ( dime_add )    coin_val <= coin_val + 10;
+         else                    coin_val <= coin_val;
+     
          if( nickel_add ) state <= p_coin;
          else if ( dime_add ) state <= p_coin;
          else state <= p_idle;
+         
          end
      p_delay : begin // 3s delay
          if (delay3s <= 375000000 ) delay3s <= delay3s +1;
          else  begin
          delay3s <= 0;
+         coin_val <= 0; 
          state <= p_idle;
          end
      end
@@ -252,8 +370,7 @@ module state_machine(
          else if ( nickel_add )  coin_val <= coin_val + 5; //else if ( nickel_add )  coin_val <= coin_val + 5; NICKEL
          else if ( dime_add )    coin_val <= coin_val + 10; //else if ( dime_add )    coin_val <= coin_val + 10;
          else                    coin_val <= coin_val;
-
-        
+    
          if ( bt_gum ) state <= p_gum;
          else if (bt_apple ) state <= p_apple;
          else if (bt_yogurt) state <= p_yogurt;
@@ -263,11 +380,20 @@ module state_machine(
          if ( coin_val >= 10) state <= p_vent;         
          else state <= p_coin;
      end
+     p_apple : begin        
+         if ( coin_val >= 15) state <= p_vent;         
+         else state <= p_coin;
+     end
+     p_yogurt : begin        
+         if ( coin_val >= 20) state <= p_vent;         
+         else state <= p_coin;
+     end
      p_vent : begin     
          state <= p_delay;
      end
      default: begin
-     //state <= p_idle;  
+        state <= p_idle;  
+        coin_val <= 0; 
      end
      endcase
      end // else synchrones rst
