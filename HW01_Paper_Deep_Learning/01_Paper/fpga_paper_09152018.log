@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  15 SEP 2018 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  26 SEP 2018 23:28
 entering extended mode
 **./fpga_paper_09152018.tex
 (fpga_paper_09152018.tex
@@ -526,25 +526,68 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 27.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 106.
-
-("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1{C:/Users/schwa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[1{C:/Users/schwa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 151.
 
-LaTeX Warning: Reference `fig' on page 2 undefined on input line 191.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 222.
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [2]
+
+LaTeX Warning: Citation `b7' on page 3 undefined on input line 200.
+
+
+LaTeX Warning: Reference `fig' on page 3 undefined on input line 236.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 267.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
-[2]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
+[3]
+
+LaTeX Warning: Citation `b1' on page 4 undefined on input line 280.
+
+
+LaTeX Warning: Citation `b2' on page 4 undefined on input line 281.
+
+
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 282.
+
+
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 282.
+
+
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 282.
+
+
+LaTeX Warning: Citation `b3' on page 4 undefined on input line 283.
+
+
+LaTeX Warning: Citation `b4' on page 4 undefined on input line 291.
+
+
+LaTeX Warning: Citation `b5' on page 4 undefined on input line 292.
+
+
+LaTeX Warning: Citation `b6' on page 4 undefined on input line 297.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--308
+[]\OT1/ptm/m/n/8 [2] \Cal-tech101." [On-line]. Avail-able:
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 301--308
+\OT1/ptm/m/n/8 http://www.vision.caltech.edu/Image[]Datasets/Caltech101/. [Ac-c
+essed:
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -556,19 +599,21 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3] (fpga_paper_09152018.aux)
+[4
+
+] (fpga_paper_09152018.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4491 strings out of 492973
- 66542 string characters out of 3126692
- 138978 words of memory out of 3000000
- 8280 multiletter control sequences out of 15000+200000
+ 4499 strings out of 492973
+ 66709 string characters out of 3126692
+ 139036 words of memory out of 3000000
+ 8288 multiletter control sequences out of 15000+200000
  54745 words of font info for 115 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,592b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,35p,2244b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmmi10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
@@ -583,9 +628,9 @@ pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on fpga_paper_09152018.pdf (3 pages, 131100 bytes).
+Output written on fpga_paper_09152018.pdf (4 pages, 137694 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

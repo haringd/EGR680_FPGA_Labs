@@ -37,9 +37,53 @@ Deep Learning, Artificial Neural Network
 \end{IEEEkeywords}
 
 \section{Introduction}
-This paper is an introduction into deep learning. First, an overview is presented with a comparison between machine learning and deep learning. This allows readers with less background to follow the reasons why deep learning often is associated with artificial networks in particular artificial neural networks. Deep learning is used in a wide range of applications but especially benefits are shown in image and speech recognition. 
-\section{Background}
+This paper is an introduction into deep learning. 
+First, an overview is presented with a comparison between machine learning and deep learning. 
+This allows readers with less background to follow the reasons why deep learning often is associated with artificial networks in particular artificial neural networks. 
+
+
+Deep learning is used in a wide range of applications but especially show improved performance in pattern recognition. Where as image recognition and speech recognition are often used as examples or for testing to show performance improvements if a field programmable gate array (FPGA) is used over a conventional central processing unit (CPU). Furthermore, most often a dedicated FPGA seems to have a better energy performance in comparison to a FPGA. 
+
+Second, deep learning (DL) will be the focus point and especially the different methods that are commonly used as neural networks (NN). 
+\section{Background}\label{sec: Background}
+
+
+\subsection{General Concepts}\label{subsec: General Concepts}
+Learning is a commonly used word and means according to Merriam Webster the following \cite{Learning}:
+\begin{enumerate}
+	\item[] 1 : the act or experience of one that learns\\
+	$\backslash\backslash$ a computer program that makes learning fun
+	\item[] 2 : knowledge or skill acquired by instruction or study
+	$\backslash\backslash$ people of good education and considerable learning
+	\item[] 3 : modification of a behavioral tendency by experience (such as exposure to conditioning)
+\end{enumerate}
+This means that a machine that learns receives either instructions or experiences something. This leads to the not unreasonable assumption that if a machine learns, somebody teaches the machine in form of instructions or exploits the machine to experience. To give  a machine instructions is most likely the essence of the todays computing. While a machine is capable of receiving instructions in many different forms the most common at the time is still the users instruction, according to the authors opinion. By applying this concept to a machine that learns a instruction in terms of machine learning not a single instruction is given a algorithm is implemented that similar to adaptive filtering in signal processing wights an input $x$ and will provide an output $z$. The a function $W$ is used to define the weight according to different methods as example linear regression or a second order polynomial. The issue for such an algorithm is the weighting function $W$ needs to be defined by a human that invests a lot of time studying cases and tries to figure out what might be the best function to weight the input for a certain situation. By introducing this thought of weight which is implemented as a simple multiplication of an input value $x$.  This allows to use a vector to describe inputs hence the weights would be a vector of the same length. Now if as example an image of 128x128 pixels would be wighted a vector of length 16384 would have to be used, assuming it is a chromatic picture with a single integer that defines each pixel. This is a real simple example as you start thinking about it but nobody in the world would try to do that with no strategy on hand. To make a point, a machine would have to learn how to interpret a picture depending on the state of the wight of each pixel or most likely groups of pixels. A machine could improve the resolution of his weighting function by learning known pictures where the result is known which is known as \textbf{supervised learning}. Due to the fact that a machine can learn such sets and define a wight for each situation very fast a machine is capable of learning more situations in days than a human is capable of in years.
+
+At this point lets create a hypothetical scenario to understand learning furthermore. Assume that a human with all cognitive abilities that we have just start to exist on a plane with a river and a sun. As a human needs a lot of water most likely this human would experience a sense of thirstiness at some point. The human has no teacher and no previous knowledge so how can the human know that he can drink from the river if not learned from a teacher.
+
+Assume there is an animal too on this plane that drinks from the water. If there is no teacher and a similar situation and obviously no other option than to explore the river the human might be try to do the same even not knowing that it will help to still the sense of thirstiness. The human \textbf{learned unsupervised} by experience of a situation as a witness.
+%Unsupervised Learning
+
+This rises the question would make a human brain the decision that it could try to drink from the river with having a single reference. The authors best guess is that most likely a decision would be either drinking, not drinking or something else not expected like trying to communicate with the animal and ask it why it drinks. This shows that a solution can have more possibilities then just yes or no which can be \textbf{classified} as a vector. 
+
+In summary, there are three important terms to know highlighted in the previous sub-section \ref{subsec: General Concepts} which are input, output, supervised learning, unsupervised learning, classification. Notice, this is not meant to be a full list of concepts there is more to explore and to know. Due to the fact that the paper shall not exceed a certain length not every concept is discussed rather than a subset is chosen that seems in the authors opinion the most important to understand the background of the matter. 
+
+The next sub-section \ref{subsec: Machine Learning} is dedicated to machine learning. 
+
+\subsection{Machine Learning}\label{subsec: Machine Learning}
+Where as general concepts has been discussed in the previous section \ref{subsec: General Concepts} in this section machine learning will be discussed. In machine learning all the previous discussed concepts can be applied. As the previous discussed example of an 128x 128 picture introduced the goal is to find functions that wights the input there for in machine learning which involves usually no more then one non linear logic layer that is applied to each input vector. The goal is to optimize the weight function $W$ in case of using the concept of supervised learning it would be a predefined set of pictures with known result that is instructed to machine. A commonly known and widely used set is Caltech 101 \cite{Caltech101}. 
+
+Know most decisions are not based on a simple algorithm or one set of pixels it is usually a combination of those patterns. Due to the fact that humans are not capable of performing complex tasks only simple ones in series or parallel, it might not be the best way to analyze a picture as such. 
+
+Therefor, a artificial neural network is discussed in sub-section \ref{subsec: Artificial Neural Network}.
+
+\subsection{Artificial Neural Network}\label{subsec: Artificial Neural Network}
+As the previous sub-section \ref{subsec: Machine Learning} discussed briefly machine learning and introduced the process of decisions this sub-section is discussing artificial neural networks (ANN).
+\subsection{Deep Learning}\label{subsec: Deep Learning}
+
+
 \subsection{Machine vs. deep}
+
 \section{Computational challenges}
 
 \section{Computational approaches}
@@ -256,13 +300,14 @@ For papers published in translation journals, please give the English
 citation first, followed by the original foreign-language citation \cite{b6}.
 
 \begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\bibitem{Learning} [1] “Learning | Definition of Learning by Merriam-Webster.” [Online]. Available: https://www.merriam-webster.com/dictionary/learning. [Accessed: 26-Sep-2018].
+\bibitem{Caltech101} [2] “Caltech101.” [Online]. Available: http://www.vision.caltech.edu/Image\_Datasets/Caltech101/. [Accessed: 26-Sep-2018].
+%\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+%\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+%\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+%\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+%\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+%\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
 \end{thebibliography}
 \vspace{12pt}
 \color{red}
