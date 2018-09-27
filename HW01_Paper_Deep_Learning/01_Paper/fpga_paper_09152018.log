@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  26 SEP 2018 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  27 SEP 2018 15:47
 entering extended mode
 **./fpga_paper_09152018.tex
 (fpga_paper_09152018.tex
@@ -514,6 +514,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 27.
 LaTeX Font Info:    Try loading font information for U+msa on input line 27.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -522,70 +523,49 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 27.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-[1{C:/Users/schwa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/Users/schwa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 151.
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
 
+ []
 
-("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [2]
-
-LaTeX Warning: Citation `b7' on page 3 undefined on input line 200.
-
-
-LaTeX Warning: Reference `fig' on page 3 undefined on input line 236.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 267.
-
-("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
-[3]
-
-LaTeX Warning: Citation `b1' on page 4 undefined on input line 280.
-
-
-LaTeX Warning: Citation `b2' on page 4 undefined on input line 281.
-
-
-LaTeX Warning: Citation `b3' on page 4 undefined on input line 282.
-
-
-LaTeX Warning: Citation `b3' on page 4 undefined on input line 282.
-
-
-LaTeX Warning: Citation `b3' on page 4 undefined on input line 282.
-
-
-LaTeX Warning: Citation `b3' on page 4 undefined on input line 283.
-
-
-LaTeX Warning: Citation `b4' on page 4 undefined on input line 291.
-
-
-LaTeX Warning: Citation `b5' on page 4 undefined on input line 292.
-
-
-LaTeX Warning: Citation `b6' on page 4 undefined on input line 297.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
+<01_images/neuron1.PNG, id=11, 197.23688pt x 379.4175pt>
+File: 01_images/neuron1.PNG Graphic file (type png)
+<use 01_images/neuron1.PNG>
+Package pdftex.def Info: 01_images/neuron1.PNG  used on input line 111.
+(pdftex.def)             Requested size: 103.19843pt x 198.5198pt.
+<01_images/fig_algo_example.PNG, id=13, 350.81062pt x 317.68687pt>
+File: 01_images/fig_algo_example.PNG Graphic file (type png)
+<use 01_images/fig_algo_example.PNG>
+Package pdftex.def Info: 01_images/fig_algo_example.PNG  used on input line 119
+.
+(pdftex.def)             Requested size: 232.19843pt x 210.2799pt.
+[2 <./01_images/neuron1.PNG>]
+<01_images/Convolutional_Neural_Network_structure.PNG, id=19, 774.64406pt x 231
+.86626pt>
+File: 01_images/Convolutional_Neural_Network_structure.PNG Graphic file (type p
+ng)
+<use 01_images/Convolutional_Neural_Network_structure.PNG>
+Package pdftex.def Info: 01_images/Convolutional_Neural_Network_structure.PNG  
+used on input line 149.
+(pdftex.def)             Requested size: 232.19843pt x 69.50026pt.
+ [3 <./01_images/fig_algo_example.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 []\OT1/ptm/m/n/8 [2] \Cal-tech101." [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 301--308
+Underfull \hbox (badness 3364) in paragraph at lines 162--163
 \OT1/ptm/m/n/8 http://www.vision.caltech.edu/Image[]Datasets/Caltech101/. [Ac-c
 essed:
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 163--164
+\OT1/ptm/m/n/8 line]. Avail-able: https://www.merriam-webster.com/dictionary/ne
+uron.
  []
 
 
@@ -601,36 +581,30 @@ Before submitting the final camera ready copy, remember to:
 
 [4
 
-] (fpga_paper_09152018.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ <./01_images/Convolutional_Neural_Network_structure.PNG>]
+(fpga_paper_09152018.aux) ) 
 Here is how much of TeX's memory you used:
- 4499 strings out of 492973
- 66709 string characters out of 3126692
- 139036 words of memory out of 3000000
- 8288 multiletter control sequences out of 15000+200000
- 54745 words of font info for 115 fonts, out of 3000000 for 9000
+ 4430 strings out of 492973
+ 66213 string characters out of 3126692
+ 138060 words of memory out of 3000000
+ 8236 multiletter control sequences out of 15000+200000
+ 41145 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,2244b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-}<C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/schwa/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/schwa/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/schwa/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Us
-ers/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-<C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
-pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utm
-bi8a.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
-s/utmr8a.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on fpga_paper_09152018.pdf (4 pages, 137694 bytes).
+ 41i,11n,35p,2244b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/enc/dvips/base/8r.enc}<C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/schwa/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/schwa/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/schwa/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
+Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb>
+<C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a
+.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/ut
+mr8a.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on fpga_paper_09152018.pdf (4 pages, 202098 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
