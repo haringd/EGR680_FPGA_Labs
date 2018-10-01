@@ -1,0 +1,305 @@
+11:48:55 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:48:59 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24316	   1188	  22584	  48088	   bbd8	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:49:02 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:49:09 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:54:15 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24320	   1188	  22584	  48092	   bbdc	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:54:27 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:56:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24716	   1188	  22576	  48480	   bd60	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:58:29 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24324	   1188	  22584	  48096	   bbe0	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:58:56 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:08:12 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24324	   1188	  22584	  48096	   bbe0	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:08:20 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:10:09 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24388	   1188	  22584	  48160	   bc20	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:10:20 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:10:56 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24388	   1188	  22584	  48160	   bc20	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:11:08 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24388	   1188	  22584	  48160	   bc20	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:12:16 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24452	   1188	  22584	  48224	   bc60	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:12:25 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:13:11 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24420	   1188	  22584	  48192	   bc40	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:13:21 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:13:28 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:15:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:17:11 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '

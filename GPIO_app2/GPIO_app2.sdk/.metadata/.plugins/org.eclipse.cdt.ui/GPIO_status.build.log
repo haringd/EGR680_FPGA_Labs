@@ -1,0 +1,27 @@
+09:59:29 **** Auto Build of configuration Debug for project GPIO_status ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_status.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_status.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_status.d" -MT"src/GPIO_status.o" -o "src/GPIO_status.o" "../src/GPIO_status.c"
+../src/GPIO_status.c: In function 'main':
+../src/GPIO_status.c:29:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+'Finished building: ../src/GPIO_status.c'
+' '
+'Building target: GPIO_status.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_status.elf"  ./src/GPIO_status.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_status.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_status.elf  |tee "GPIO_status.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23492	   1188	  22584	  47264	   b8a0	GPIO_status.elf
+'Finished building: GPIO_status.elf.size'
+' '
+
+09:59:30 Build Finished (took 991ms)
+

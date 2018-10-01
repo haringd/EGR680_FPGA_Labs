@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  25 SEP 2018 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  1 OCT 2018 09:55
 entering extended mode
 **./reportLab04SDK.tex
 (reportLab04SDK.tex
@@ -790,7 +790,7 @@ Package biblatex Info: ... file 'reportLab04SDK.bbl' found.
  (reportLab04SDK.bbl)
 Package biblatex Info: Reference section=0 on input line 50.
 Package biblatex Info: Reference segment=0 on input line 50.
-<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=47, 969.6225pt x 755.82375pt>
+<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=55, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
@@ -820,27 +820,47 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 (02_sections/Introduction.tex) (02_sections/Design.tex
-<01_images/Vivado_lab4_CompletedDesign.PNG, id=77, 924.45375pt x 402.00188pt>
+<01_images/Vivado_lab4_CompletedDesign.PNG, id=88, 924.45375pt x 402.00188pt>
 File: 01_images/Vivado_lab4_CompletedDesign.PNG Graphic file (type png)
 <use 01_images/Vivado_lab4_CompletedDesign.PNG>
 Package pdftex.def Info: 01_images/Vivado_lab4_CompletedDesign.PNG  used on inp
 ut line 13.
-(pdftex.def)             Requested size: 328.82707pt x 142.99075pt.
-<01_images/Vivado_lab4_part1_SecondErrorSDK.PNG, id=78, 1032.85875pt x 571.3846
-9pt>
+(pdftex.def)             Requested size: 469.75502pt x 204.27602pt.
+<01_images/Vivado_lab_HDL_topView.PNG, id=90, 727.96968pt x 269.50688pt>
+File: 01_images/Vivado_lab_HDL_topView.PNG Graphic file (type png)
+<use 01_images/Vivado_lab_HDL_topView.PNG>
+Package pdftex.def Info: 01_images/Vivado_lab_HDL_topView.PNG  used on input li
+ne 22.
+(pdftex.def)             Requested size: 469.75502pt x 173.9149pt.
+ [3 <./01_images/Vivado_lab4_CompletedDesign.PNG>]
+<01_images/Vivado_lab4_SW_BTN_Register.PNG, id=99, 465.23813pt x 180.675pt>
+File: 01_images/Vivado_lab4_SW_BTN_Register.PNG Graphic file (type png)
+<use 01_images/Vivado_lab4_SW_BTN_Register.PNG>
+Package pdftex.def Info: 01_images/Vivado_lab4_SW_BTN_Register.PNG  used on inp
+ut line 31.
+(pdftex.def)             Requested size: 469.75502pt x 182.43619pt.
+<01_images/Vivado_lab4_TT_PartII.PNG, id=101, 311.66437pt x 255.20343pt>
+File: 01_images/Vivado_lab4_TT_PartII.PNG Graphic file (type png)
+<use 01_images/Vivado_lab4_TT_PartII.PNG>
+Package pdftex.def Info: 01_images/Vivado_lab4_TT_PartII.PNG  used on input lin
+e 39.
+(pdftex.def)             Requested size: 328.82707pt x 269.26045pt.
+ [4 <./01_images/Vivado_lab_HDL_topView.PNG> <./01_images/Vivado_lab4_SW_BTN_Re
+gister.PNG>]
+<01_images/Vivado_lab4_part1_SecondErrorSDK.PNG, id=111, 1032.85875pt x 571.384
+69pt>
 File: 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG Graphic file (type png)
 <use 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG>
 Package pdftex.def Info: 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG  used o
-n input line 22.
-(pdftex.def)             Requested size: 328.82707pt x 181.90521pt.
-)
-(02_sections/Simulation.tex) (02_sections/Conclusion.tex) [3 <./01_images/Vivad
-o_lab4_CompletedDesign.PNG> <./01_images/Vivado_lab4_part1_SecondErrorSDK.PNG>]
-[4]
+n input line 48.
+(pdftex.def)             Requested size: 469.75502pt x 259.8671pt.
+) (02_sections/Simulation.tex)
+(02_sections/Conclusion.tex) [5 <./01_images/Vivado_lab4_TT_PartII.PNG> <./01_i
+mages/Vivado_lab4_part1_SecondErrorSDK.PNG>] [6]
 \openout2 = `02_sections/Appendix.aux'.
 
  (02_sections/Appendix.tex
-<01_images/Vivado_LanguageTemplates.png, id=92, 902.6222pt x 573.64313pt>
+<01_images/Vivado_LanguageTemplates.png, id=124, 902.6222pt x 573.64313pt>
 File: 01_images/Vivado_LanguageTemplates.png Graphic file (type png)
 <use 01_images/Vivado_LanguageTemplates.png>
 Package pdftex.def Info: 01_images/Vivado_LanguageTemplates.png  used on input 
@@ -861,7 +881,7 @@ File: lstlang3.sty 2018/09/02 1.7 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 16.
- [5
+ [7
 
  <./01_images/Vivado_LanguageTemplates.png>]
 Overfull \hbox (261.04356pt too wide) in paragraph at lines 36--38
@@ -871,7 +891,7 @@ Overfull \hbox (261.04356pt too wide) in paragraph at lines 36--38
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [6]
+) [8]
 
 LaTeX Warning: Empty bibliography on input line 64.
 
@@ -881,17 +901,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `reportLab04SDK.out' has not changed.
-(rerunfilecheck)             Checksum: A7F95A2DC65E44F69940D0BBCDFA9295;747.
+(rerunfilecheck)             Checksum: 09D1F97BCD3DB25324F5F765587A9185;847.
 Package logreq Info: Writing requests to 'reportLab04SDK.run.xml'.
 \openout1 = `reportLab04SDK.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 17176 strings out of 492973
- 282691 string characters out of 3126692
- 753360 words of memory out of 3000000
- 20779 multiletter control sequences out of 15000+200000
+ 17206 strings out of 492973
+ 283533 string characters out of 3126692
+ 753827 words of memory out of 3000000
+ 20799 multiletter control sequences out of 15000+200000
  9345 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,44p,956b,2023s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -904,10 +924,11 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/schw
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 :/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmr17.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmtt10.pfb>
-Output written on reportLab04SDK.pdf (6 pages, 583758 bytes).
+amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on reportLab04SDK.pdf (8 pages, 652174 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
