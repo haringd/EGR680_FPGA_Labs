@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  1 OCT 2018 09:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  1 OCT 2018 19:45
 entering extended mode
 **./reportLab04SDK.tex
 (reportLab04SDK.tex
@@ -54,6 +54,13 @@ Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wasysym\wasysym.st
 y"
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
@@ -665,22 +672,22 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (reportLab04SDK.aux (02_sections/Appendix.aux))
 \openout1 = `reportLab04SDK.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 75.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -692,9 +699,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count328
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
  (reportLab04SDK.out) (reportLab04SDK.out)
 \@outlinefile=\write5
 \openout5 = `reportLab04SDK.out'.
@@ -788,21 +795,21 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'reportLab04SDK.bbl' found.
  (reportLab04SDK.bbl)
-Package biblatex Info: Reference section=0 on input line 50.
-Package biblatex Info: Reference segment=0 on input line 50.
+Package biblatex Info: Reference section=0 on input line 75.
+Package biblatex Info: Reference segment=0 on input line 75.
 <01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=55, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
-put line 52.
+put line 77.
 (pdftex.def)             Requested size: 193.92107pt x 151.16206pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 52.
+(Font)              <12> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 52.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 52.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 52.
+(Font)              <6> on input line 77.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 77.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -833,13 +840,13 @@ Package pdftex.def Info: 01_images/Vivado_lab_HDL_topView.PNG  used on input li
 ne 22.
 (pdftex.def)             Requested size: 469.75502pt x 173.9149pt.
  [3 <./01_images/Vivado_lab4_CompletedDesign.PNG>]
-<01_images/Vivado_lab4_SW_BTN_Register.PNG, id=99, 465.23813pt x 180.675pt>
+<01_images/Vivado_lab4_SW_BTN_Register.PNG, id=100, 465.23813pt x 180.675pt>
 File: 01_images/Vivado_lab4_SW_BTN_Register.PNG Graphic file (type png)
 <use 01_images/Vivado_lab4_SW_BTN_Register.PNG>
 Package pdftex.def Info: 01_images/Vivado_lab4_SW_BTN_Register.PNG  used on inp
 ut line 31.
 (pdftex.def)             Requested size: 469.75502pt x 182.43619pt.
-<01_images/Vivado_lab4_TT_PartII.PNG, id=101, 311.66437pt x 255.20343pt>
+<01_images/Vivado_lab4_TT_PartII.PNG, id=102, 311.66437pt x 255.20343pt>
 File: 01_images/Vivado_lab4_TT_PartII.PNG Graphic file (type png)
 <use 01_images/Vivado_lab4_TT_PartII.PNG>
 Package pdftex.def Info: 01_images/Vivado_lab4_TT_PartII.PNG  used on input lin
@@ -847,88 +854,93 @@ e 39.
 (pdftex.def)             Requested size: 328.82707pt x 269.26045pt.
  [4 <./01_images/Vivado_lab_HDL_topView.PNG> <./01_images/Vivado_lab4_SW_BTN_Re
 gister.PNG>]
-<01_images/Vivado_lab4_part1_SecondErrorSDK.PNG, id=111, 1032.85875pt x 571.384
-69pt>
-File: 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG Graphic file (type png)
-<use 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG>
-Package pdftex.def Info: 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG  used o
-n input line 48.
-(pdftex.def)             Requested size: 469.75502pt x 259.8671pt.
-) (02_sections/Simulation.tex)
-(02_sections/Conclusion.tex) [5 <./01_images/Vivado_lab4_TT_PartII.PNG> <./01_i
-mages/Vivado_lab4_part1_SecondErrorSDK.PNG>] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 68.
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+[5 <./01_images/Vivado_lab4_TT_PartII.PNG>]) (02_sections/Conclusion.tex)
+[6]
 \openout2 = `02_sections/Appendix.aux'.
 
  (02_sections/Appendix.tex
-<01_images/Vivado_LanguageTemplates.png, id=124, 902.6222pt x 573.64313pt>
-File: 01_images/Vivado_LanguageTemplates.png Graphic file (type png)
-<use 01_images/Vivado_LanguageTemplates.png>
-Package pdftex.def Info: 01_images/Vivado_LanguageTemplates.png  used on input 
-line 9.
-(pdftex.def)             Requested size: 281.85587pt x 179.13173pt.
-
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2018/04/06 v1.3b Input encoding file
+)
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
-("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang2.
-sty"
-File: lstlang2.sty 2018/09/02 1.7 listings language file
-)
-("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang3.
-sty"
-File: lstlang3.sty 2018/09/02 1.7 listings language file
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 16.
- [7
+nput line 5.
+ (../GPIO_app2/GPIO_app2.sdk/GPIO_game/src/GPIO_game.c
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1.
 
- <./01_images/Vivado_LanguageTemplates.png>]
-Overfull \hbox (261.04356pt too wide) in paragraph at lines 36--38
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
 
-) [8]
+[7
 
-LaTeX Warning: Empty bibliography on input line 64.
+] [8])
+<01_images/Vivado_lab4_part1_SecondErrorSDK.PNG, id=272, 1032.85875pt x 571.384
+69pt>
+File: 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG Graphic file (type png)
+<use 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG>
+Package pdftex.def Info: 01_images/Vivado_lab4_part1_SecondErrorSDK.PNG  used o
+n input line 19.
+(pdftex.def)             Requested size: 469.75502pt x 259.8671pt.
+) [9 <./01_images/Vivado_lab4_part1_SecondErrorSDK.PNG>]
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+LaTeX Warning: Empty bibliography on input line 89.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
 (reportLab04SDK.aux (02_sections/Appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 Package rerunfilecheck Info: File `reportLab04SDK.out' has not changed.
-(rerunfilecheck)             Checksum: 09D1F97BCD3DB25324F5F765587A9185;847.
+(rerunfilecheck)             Checksum: B3E450FD17DB4810D06791A097B0A40A;842.
 Package logreq Info: Writing requests to 'reportLab04SDK.run.xml'.
 \openout1 = `reportLab04SDK.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 17206 strings out of 492973
- 283533 string characters out of 3126692
- 753827 words of memory out of 3000000
- 20799 multiletter control sequences out of 15000+200000
- 9345 words of font info for 35 fonts, out of 3000000 for 9000
+ 17503 strings out of 492973
+ 287112 string characters out of 3126692
+ 984109 words of memory out of 3000000
+ 20952 multiletter control sequences out of 15000+200000
+ 14891 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,44p,956b,2023s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/schwa/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/schwa/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/schw
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on reportLab04SDK.pdf (8 pages, 652174 bytes).
+ 41i,7n,61p,956b,2006s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ectt1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\schwa\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\schwa\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\schwa\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Us
+ers\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.
+pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1728.pk><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/schwa/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on reportLab04SDK.pdf (9 pages, 652696 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

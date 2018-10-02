@@ -1,4 +1,4 @@
-12:17:11 **** Auto Build of configuration Debug for project GPIO_game ****
+19:04:37 **** Auto Build of configuration Debug for project GPIO_game ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -19,5 +19,5 @@ arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
 'Finished building: GPIO_game.elf.size'
 ' '
 
-12:17:12 Build Finished (took 856ms)
+19:04:38 Build Finished (took 858ms)
 

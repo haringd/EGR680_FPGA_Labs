@@ -1,7 +1,5 @@
 /*
  * GPIO_game.c
- * Implements a game show with four buttons and the uart console named
- * Let's Make a Deal!
  *
  *  Created on: 01.10.2018
  *      Author: D. Häring

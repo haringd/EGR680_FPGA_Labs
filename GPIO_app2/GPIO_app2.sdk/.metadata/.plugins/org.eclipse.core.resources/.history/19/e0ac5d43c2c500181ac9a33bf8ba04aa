@@ -1,41 +1,9 @@
 /*
  * GPIO_game.c
- * Implements a game show with four buttons and the uart console named
- * Let's Make a Deal!
  *
  *  Created on: 01.10.2018
- *      Author: D. Häring
- *
- *
+ *      Author: schwa
  */
-
- /*   *************************************************************
- *   ** FSM State machine                                       **
- *   *************************************************************
- *                      000
- *   +---------------------+
- *   | Idle                |
- *   | Display user input  |<--------+
- *   |                     |         |
- *   +---------------------+         |
- *       |                           |
- *       |                           |
- *       |              001          |
- *   +---------------------+         |
- *   |                     |         |
- *   | Wait for button     |         |
- *   | coin_val on Pmod A  |         |
- *   +---------------------+         |
- *       |                           |
- *       |                           |
- *       |              002          |
- *   +---------------------+         |
- *   | user output         |         |
- *   | if (rnd == door)    |---------+
- *   | Display output      |
- *   +---------------------+
- * *************************************************************/
-
 
 #include "xparameters.h"
 #include "xgpio.h"
@@ -66,6 +34,9 @@ int main (void)
 	{
 
 		psb_check = XGpio_DiscreteRead(&push, 1);
+//		xil_printf("Push Buttons Status %x\r\n", psb_check);
+//		dip_check = XGpio_DiscreteRead(&dip, 1);
+//		xil_printf("DIP Switch Status %x\r\n", dip_check);
 
 		switch (state) {
 		case 0:// Idle state
