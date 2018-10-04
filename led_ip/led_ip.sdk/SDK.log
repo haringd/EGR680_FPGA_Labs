@@ -1,0 +1,992 @@
+09:10:59 INFO  : Registering command handlers for SDK TCF services
+09:11:00 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\temp_xsdb_launch_script.tcl
+09:11:04 INFO  : XSCT server has started successfully.
+09:11:12 INFO  : Successfully done setting XSCT server connection channel  
+09:11:12 INFO  : Processing command line option -hwspec C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper.hdf.
+09:11:12 INFO  : Successfully done setting SDK workspace  
+09:49:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+09:49:09 INFO  : FPGA configured successfully with bitstream "C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+09:49:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+09:49:44 INFO  : 'fpga -state' command is executed.
+09:49:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:45 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+09:49:45 INFO  : 'jtag frequency' command is executed.
+09:49:45 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+09:49:45 INFO  : Context for 'APU' is selected.
+09:49:45 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+09:49:45 INFO  : 'configparams force-mem-access 1' command is executed.
+09:49:45 INFO  : Context for 'APU' is selected.
+09:49:45 INFO  : 'stop' command is executed.
+09:49:46 INFO  : 'ps7_init' command is executed.
+09:49:46 INFO  : 'ps7_post_config' command is executed.
+09:49:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:49:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+09:49:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:49:47 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_status/Debug/GPIO_status.elf' is downloaded to processor 'ps7_cortexa9_0'.
+09:49:47 INFO  : 'configparams force-mem-access 0' command is executed.
+09:49:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_status/Debug/GPIO_status.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:49:47 INFO  : Memory regions updated for context APU
+09:49:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+09:49:47 INFO  : 'con' command is executed.
+09:49:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+09:49:47 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_status.elf_on_local.tcl'
+09:59:40 INFO  : Disconnected from the channel tcfchan#1.
+10:01:05 INFO  : Registering command handlers for SDK TCF services
+10:01:06 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\temp_xsdb_launch_script.tcl
+10:01:08 INFO  : XSCT server has started successfully.
+10:01:08 INFO  : Successfully done setting XSCT server connection channel  
+10:01:12 INFO  : Processing command line option -hwspec C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper.hdf.
+10:01:12 INFO  : Successfully done setting SDK workspace  
+10:01:13 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+10:11:08 INFO  : Registering command handlers for SDK TCF services
+10:11:08 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\temp_xsdb_launch_script.tcl
+10:11:12 INFO  : XSCT server has started successfully.
+10:11:18 INFO  : Processing command line option -hwspec C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper.hdf.
+10:11:18 INFO  : Successfully done setting XSCT server connection channel  
+10:11:18 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+10:11:18 INFO  : Successfully done setting SDK workspace  
+10:17:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+10:17:43 INFO  : 'fpga -state' command is executed.
+10:17:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:17:43 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+10:17:43 INFO  : 'jtag frequency' command is executed.
+10:17:43 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:17:43 INFO  : Context for 'APU' is selected.
+10:17:43 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+10:17:43 INFO  : 'configparams force-mem-access 1' command is executed.
+10:17:44 INFO  : Context for 'APU' is selected.
+10:17:44 INFO  : 'stop' command is executed.
+10:17:44 INFO  : 'ps7_init' command is executed.
+10:17:44 INFO  : 'ps7_post_config' command is executed.
+10:17:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:17:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:44 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:17:44 INFO  : 'configparams force-mem-access 0' command is executed.
+10:17:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:17:44 INFO  : Memory regions updated for context APU
+10:17:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:17:45 INFO  : 'con' command is executed.
+10:17:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+10:17:45 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:11:51 INFO  : Disconnected from the channel tcfchan#1.
+11:11:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:11:53 INFO  : 'fpga -state' command is executed.
+11:11:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:53 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:11:53 INFO  : 'jtag frequency' command is executed.
+11:11:53 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:11:53 INFO  : Context for 'APU' is selected.
+11:11:55 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:11:55 INFO  : 'configparams force-mem-access 1' command is executed.
+11:11:55 INFO  : Context for 'APU' is selected.
+11:11:56 INFO  : 'stop' command is executed.
+11:11:56 INFO  : 'ps7_init' command is executed.
+11:11:56 INFO  : 'ps7_post_config' command is executed.
+11:11:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:11:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:56 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:11:56 INFO  : 'configparams force-mem-access 0' command is executed.
+11:11:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:11:56 INFO  : Memory regions updated for context APU
+11:11:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:11:57 INFO  : 'con' command is executed.
+11:11:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:11:57 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:13:06 INFO  : Disconnected from the channel tcfchan#2.
+11:13:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:13:08 INFO  : 'fpga -state' command is executed.
+11:13:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:13:08 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:13:08 INFO  : 'jtag frequency' command is executed.
+11:13:08 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:13:08 INFO  : Context for 'APU' is selected.
+11:13:11 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:13:11 INFO  : 'configparams force-mem-access 1' command is executed.
+11:13:11 INFO  : Context for 'APU' is selected.
+11:13:11 INFO  : 'stop' command is executed.
+11:13:11 INFO  : 'ps7_init' command is executed.
+11:13:11 INFO  : 'ps7_post_config' command is executed.
+11:13:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:13:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:12 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:13:12 INFO  : 'configparams force-mem-access 0' command is executed.
+11:13:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:13:12 INFO  : Memory regions updated for context APU
+11:13:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:13:12 INFO  : 'con' command is executed.
+11:13:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:13:12 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:15:11 INFO  : Disconnected from the channel tcfchan#3.
+11:16:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:16:38 INFO  : 'fpga -state' command is executed.
+11:16:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:16:38 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:16:38 INFO  : 'jtag frequency' command is executed.
+11:16:38 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:16:38 INFO  : Context for 'APU' is selected.
+11:16:38 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:16:38 INFO  : 'configparams force-mem-access 1' command is executed.
+11:16:38 INFO  : Context for 'APU' is selected.
+11:16:38 INFO  : 'stop' command is executed.
+11:16:39 INFO  : 'ps7_init' command is executed.
+11:16:39 INFO  : 'ps7_post_config' command is executed.
+11:16:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:16:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:39 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:16:39 INFO  : 'configparams force-mem-access 0' command is executed.
+11:16:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:16:39 INFO  : Memory regions updated for context APU
+11:16:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:16:39 INFO  : 'con' command is executed.
+11:16:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:16:39 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:20:10 INFO  : Disconnected from the channel tcfchan#4.
+11:20:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:20:12 INFO  : 'fpga -state' command is executed.
+11:20:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:20:12 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:20:12 INFO  : 'jtag frequency' command is executed.
+11:20:12 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:20:12 INFO  : Context for 'APU' is selected.
+11:20:14 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:20:14 INFO  : 'configparams force-mem-access 1' command is executed.
+11:20:14 INFO  : Context for 'APU' is selected.
+11:20:14 INFO  : 'stop' command is executed.
+11:20:15 INFO  : 'ps7_init' command is executed.
+11:20:15 INFO  : 'ps7_post_config' command is executed.
+11:20:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:20:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:15 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:20:15 INFO  : 'configparams force-mem-access 0' command is executed.
+11:20:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:20:15 INFO  : Memory regions updated for context APU
+11:20:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:20:15 INFO  : 'con' command is executed.
+11:20:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:20:15 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:34:42 INFO  : Disconnected from the channel tcfchan#5.
+11:34:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:34:43 INFO  : 'fpga -state' command is executed.
+11:34:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:34:44 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:34:44 INFO  : 'jtag frequency' command is executed.
+11:34:44 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:34:44 INFO  : Context for 'APU' is selected.
+11:34:46 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:34:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:34:46 INFO  : Context for 'APU' is selected.
+11:34:46 INFO  : 'stop' command is executed.
+11:34:47 INFO  : 'ps7_init' command is executed.
+11:34:47 INFO  : 'ps7_post_config' command is executed.
+11:34:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:34:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:34:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:34:47 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:34:47 INFO  : 'configparams force-mem-access 0' command is executed.
+11:34:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:34:47 INFO  : Memory regions updated for context APU
+11:34:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:34:47 INFO  : 'con' command is executed.
+11:34:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:34:47 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:36:42 INFO  : Disconnected from the channel tcfchan#6.
+11:36:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:36:43 INFO  : 'fpga -state' command is executed.
+11:36:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:36:43 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:36:44 INFO  : 'jtag frequency' command is executed.
+11:36:44 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:36:44 INFO  : Context for 'APU' is selected.
+11:36:46 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:36:46 INFO  : 'configparams force-mem-access 1' command is executed.
+11:36:46 INFO  : Context for 'APU' is selected.
+11:36:46 INFO  : 'stop' command is executed.
+11:36:47 INFO  : 'ps7_init' command is executed.
+11:36:47 INFO  : 'ps7_post_config' command is executed.
+11:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:47 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:36:47 INFO  : 'configparams force-mem-access 0' command is executed.
+11:36:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:36:47 INFO  : Memory regions updated for context APU
+11:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:36:47 INFO  : 'con' command is executed.
+11:36:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:36:47 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:39:15 INFO  : Disconnected from the channel tcfchan#7.
+11:39:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:39:16 INFO  : 'fpga -state' command is executed.
+11:39:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:39:16 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:39:16 INFO  : 'jtag frequency' command is executed.
+11:39:16 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:39:16 INFO  : Context for 'APU' is selected.
+11:39:19 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:39:19 INFO  : 'configparams force-mem-access 1' command is executed.
+11:39:19 INFO  : Context for 'APU' is selected.
+11:39:19 INFO  : 'stop' command is executed.
+11:39:19 INFO  : 'ps7_init' command is executed.
+11:39:19 INFO  : 'ps7_post_config' command is executed.
+11:39:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:39:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:20 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:39:20 INFO  : 'configparams force-mem-access 0' command is executed.
+11:39:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:39:20 INFO  : Memory regions updated for context APU
+11:39:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:39:20 INFO  : 'con' command is executed.
+11:39:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:39:20 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:40:35 INFO  : Disconnected from the channel tcfchan#8.
+11:40:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:40:36 INFO  : 'fpga -state' command is executed.
+11:40:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:37 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:40:37 INFO  : 'jtag frequency' command is executed.
+11:40:37 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:40:37 INFO  : Context for 'APU' is selected.
+11:40:39 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:40:39 INFO  : 'configparams force-mem-access 1' command is executed.
+11:40:39 INFO  : Context for 'APU' is selected.
+11:40:39 INFO  : 'stop' command is executed.
+11:40:40 INFO  : 'ps7_init' command is executed.
+11:40:40 INFO  : 'ps7_post_config' command is executed.
+11:40:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:40:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:40 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:40:40 INFO  : 'configparams force-mem-access 0' command is executed.
+11:40:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:40:40 INFO  : Memory regions updated for context APU
+11:40:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:40 INFO  : 'con' command is executed.
+11:40:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:40:40 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:45:06 INFO  : Disconnected from the channel tcfchan#9.
+11:45:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:45:08 INFO  : 'fpga -state' command is executed.
+11:45:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:08 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:45:08 INFO  : 'jtag frequency' command is executed.
+11:45:08 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:45:08 INFO  : Context for 'APU' is selected.
+11:45:10 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:45:10 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:10 INFO  : Context for 'APU' is selected.
+11:45:10 INFO  : 'stop' command is executed.
+11:45:11 INFO  : 'ps7_init' command is executed.
+11:45:11 INFO  : 'ps7_post_config' command is executed.
+11:45:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:45:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:11 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:45:11 INFO  : 'configparams force-mem-access 0' command is executed.
+11:45:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:45:11 INFO  : Memory regions updated for context APU
+11:45:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:11 INFO  : 'con' command is executed.
+11:45:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:45:11 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:49:13 INFO  : Disconnected from the channel tcfchan#10.
+11:49:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:49:15 INFO  : 'fpga -state' command is executed.
+11:49:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:15 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:49:15 INFO  : 'jtag frequency' command is executed.
+11:49:15 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:49:15 INFO  : Context for 'APU' is selected.
+11:49:17 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:49:17 INFO  : 'configparams force-mem-access 1' command is executed.
+11:49:18 INFO  : Context for 'APU' is selected.
+11:49:18 INFO  : 'stop' command is executed.
+11:49:18 INFO  : 'ps7_init' command is executed.
+11:49:18 INFO  : 'ps7_post_config' command is executed.
+11:49:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:18 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:49:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:18 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:49:18 INFO  : 'configparams force-mem-access 0' command is executed.
+11:49:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:49:18 INFO  : Memory regions updated for context APU
+11:49:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:49:19 INFO  : 'con' command is executed.
+11:49:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:49:19 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:54:20 INFO  : Disconnected from the channel tcfchan#11.
+11:54:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:54:28 INFO  : 'fpga -state' command is executed.
+11:54:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:29 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:54:29 INFO  : 'jtag frequency' command is executed.
+11:54:29 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:54:29 INFO  : Context for 'APU' is selected.
+11:54:29 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:54:29 INFO  : 'configparams force-mem-access 1' command is executed.
+11:54:29 INFO  : Context for 'APU' is selected.
+11:54:29 INFO  : 'stop' command is executed.
+11:54:29 INFO  : 'ps7_init' command is executed.
+11:54:29 INFO  : 'ps7_post_config' command is executed.
+11:54:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:54:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:30 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:54:30 INFO  : 'configparams force-mem-access 0' command is executed.
+11:54:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:54:30 INFO  : Memory regions updated for context APU
+11:54:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:30 INFO  : 'con' command is executed.
+11:54:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:54:30 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+11:58:49 INFO  : Disconnected from the channel tcfchan#12.
+11:58:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+11:58:57 INFO  : 'fpga -state' command is executed.
+11:58:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:58:57 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+11:58:57 INFO  : 'jtag frequency' command is executed.
+11:58:57 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+11:58:57 INFO  : Context for 'APU' is selected.
+11:58:57 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+11:58:57 INFO  : 'configparams force-mem-access 1' command is executed.
+11:58:57 INFO  : Context for 'APU' is selected.
+11:58:57 INFO  : 'stop' command is executed.
+11:58:58 INFO  : 'ps7_init' command is executed.
+11:58:58 INFO  : 'ps7_post_config' command is executed.
+11:58:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+11:58:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:58 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:58:58 INFO  : 'configparams force-mem-access 0' command is executed.
+11:58:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:58:58 INFO  : Memory regions updated for context APU
+11:58:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:58 INFO  : 'con' command is executed.
+11:58:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+11:58:58 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+12:08:22 INFO  : Disconnected from the channel tcfchan#13.
+12:08:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+12:08:23 INFO  : 'fpga -state' command is executed.
+12:08:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:08:23 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+12:08:23 INFO  : 'jtag frequency' command is executed.
+12:08:23 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:08:23 INFO  : Context for 'APU' is selected.
+12:08:26 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:08:26 INFO  : 'configparams force-mem-access 1' command is executed.
+12:08:26 INFO  : Context for 'APU' is selected.
+12:08:26 INFO  : 'stop' command is executed.
+12:08:26 INFO  : 'ps7_init' command is executed.
+12:08:26 INFO  : 'ps7_post_config' command is executed.
+12:08:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:08:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:08:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:08:27 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:08:27 INFO  : 'configparams force-mem-access 0' command is executed.
+12:08:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:08:27 INFO  : Memory regions updated for context APU
+12:08:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:08:27 INFO  : 'con' command is executed.
+12:08:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+12:08:27 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+12:10:22 INFO  : Disconnected from the channel tcfchan#14.
+12:10:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+12:10:23 INFO  : 'fpga -state' command is executed.
+12:10:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:23 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+12:10:23 INFO  : 'jtag frequency' command is executed.
+12:10:23 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:10:24 INFO  : Context for 'APU' is selected.
+12:10:26 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:10:26 INFO  : 'configparams force-mem-access 1' command is executed.
+12:10:26 INFO  : Context for 'APU' is selected.
+12:10:26 INFO  : 'stop' command is executed.
+12:10:26 INFO  : 'ps7_init' command is executed.
+12:10:26 INFO  : 'ps7_post_config' command is executed.
+12:10:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:10:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:27 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:10:27 INFO  : 'configparams force-mem-access 0' command is executed.
+12:10:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:10:27 INFO  : Memory regions updated for context APU
+12:10:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:27 INFO  : 'con' command is executed.
+12:10:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+12:10:27 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+12:12:27 INFO  : Disconnected from the channel tcfchan#15.
+12:12:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+12:12:28 INFO  : 'fpga -state' command is executed.
+12:12:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:12:29 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+12:12:29 INFO  : 'jtag frequency' command is executed.
+12:12:29 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:12:29 INFO  : Context for 'APU' is selected.
+12:12:31 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:12:31 INFO  : 'configparams force-mem-access 1' command is executed.
+12:12:31 INFO  : Context for 'APU' is selected.
+12:12:31 INFO  : 'stop' command is executed.
+12:12:31 INFO  : 'ps7_init' command is executed.
+12:12:31 INFO  : 'ps7_post_config' command is executed.
+12:12:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:12:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:12:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:12:32 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:12:32 INFO  : 'configparams force-mem-access 0' command is executed.
+12:12:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:12:32 INFO  : Memory regions updated for context APU
+12:12:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:12:32 INFO  : 'con' command is executed.
+12:12:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+12:12:32 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+12:13:31 INFO  : Disconnected from the channel tcfchan#16.
+12:13:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+12:13:32 INFO  : 'fpga -state' command is executed.
+12:13:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:13:32 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+12:13:32 INFO  : 'jtag frequency' command is executed.
+12:13:32 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:13:32 INFO  : Context for 'APU' is selected.
+12:13:35 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+12:13:35 INFO  : 'configparams force-mem-access 1' command is executed.
+12:13:35 INFO  : Context for 'APU' is selected.
+12:13:35 INFO  : 'stop' command is executed.
+12:13:35 INFO  : 'ps7_init' command is executed.
+12:13:35 INFO  : 'ps7_post_config' command is executed.
+12:13:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:13:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:13:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:13:35 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:13:36 INFO  : 'configparams force-mem-access 0' command is executed.
+12:13:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:13:36 INFO  : Memory regions updated for context APU
+12:13:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:13:36 INFO  : 'con' command is executed.
+12:13:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+12:13:36 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+12:17:20 INFO  : Disconnected from the channel tcfchan#17.
+17:24:59 INFO  : Registering command handlers for SDK TCF services
+17:25:00 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\temp_xsdb_launch_script.tcl
+17:25:03 INFO  : XSCT server has started successfully.
+17:25:03 INFO  : Successfully done setting XSCT server connection channel  
+17:25:07 INFO  : Processing command line option -hwspec C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper.hdf.
+17:25:07 INFO  : Successfully done setting SDK workspace  
+17:25:08 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+17:25:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+17:25:25 INFO  : FPGA configured successfully with bitstream "C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+17:26:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+17:26:02 INFO  : 'fpga -state' command is executed.
+17:26:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:26:02 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+17:26:02 INFO  : 'jtag frequency' command is executed.
+17:26:02 INFO  : Sourcing of 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:26:02 INFO  : Context for 'APU' is selected.
+17:26:02 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf'.
+17:26:02 INFO  : 'configparams force-mem-access 1' command is executed.
+17:26:02 INFO  : Context for 'APU' is selected.
+17:26:02 INFO  : 'stop' command is executed.
+17:26:03 INFO  : 'ps7_init' command is executed.
+17:26:03 INFO  : 'ps7_post_config' command is executed.
+17:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:03 INFO  : The application 'C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:26:03 INFO  : 'configparams force-mem-access 0' command is executed.
+17:26:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/GPIO_app2/GPIO_app2.sdk/GPIO_game/Debug/GPIO_game.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:26:03 INFO  : Memory regions updated for context APU
+17:26:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:26:04 INFO  : 'con' command is executed.
+17:26:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+17:26:04 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\GPIO_app2\GPIO_app2.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_gpio_game.elf_on_local.tcl'
+20:03:26 INFO  : Disconnected from the channel tcfchan#1.
+21:35:17 INFO  : Registering command handlers for SDK TCF services
+21:35:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\FPGA_EGR680\led_ip\led_ip.sdk\temp_xsdb_launch_script.tcl
+21:35:22 INFO  : XSCT server has started successfully.
+21:35:29 INFO  : Processing command line option -hwspec C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper.hdf.
+21:35:29 INFO  : Successfully done setting XSCT server connection channel  
+21:35:30 INFO  : Successfully done setting SDK workspace  
+21:59:56 ERROR : The Hardware Project referenced by this BSP (led_ip_bsp_1) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
+22:02:42 INFO  : No changes in MSS file content so not generating sources.
+22:04:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:05:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:08:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:08:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+22:08:30 INFO  : FPGA configured successfully with bitstream "C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/system_wrapper.bit"
+22:09:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+22:09:25 INFO  : 'fpga -state' command is executed.
+22:09:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:09:25 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+22:09:25 INFO  : 'jtag frequency' command is executed.
+22:09:25 INFO  : Sourcing of 'C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/ps7_init.tcl' is done.
+22:09:25 INFO  : Context for 'APU' is selected.
+22:09:25 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/system.hdf'.
+22:09:25 INFO  : 'configparams force-mem-access 1' command is executed.
+22:09:25 INFO  : Context for 'APU' is selected.
+22:09:25 INFO  : 'stop' command is executed.
+22:09:26 INFO  : 'ps7_init' command is executed.
+22:09:26 INFO  : 'ps7_post_config' command is executed.
+22:09:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:09:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:09:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:09:26 INFO  : The application 'C:/FPGA_EGR680/led_ip/led_ip.sdk/led_ip/Debug/led_ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:09:26 INFO  : 'configparams force-mem-access 0' command is executed.
+22:09:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/led_ip/led_ip.sdk/led_ip/Debug/led_ip.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:09:26 INFO  : Memory regions updated for context APU
+22:09:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:09:26 INFO  : 'con' command is executed.
+22:09:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+22:09:26 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\led_ip\led_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_led_ip.elf_on_local.tcl'
+22:13:12 INFO  : Disconnected from the channel tcfchan#1.
+22:13:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A" && level==0} -index 1' command is executed.
+22:13:14 INFO  : 'fpga -state' command is executed.
+22:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:14 INFO  : Jtag cable 'Xilinx PYNQ-Z1 003017A6DFA8A' is selected.
+22:13:14 INFO  : 'jtag frequency' command is executed.
+22:13:14 INFO  : Sourcing of 'C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/ps7_init.tcl' is done.
+22:13:14 INFO  : Context for 'APU' is selected.
+22:13:17 INFO  : Hardware design information is loaded from 'C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/system.hdf'.
+22:13:17 INFO  : 'configparams force-mem-access 1' command is executed.
+22:13:17 INFO  : Context for 'APU' is selected.
+22:13:17 INFO  : 'stop' command is executed.
+22:13:17 INFO  : 'ps7_init' command is executed.
+22:13:17 INFO  : 'ps7_post_config' command is executed.
+22:13:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:13:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:18 INFO  : The application 'C:/FPGA_EGR680/led_ip/led_ip.sdk/led_ip/Debug/led_ip.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:13:18 INFO  : 'configparams force-mem-access 0' command is executed.
+22:13:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+loadhw -hw C:/FPGA_EGR680/led_ip/led_ip.sdk/system_wrapper_hw_platform_1/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+dow C:/FPGA_EGR680/led_ip/led_ip.sdk/led_ip/Debug/led_ip.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:13:18 INFO  : Memory regions updated for context APU
+22:13:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:18 INFO  : 'con' command is executed.
+22:13:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx PYNQ-Z1 003017A6DFA8A"} -index 0
+con
+----------------End of Script----------------
+
+22:13:18 INFO  : Launch script is exported to file 'C:\FPGA_EGR680\led_ip\led_ip.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_led_ip.elf_on_local.tcl'
+22:27:07 INFO  : Disconnected from the channel tcfchan#2.

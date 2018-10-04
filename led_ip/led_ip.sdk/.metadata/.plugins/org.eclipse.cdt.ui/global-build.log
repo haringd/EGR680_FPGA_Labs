@@ -1,0 +1,45 @@
+22:13:01 **** Incremental Build of configuration Debug for project led_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+22:13:10 **** Incremental Build of configuration Debug for project led_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/led_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../led_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_ip.d" -MT"src/led_ip.o" -o "src/led_ip.o" "../src/led_ip.c"
+'Finished building: ../src/led_ip.c'
+' '
+'Building target: led_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../led_ip_bsp/ps7_cortexa9_0/lib -o "led_ip.elf"  ./src/led_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: led_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size led_ip.elf  |tee "led_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23492	   1188	  22584	  47264	   b8a0	led_ip.elf
+'Finished building: led_ip.elf.size'
+' '
+22:18:04 **** Auto Build of configuration Debug for project led_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/led_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../led_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_ip.d" -MT"src/led_ip.o" -o "src/led_ip.o" "../src/led_ip.c"
+'Finished building: ../src/led_ip.c'
+' '
+'Building target: led_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../led_ip_bsp/ps7_cortexa9_0/lib -o "led_ip.elf"  ./src/led_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: led_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size led_ip.elf  |tee "led_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23492	   1188	  22584	  47264	   b8a0	led_ip.elf
+'Finished building: led_ip.elf.size'
+' '

@@ -1,0 +1,16 @@
+22:01:00 **** Auto Build of configuration Debug for project led_ip_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/led_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/led_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../led_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/led_ip.d" -MT"src/led_ip.o" -o "src/led_ip.o" "../src/led_ip.c"
+../src/led_ip.c: In function 'main':
+../src/led_ip.c:36:8: error: 'i' undeclared (first use in this function)
+   for (i=0; 9>9999999; i++);
+        ^
+../src/led_ip.c:36:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/led_ip.o] Fehler 1
+
+22:01:00 Build Finished (took 532ms)
+
