@@ -1,0 +1,8 @@
+10:03:50 **** Auto Build of configuration Debug for project LetsMakeADeal ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+
+10:03:50 Build Finished (took 268ms)
+

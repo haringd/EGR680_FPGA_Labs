@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Sep 30 18:34:57 2018
+# Process ID: 16096
+# Current directory: C:/FPGA_EGR680/GPIO_app2/GPIO_app2.runs/system_axi_gpio_0_1_synth_1
+# Command line: vivado.exe -log system_axi_gpio_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_gpio_0_1.tcl
+# Log file: C:/FPGA_EGR680/GPIO_app2/GPIO_app2.runs/system_axi_gpio_0_1_synth_1/system_axi_gpio_0_1.vds
+# Journal file: C:/FPGA_EGR680/GPIO_app2/GPIO_app2.runs/system_axi_gpio_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_axi_gpio_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 325.629 ; gain = 78.605
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_1' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/synth/system_axi_gpio_0_1.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:1257]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ipshared/cb07/hdl/axi_gpio_v2_0_vh_rfs.vhd:1257]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_gpio_0_1' (8#1) [c:/FPGA_EGR680/GPIO_app2/GPIO_app2.srcs/sources_1/bd/system/ip/system_axi_gpio_0_1/synth/system_axi_gpio_0_1.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 366.711 ; gain = 119.688
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 366.711 ; gain = 119.688
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.326 . Memory (MB): peak = 689.152 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     5|
+|3     |LUT3 |     4|
+|4     |LUT4 |     7|
+|5     |LUT5 |    11|
+|6     |LUT6 |    10|
+|7     |FDR  |    16|
+|8     |FDRE |    41|
+|9     |FDSE |     4|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 689.152 ; gain = 442.129
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 689.152 ; gain = 449.328

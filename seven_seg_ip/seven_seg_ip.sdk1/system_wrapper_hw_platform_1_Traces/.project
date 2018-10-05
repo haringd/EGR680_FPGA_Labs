@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>system_wrapper_hw_platform_1_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_Okt-04_17-05/PS_Trace_Okt-04_17-05/PS_Trace_Okt-04_17-05_</name>
+			<type>1</type>
+			<location>C:/FPGA_EGR680/seven_seg_ip/seven_seg_ip.sdk/system_wrapper_hw_platform_1_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>

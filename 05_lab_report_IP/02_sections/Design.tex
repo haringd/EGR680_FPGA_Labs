@@ -1,13 +1,11 @@
 \section{Design}\label{sec: Design}
 In this section the design and decisions that where made to achieve the laboratory are discussed.
 %The code for lab 03 can be reviewed online under the flowing link \href{https://github.com/haringd/EGR680_FPGA_Labs/tree/master/VENDMACH}{http://github.com/haringd/EGR680\_FPGA\_Labs/tree/master/VENDMACH}.
-\subsection{SDK Lab specification}\label{subsec: Vending machine specification}
-In this part, you will create a simple hardcore ARM Cortex-A9 based embedded system on the PYNQ board. The
-embedded system design is broken up into three parts: Hardware design of the ARM Cortex-A9 hardcore
-processor, application software design using SDK, and finally hardware implementation of the software running
-on the hardcore processor. The application you will design in this part is a UART application that prints “HELLO
-WORLD” to a terminal emulator like Tera Term. Use the figure below as a flow guide for this lab. The diagram
-for the completed design is shown in Figure \ref{fig: Vivado_lab4_CompletedDesign}. 
+\subsection{Lab specification}\label{subsec: Lab specification}
+In this part,a simple program in C is developed that takes the user input of two dip switches and represents it in binary on the on board LEDs. The user input is printed out over UART terminal as well as the user input of the buttons. 
+
+The binary user input of the dip switches is passed into the hardware instantiated decoder which is implemented in an user created IP module. The module consist out of an 7 bit output for one seven-segment display and the carry bit, which is used to switch between the two segments.
+The diagram for the partial design is shown in Figure \ref{fig: Vivado_lab4_CompletedDesign}. The designed seven\_seg\_ip is connected over the AXI bus like the LED\_IP. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{01_images/Vivado_lab4_CompletedDesign.PNG}
@@ -16,7 +14,7 @@ for the completed design is shown in Figure \ref{fig: Vivado_lab4_CompletedDesig
 \end{figure}
 
 \subsection{HDL}\label{subsec: HDL}
-Figure \ref{fig: Vivado_lab_HDL_topView} shows the HDL top level based of the ZYNQ 7 Processing system which is connected with an AXI bus S00\_AXI to a intellectual property (IP) block that manages peripherals. From there an AXI bus is used to connect two general purpose input output (GPIO) IP blocks, one for buttons and another one for switches. Furthermore, a Processor System Reset IP block is used that interconnects all resets.
+Figure \ref{fig: Vivado_lab_HDL_topView} shows the HDL top level based of the ZYNQ 7 Processing system which is connected with an AXI bus S\_AXI to a intellectual property (IP) block that manages peripherals. From there an AXI bus is used to connect two general purpose input output (GPIO) IP blocks, one for buttons and another one for switches. Furthermore, a Processor System Reset IP block is used that interconnects all resets. The block of interest is the added seven\_seg\_ip that is used to decode the user input into the seven-segment display.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{01_images/Vivado_lab_HDL_topView.PNG}
@@ -25,74 +23,19 @@ Figure \ref{fig: Vivado_lab_HDL_topView} shows the HDL top level based of the ZY
 \end{figure}
 
 \subsection{SDK}\label{subsec: SDK}
-After the HDL top level is defined the SDK can be launched with \textbf{File $\rightarrow$ Launch SDK}. The *.hdf file should be shown or can be opened that shows the base registers for the switches and buttons, as highlighted in Figure \ref{fig: Vivado_lab4_SW_BTN_Register}. 
+After the HDL top level is defined the SDK can be launched with \textbf{File $\rightarrow$ Launch SDK}. The *.hdf file should be shown or can be opened that shows the base registers for the switches, led, seven-segment display, and buttons, as shown in Figure \ref{fig: Vivado_lab4_SW_BTN_Register}. 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\textwidth]{01_images/Vivado_lab4_SW_BTN_Register.PNG}
-	\caption{*.hdf file that shows the base register for switches and buttons.}
-	\label{fig: Vivado_lab4_SW_BTN_Register}
+	\caption{*.hdf file that shows the base register for switches, led, seven-segment display, and buttons.}
+	\label{fig: Vivado_lab5_SW_BTN_Register}
 \end{figure}
 
-After writing the C code given in part two and loading the the bit stream file and the build elf file onto the board the serial console Terra Term shows the status of the buttons and switches, as shown in Figure \ref{fig: Vivado_lab4_TT_PartII}
+After writing the C code the FPGA bit stream file and the build elf file can be loaded onto the board. The serial console Terra Term shows the status of the buttons and switches, as shown in Figure \ref{fig: Vivado_lab4_TT_PartII}. The C code could basically used entyrely from the former lab and only the lines 17 and 40 had to be added.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{01_images/Vivado_lab4_TT_PartII.PNG}
 	\caption{Terra Term print out of the switches and buttons status.}
 	\label{fig: Vivado_lab4_TT_PartII}
-\end{figure}
-
-\subsection{Let's Make a Deal}\label{subsec: Lets Make a Deal}
-Part III of laboratory 4 is to program a game show named "Let's Make a Deal!". 
-Therefor, the previous HDL code is reused because the push buttons (psb) and universal asynchronous receiver transmitter (UART) is used for the game show while the switches are just not initials in the program code and not used. 
-
-The game works as followed a computer, in this case ZYNQ embedded system, uses based on the users input time. The $startTime$ stamp is made as the game starts while the $stopTime$ stamp is made as the user presses the input button, the $deltaTime$ is calculated according Equation \ref{eq: delta}. A random number is generated out of the $deltaTime$ stamp that is determined according to Equation \ref{eq: random}. The user input is to chose a door which hides a good deal but to get it the users answer has to match the computers generated door number.
-
-The program consist of two switch case statements one for the program flow as shown in Figure \ref{fig: Game Show state machine}. The second state machine contains the input logic to map the binary button input to a integer number. In addition, simple delays where used to de-bounce the buttons.  
-
-The four buttons are configured as the following btn0 is Door 1, btn1 is Door 2, btn2 is Door 3, btn3 is Door 4.
-
-The complete code listening can be found under Section \ref{subsec: C code}.
-\\
-\\
-\textbf{IMPORTANT:} For the game show the programmable logic has to be flashed first with the generated bit stream file than the compiled C code can be flashed with the *.elf file.
-
-\begin{equation}
-deltaTime = startTime - stopTime \label{eq: delta}
-\end{equation}
-\begin{equation}
-rnd = (deltaTime\ \%\ 4) + 1 \label{eq: random}
-\end{equation}
-
-\subsection{Game Show State Machine}\label{subsec: Game Show State Machin}
-\begin{figure}[H]
-	\begin{verbatim}       
-/*********************************************************************************
-** FSM State machine                                                            **
-**********************************************************************************
-                   000                        
-+---------------------+           
-| Idle                |           
-| Display user input  |<--------+
-|                     |         | 
-+---------------------+         | 
-    |                           |             
-    |                           |             
-    |              001          |             
-+---------------------+         |        
-|                     |         |        
-| Wait for button     |         |        
-| coin_val on Pmod A  |         |        
-+---------------------+         |                           
-    |                           |             
-    |                           |             
-    |              002          |             
-+---------------------+         |             
-| user output         |         |             
-| if (rnd == door)    |---------+
-| Display output      |                       
-+---------------------+                            
-/*********************************************************************************/
-	\end{verbatim}
-	\caption{Game Show state machine.}\label{fig: Game Show state machine}
 \end{figure}
 

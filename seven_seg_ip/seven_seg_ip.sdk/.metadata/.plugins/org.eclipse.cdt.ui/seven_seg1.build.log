@@ -1,0 +1,8 @@
+19:37:26 **** Incremental Build of configuration Debug for project seven_seg1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+
+19:37:26 Build Finished (took 339ms)
+

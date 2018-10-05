@@ -1,0 +1,16 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Oct  4 19:18:08 2018
+| Host         : DESKTOP-50SCECT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_seven_seg_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_seven_seg_ip_0_0 (xilinx.com:user:seven_seg_ip:1.0) from (Rev. 2) to (Rev. 4)
+

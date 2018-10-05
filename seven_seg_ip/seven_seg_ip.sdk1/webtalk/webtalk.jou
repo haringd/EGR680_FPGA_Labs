@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Thu Oct  4 19:29:23 2018
+# Process ID: 8612
+# Current directory: C:/FPGA_EGR680/seven_seg_ip/seven_seg_ip.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/FPGA_EGR680/seven_seg_ip/seven_seg_ip.sdk/webtalk/webtalk.log
+# Journal file: C:/FPGA_EGR680/seven_seg_ip/seven_seg_ip.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

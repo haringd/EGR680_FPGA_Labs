@@ -1,0 +1,1044 @@
+11:48:55 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:48:59 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24316	   1188	  22584	  48088	   bbd8	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:49:02 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:49:09 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:54:15 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24320	   1188	  22584	  48092	   bbdc	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:54:27 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+11:56:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24716	   1188	  22576	  48480	   bd60	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:58:29 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24324	   1188	  22584	  48096	   bbe0	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+11:58:56 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:08:12 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24324	   1188	  22584	  48096	   bbe0	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:08:20 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:10:09 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24388	   1188	  22584	  48160	   bc20	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:10:20 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:10:56 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24388	   1188	  22584	  48160	   bc20	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:11:08 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24388	   1188	  22584	  48160	   bc20	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:12:16 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24452	   1188	  22584	  48224	   bc60	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:12:25 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:13:11 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24420	   1188	  22584	  48192	   bc40	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:13:21 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:13:28 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+12:15:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+12:17:11 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+17:26:00 **** Incremental Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:37:58 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+17:38:17 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+19:02:19 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+../src/GPIO_game.c:8:5: warning: "/*" within comment [-Wcomment]
+  *  /*************************************************************
+      
+../src/GPIO_game.c:33:4: warning: "/*" within comment [-Wcomment]
+  * /**************************************************************/
+     
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+19:03:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+19:04:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+16:07:15 **** Auto Build of project GPIO_status_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+16:07:35 **** Auto Build of configuration Debug for project GPIO_status ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_status.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_status.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_status.d" -MT"src/GPIO_status.o" -o "src/GPIO_status.o" "../src/GPIO_status.c"
+../src/GPIO_status.c: In function 'main':
+../src/GPIO_status.c:29:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(1);
+   ^~~~~
+'Finished building: ../src/GPIO_status.c'
+' '
+'Building target: GPIO_status.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_status.elf"  ./src/GPIO_status.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_status.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_status.elf  |tee "GPIO_status.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23492	   1188	  22584	  47264	   b8a0	GPIO_status.elf
+'Finished building: GPIO_status.elf.size'
+' '
+16:07:37 **** Auto Build of configuration Debug for project GPIO_game ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/GPIO_game.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_game.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../GPIO_status_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/GPIO_game.d" -MT"src/GPIO_game.o" -o "src/GPIO_game.o" "../src/GPIO_game.c"
+'Finished building: ../src/GPIO_game.c'
+' '
+'Building target: GPIO_game.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_status_bsp/ps7_cortexa9_0/lib -o "GPIO_game.elf"  ./src/GPIO_game.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: GPIO_game.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size GPIO_game.elf  |tee "GPIO_game.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24356	   1188	  22584	  48128	   bc00	GPIO_game.elf
+'Finished building: GPIO_game.elf.size'
+' '
+16:09:05 **** Build of project seven_seg_ip_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/seven_seg_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling bram"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling led_ip..."
+led_ip_selftest.c: In function 'LED_IP_Reg_SelfTest':
+led_ip_selftest.c:52:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( LED_IP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                       ^~
+led_ip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+xscugic_g.c:53:2: warning: missing initializer for field 'HandlerTable' of 'XScuGic_Config {aka struct <anonymous>}' [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xscugic_g.c:41:0:
+xscugic.h:218:27: note: 'HandlerTable' declared here
+  XScuGic_VectorTableEntry HandlerTable[XSCUGIC_MAX_NUM_INTR_INPUTS];/**<
+                           ^~~~~~~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/seven_seg_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/seven_seg_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling seven_seg_ip..."
+seven_seg_ip_selftest.c: In function 'SEVEN_SEG_IP_Reg_SelfTest':
+seven_seg_ip_selftest.c:52:61: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( SEVEN_SEG_IP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                             ^~
+seven_seg_ip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_3/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project seven_seg_ip ****
+
+Nothing to build for project seven_seg_ip
+16:09:43 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../seven_seg_ip_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+xil-crt0.S:(.text+0x68): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [seven_seg_ip.elf] Fehler 1
+16:17:08 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:41:3: error: 'SEVEN_SEG_' undeclared (first use in this function)
+   SEVEN_SEG_
+   ^~~~~~~~~~
+../src/seven_seg_ip.c:41:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/seven_seg_ip.c:43:3: error: expected ';' before 'for'
+   for (i=0; 9>9999999; i++);
+   ^~~
+../src/seven_seg_ip.c:22:6: warning: unused variable 'i' [-Wunused-variable]
+  int i, psb_check, dip_check;
+      ^
+make: *** [src/seven_seg_ip.o] Fehler 1
+16:19:00 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23492	   1188	  22584	  47264	   b8a0	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:20:12 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:20:13 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:32:16 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:32:36 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:38:52 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:39:02 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:41:02 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:41:11 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:42:50 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:43:19 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:43:58 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:44:19 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:46:26 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:46:35 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:47:27 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+16:47:39 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:48:34 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+16:51:40 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:04:21 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+17:04:34 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:05:33 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+17:05:39 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:06:07 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:07:18 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+17:07:29 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:13:10 **** Auto Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/seven_seg_ip.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/seven_seg_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../seven_seg_ip_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/seven_seg_ip.d" -MT"src/seven_seg_ip.o" -o "src/seven_seg_ip.o" "../src/seven_seg_ip.c"
+../src/seven_seg_ip.c: In function 'main':
+../src/seven_seg_ip.c:22:36: warning: variable 'cat' set but not used [-Wunused-but-set-variable]
+  int i, psb_check, dip_check, seg, cat;
+                                    ^~~
+'Finished building: ../src/seven_seg_ip.c'
+' '
+'Building target: seven_seg_ip.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../seven_seg_ip_bsp/ps7_cortexa9_0/lib -o "seven_seg_ip.elf"  ./src/seven_seg_ip.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: seven_seg_ip.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size seven_seg_ip.elf  |tee "seven_seg_ip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23620	   1188	  22584	  47392	   b920	seven_seg_ip.elf
+'Finished building: seven_seg_ip.elf.size'
+' '
+17:56:15 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
+17:56:51 **** Incremental Build of configuration Debug for project seven_seg_ip ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Für das Ziel »main-build« ist nichts zu tun.
