@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  24 OCT 2018 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  25 OCT 2018 10:00
 entering extended mode
 **./reportLab07Python.tex
 (reportLab07Python.tex
@@ -797,7 +797,7 @@ Package biblatex Info: ... file 'reportLab07Python.bbl' found.
  (reportLab07Python.bbl)
 Package biblatex Info: Reference section=0 on input line 120.
 Package biblatex Info: Reference segment=0 on input line 120.
-<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=31, 969.6225pt x 755.82375pt>
+<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=43, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
@@ -827,31 +827,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 (02_sections/Introduction.tex) (02_sections/Design.tex
-<01_images/SpyderIDE.PNG, id=57, 848.4197pt x 572.89032pt>
-File: 01_images/SpyderIDE.PNG Graphic file (type png)
-<use 01_images/SpyderIDE.PNG>
-Package pdftex.def Info: 01_images/SpyderIDE.PNG  used on input line 8.
-(pdftex.def)             Requested size: 469.75502pt x 317.19737pt.
-
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-) [3 <./01_images/SpyderIDE.PNG>]
+)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 18.
-<01_images/MainMenu.PNG, id=69, 218.31563pt x 148.30406pt>
-File: 01_images/MainMenu.PNG Graphic file (type png)
-<use 01_images/MainMenu.PNG>
-Package pdftex.def Info: 01_images/MainMenu.PNG  used on input line 47.
-(pdftex.def)             Requested size: 234.8775pt x 159.55498pt.
-) (02_sections/Conclusion.tex) [4 <./01_images/MainMenu.PNG>]
+nput line 7.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
+
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<01_images/printed_receipt.PNG, id=77, 265.74281pt x 389.20406pt>
+File: 01_images/printed_receipt.PNG Graphic file (type png)
+<use 01_images/printed_receipt.PNG>
+Package pdftex.def Info: 01_images/printed_receipt.PNG  used on input line 39.
+(pdftex.def)             Requested size: 234.8775pt x 344.00908pt.
+
+[3]) (02_sections/Conclusion.tex) [4 <./01_images/printed_receipt.PNG>]
 \openout2 = `02_sections/Appendix.aux'.
 
- (02_sections/Appendix.tex
+
+(02_sections/Appendix.tex
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2018/04/06 v1.3b Input encoding file
 )
-(../06_lab_python_bank.py
+(../07_lab_PythonFunctions_PartI.py
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -862,7 +863,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 
 [5
 
-] [6])) [7]
+]) (../atm_func.py [6] [7] [8]) (../atm_receipt.py [9] [10])
+(../atm_func_partII.py [11] [12]) (../atm_instance.py [13] [14])
+(../atm_class.py [15] [16] [17])) [18]
 
 LaTeX Warning: Empty bibliography on input line 134.
 
@@ -872,34 +875,35 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `reportLab07Python.out' has not changed.
-(rerunfilecheck)             Checksum: 1C70DB491B60C0209420E725F1258CB8;364.
+(rerunfilecheck)             Checksum: E3F3E16F83116FD8EF629FDB42B074BF;594.
 Package logreq Info: Writing requests to 'reportLab07Python.run.xml'.
 \openout1 = `reportLab07Python.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 17555 strings out of 492973
- 285805 string characters out of 3126692
- 1091763 words of memory out of 3000000
- 20992 multiletter control sequences out of 15000+200000
- 14578 words of font info for 38 fonts, out of 3000000 for 9000
+ 18362 strings out of 492973
+ 297718 string characters out of 3126692
+ 1198847 words of memory out of 3000000
+ 21068 multiletter control sequences out of 15000+200000
+ 14891 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,49p,962b,1989s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,49p,962b,1995s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\schwa\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\schwa\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
-ers\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.
-pk><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb>
-Output written on reportLab07Python.pdf (7 pages, 277843 bytes).
+ectt1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\schwa\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\schwa\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\schwa\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Us
+ers\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.
+pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1728.pk><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb>
+Output written on reportLab07Python.pdf (18 pages, 364705 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 197 named destinations out of 1000 (max. 500000)
- 72 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1566 PDF objects out of 1728 (max. 8388607)
+ 910 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

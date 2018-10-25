@@ -5,12 +5,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Design}{3}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}SDK}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}ATM machine Part I}{3}{subsection.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}ATM machine}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}ATM machine Part II}{3}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}ATM machine Part II}{4}{subsection.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Conclusion}{4}{section.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Appendix}{5}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Python code Part III}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Python code Part I}{5}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Python code Part II}{9}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Python code Part III}{13}{subsection.4.3}

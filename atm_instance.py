@@ -5,18 +5,16 @@ Spyder Editor
 This is a temporary script file.
 """
 from time import asctime
-
+import re
 from atm_func_partII import welcome, pin, \
-selMainMenue, newPin, deposit, withdraw, balance, receipt
+selMainMenue, newPin, deposit, withdraw, balance, receipt, delay
 
 AMOUNT_MIN = 0
 AMOUNT_MAX = 1000
 
-
 gPin  = "1234"
 gSelect = 0
 gAccountValue = 0
-
 gReceiptFile = "atm_receipt.txt"
 
 # Open a file
@@ -24,9 +22,9 @@ try:
     fo = open("07_lab_error_log.txt", "a")
     fr = open(gReceiptFile, "w")
     fo.write(asctime()+ 'ATM program starts '+ '\n')
-    fr.write('-------------------Bank Me-------------------\n')
+    fr.write('\n-------------------Bank Me-------------------\n')
     fr.write('---------------Transaction Receipt-----------\n')
-    fr.write('*********************************************\n')
+    fr.write('*********************************************\n\n')
 except IOError as e:
     print('File '+e.filename+' could not be opened!') 
 
@@ -49,7 +47,7 @@ while True:
         fo.write(asctime()+ ' User login error\n')
 
 # Main menu
-while  gSelect != "6":
+while  gSelect != "5":
     ret = 0
     ret = selMainMenue(input("PLEASE SELECT FROM THE ABOVE OTPIONS: ") )
 #    print(ret) # debug only
@@ -63,15 +61,15 @@ while  gSelect != "6":
         fo.write(asctime()+ ' User slection error\n')
         print(ret[0])
 
-    if gSelect == '6': # exit
+    if gSelect == '5': # exit
+        while True:
+            if not re.match("^[y]$", input('Do you wish to print the receipt, press y or n? ')):
+                print("\nThank you for chosing BANK ME!")
+                break
+            else:
+                receipt(gReceiptFile, fr)   
+                break
         exit
-    elif gSelect == '5': # print receipt
-         fr.write('THANK YOU FOR CHOOSING BANK ME!')
-         fr.close()
-         fr = open(gReceiptFile, "r")
-         receipt(fr)   
-         fr.close()
-         fr = open(gReceiptFile, "a")
     elif gSelect == '4': # change PIN
         while True:
             ret = 0
@@ -124,8 +122,8 @@ while  gSelect != "6":
         balance(gAccountValue, fr)
     else:
         print("\nIncorrect Selecion!")
-        
-print("\nThank you for chosing BANK ME!")
+
 fo.write(asctime()+ ' Program Closed\n')
-fo.close()
-fr.close()
+fo.close() # to ensure file is closed
+fr.close() # to ensure file is closed
+delay(3000)

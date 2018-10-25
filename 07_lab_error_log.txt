@@ -145,3 +145,38 @@ Wed Oct 24 12:31:45 2018 Program Closed
 Wed Oct 24 12:31:47 2018ATM program starts 
 Wed Oct 24 12:31:49 2018 User logged in 
 Wed Oct 24 12:32:33 2018 Program Closed
+Thu Oct 25 08:40:14 2018ATM program starts 
+Thu Oct 25 08:40:18 2018 User logged in 
+Thu Oct 25 08:40:25 2018 Program Closed
+Thu Oct 25 08:55:18 2018ATM program starts 
+Thu Oct 25 08:55:23 2018 User logged in 
+Thu Oct 25 09:01:12 2018 Program Closed
+Thu Oct 25 09:07:54 2018ATM program starts 
+Thu Oct 25 09:07:58 2018 User logged in 
+Thu Oct 25 09:08:05 2018 Program Closed
+Thu Oct 25 09:09:02 2018ATM program starts 
+Thu Oct 25 09:09:12 2018 User logged in 
+Thu Oct 25 09:09:26 2018 Program Closed
+Thu Oct 25 09:09:35 2018ATM program starts 
+Thu Oct 25 09:09:58 2018 User logged in 
+Thu Oct 25 09:10:41 2018 Deposit error
+Thu Oct 25 09:11:07 2018 Program Closed
+Thu Oct 25 09:12:18 2018ATM program starts 
+Thu Oct 25 09:12:23 2018 User logged in 
+Thu Oct 25 09:12:55 2018 Program Closed
+Thu Oct 25 09:13:10 2018ATM program starts 
+Thu Oct 25 09:13:13 2018 User logged in 
+Thu Oct 25 09:13:24 2018 Program Closed
+Thu Oct 25 09:13:30 2018ATM program starts 
+Thu Oct 25 09:13:35 2018 User login error
+Thu Oct 25 09:13:38 2018 User login error
+Thu Oct 25 09:13:42 2018 User logged in 
+Thu Oct 25 09:13:53 2018 Deposit error
+Thu Oct 25 09:13:58 2018 Deposit error
+Thu Oct 25 09:15:40 2018 Program Closed
+Thu Oct 25 09:15:45 2018ATM program starts 
+Thu Oct 25 09:15:54 2018 User logged in 
+Thu Oct 25 09:16:06 2018 Withdraw error
+Thu Oct 25 09:16:19 2018 Deposit error
+Thu Oct 25 09:16:34 2018 User PIN error
+Thu Oct 25 09:27:05 2018 Program Closed
