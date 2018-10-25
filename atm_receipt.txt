@@ -3,18 +3,3 @@
 ---------------Transaction Receipt-----------
 *********************************************
 
-Your checking account balance is----> $0
-
-Your withdraw amounte is------------> $0
-
-Your deposit amounte is-------------> $3
-
-Your checking account balance is----> $3
-
-You have changed your PIN number
-
-Your withdraw amounte is------------> $1
-
-Your checking account balance is----> $2
-
-THANK YOU FOR CHOOSING BANK ME!
