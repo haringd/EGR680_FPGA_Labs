@@ -3,3 +3,6 @@
 ---------------Transaction Receipt-----------
 *********************************************
 
+Your checking account balance is----> $0
+
+THANK YOU FOR CHOOSING BANK ME!

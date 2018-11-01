@@ -1,0 +1,281 @@
+
+-------------------Bank Me-------------------
+---------------Transaction Receipt-----------
+*********************************************
+
+Wed Oct 31 21:34:57 2018 ATM program starts 
+Wed Oct 31 21:40:14 2018 ATM program starts 
+Wed Oct 31 21:40:38 2018 ATM program starts 
+Wed Oct 31 21:41:36 2018 ATM program starts 
+Wed Oct 31 21:41:59 2018 ATM program starts 
+Wed Oct 31 21:42:54 2018 ATM program starts 
+Wed Oct 31 21:42:57 2018 ATM program starts 
+Wed Oct 31 21:44:39 2018 ATM program starts 
+Wed Oct 31 21:44:40 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:44:42 2018 Program Closed
+Wed Oct 31 21:46:06 2018 ATM program starts 
+Wed Oct 31 21:46:07 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:46:08 2018 Program Closed
+Wed Oct 31 21:46:11 2018 ATM program starts 
+Wed Oct 31 21:46:12 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:46:23 2018 Program Closed
+Wed Oct 31 21:46:55 2018 ATM program starts 
+Wed Oct 31 21:46:56 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:46:58 2018 Program Closed
+Wed Oct 31 21:47:09 2018 ATM program starts 
+Wed Oct 31 21:47:10 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:47:10 2018 Program Closed
+Wed Oct 31 21:47:16 2018 ATM program starts 
+Wed Oct 31 21:47:17 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:47:19 2018 Program Closed
+Wed Oct 31 21:47:24 2018 ATM program starts 
+Wed Oct 31 21:47:25 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:47:26 2018 Program Closed
+Wed Oct 31 21:48:04 2018 ATM program starts 
+Wed Oct 31 21:48:05 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:48:09 2018 Program Closed
+Wed Oct 31 21:48:22 2018 ATM program starts 
+Wed Oct 31 21:48:23 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:48:26 2018 Program Closed
+Wed Oct 31 21:48:41 2018 ATM program starts 
+Wed Oct 31 21:48:42 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:48:49 2018 Program Closed
+Wed Oct 31 21:49:04 2018 ATM program starts 
+Wed Oct 31 21:49:05 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:49:11 2018 Program Closed
+Wed Oct 31 21:51:20 2018 ATM program starts 
+Wed Oct 31 21:51:21 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:51:31 2018 Program Closed
+Wed Oct 31 21:52:14 2018 ATM program starts 
+Wed Oct 31 21:52:15 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:52:23 2018 Program Closed
+Wed Oct 31 21:53:01 2018 ATM program starts 
+Wed Oct 31 21:53:02 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:57:22 2018 Program Closed
+Wed Oct 31 21:57:23 2018 ATM program starts 
+Wed Oct 31 21:57:24 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:57:24 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:57:40 2018 Program Closed
+Wed Oct 31 21:58:45 2018 ATM program starts 
+Wed Oct 31 21:58:46 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:58:46 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 21:59:12 2018 Program Closed
+Wed Oct 31 22:02:43 2018 ATM program starts 
+Wed Oct 31 22:02:44 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:02:44 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:02:55 2018 Program Closed
+Wed Oct 31 22:07:01 2018 ATM program starts 
+Wed Oct 31 22:07:02 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:07:02 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:07:13 2018 Program Closed
+Wed Oct 31 22:08:02 2018 ATM program starts 
+Wed Oct 31 22:08:03 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:08:03 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:08:15 2018 Program Closed
+Wed Oct 31 22:08:21 2018 ATM program starts 
+Wed Oct 31 22:08:22 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:08:22 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:08:27 2018 Program Closed
+Wed Oct 31 22:16:26 2018 ATM program starts 
+Wed Oct 31 22:16:27 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:16:27 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:16:38 2018 Program Closed
+Wed Oct 31 22:17:13 2018 ATM program starts 
+Wed Oct 31 22:17:14 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:17:14 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:17:23 2018 Program Closed
+Wed Oct 31 22:19:05 2018 ATM program starts 
+Wed Oct 31 22:19:06 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:19:06 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:19:12 2018 Program Closed
+Wed Oct 31 22:19:23 2018 ATM program starts 
+Wed Oct 31 22:19:24 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:19:24 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:19:32 2018 Program Closed
+Wed Oct 31 22:20:57 2018 ATM program starts 
+Wed Oct 31 22:20:58 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:21:13 2018 Program Closed
+Wed Oct 31 22:25:02 2018 ATM program starts 
+Wed Oct 31 22:25:19 2018 Program Closed
+Wed Oct 31 22:25:45 2018 ATM program starts 
+Wed Oct 31 22:25:49 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 22:27:23 2018 Program Closed
+Wed Oct 31 22:27:25 2018 ATM program starts 
+Wed Oct 31 22:27:36 2018 Invalid PIN!
+Wed Oct 31 22:28:05 2018 Program Closed
+Wed Oct 31 22:41:05 2018 ATM program starts 
+Wed Oct 31 22:41:09 2018 Program Closed
+Wed Oct 31 22:41:40 2018 ATM program starts 
+Wed Oct 31 22:41:45 2018 Program Closed
+Wed Oct 31 22:42:05 2018 ATM program starts 
+Wed Oct 31 22:42:12 2018 Program Closed
+Wed Oct 31 22:42:31 2018 ATM program starts 
+Wed Oct 31 22:42:36 2018 Program Closed
+Wed Oct 31 22:47:54 2018 ATM program starts 
+Wed Oct 31 22:48:01 2018 Program Closed
+Wed Oct 31 22:48:06 2018 ATM program starts 
+Wed Oct 31 22:48:11 2018 Program Closed
+Wed Oct 31 22:48:22 2018 ATM program starts 
+Wed Oct 31 22:48:26 2018 Program Closed
+Wed Oct 31 22:50:17 2018 ATM program starts 
+Wed Oct 31 22:50:20 2018 Program Closed
+Wed Oct 31 22:50:28 2018 ATM program starts 
+Wed Oct 31 22:50:33 2018 Program Closed
+Wed Oct 31 22:50:41 2018 ATM program starts 
+Wed Oct 31 22:50:45 2018 Program Closed
+Wed Oct 31 22:51:02 2018 ATM program starts 
+Wed Oct 31 22:51:05 2018 Program Closed
+Wed Oct 31 22:51:08 2018 ATM program starts 
+Wed Oct 31 22:51:13 2018 Program Closed
+Wed Oct 31 22:51:25 2018 ATM program starts 
+Wed Oct 31 22:51:28 2018 Program Closed
+Wed Oct 31 22:51:33 2018 ATM program starts 
+Wed Oct 31 22:51:35 2018 Program Closed
+Wed Oct 31 22:51:58 2018 ATM program starts 
+Wed Oct 31 22:52:16 2018 Program Closed
+Wed Oct 31 22:52:50 2018 ATM program starts 
+Wed Oct 31 22:52:53 2018 Program Closed
+Wed Oct 31 22:53:22 2018 ATM program starts 
+Wed Oct 31 22:53:25 2018 Program Closed
+Wed Oct 31 22:53:45 2018 ATM program starts 
+Wed Oct 31 22:53:52 2018 Program Closed
+Wed Oct 31 22:54:13 2018 ATM program starts 
+Wed Oct 31 22:54:35 2018 Program Closed
+Wed Oct 31 22:55:21 2018 ATM program starts 
+Wed Oct 31 22:55:26 2018 Program Closed
+Wed Oct 31 22:56:16 2018 ATM program starts 
+Wed Oct 31 22:56:27 2018 Program Closed
+Wed Oct 31 22:56:45 2018 ATM program starts 
+Wed Oct 31 22:57:24 2018 Program Closed
+Wed Oct 31 22:58:08 2018 ATM program starts 
+Wed Oct 31 22:58:13 2018 Program Closed
+Wed Oct 31 22:58:22 2018 ATM program starts 
+Wed Oct 31 22:58:35 2018 Invalid PIN!
+Wed Oct 31 22:58:57 2018 Program Closed
+Wed Oct 31 22:59:09 2018 ATM program starts 
+Wed Oct 31 22:59:31 2018 Program Closed
+Wed Oct 31 23:02:25 2018 ATM program starts 
+Wed Oct 31 23:02:46 2018 Program Closed
+Wed Oct 31 23:06:15 2018 ATM program starts 
+Wed Oct 31 23:06:27 2018 Program Closed
+Wed Oct 31 23:06:38 2018 ATM program starts 
+Wed Oct 31 23:06:48 2018 Program Closed
+Wed Oct 31 23:07:53 2018 ATM program starts 
+Wed Oct 31 23:08:02 2018 Program Closed
+Wed Oct 31 23:08:06 2018 ATM program starts 
+Wed Oct 31 23:08:08 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 23:08:16 2018 Program Closed
+Wed Oct 31 23:08:49 2018 ATM program starts 
+Wed Oct 31 23:08:58 2018 Program Closed
+Wed Oct 31 23:09:11 2018 ATM program starts 
+Wed Oct 31 23:09:19 2018 Program Closed
+Wed Oct 31 23:09:49 2018 ATM program starts 
+Wed Oct 31 23:10:00 2018 Program Closed
+Wed Oct 31 23:10:35 2018 ATM program starts 
+Wed Oct 31 23:10:49 2018 Program Closed
+Wed Oct 31 23:11:05 2018 ATM program starts 
+Wed Oct 31 23:11:15 2018 Program Closed
+Wed Oct 31 23:11:22 2018 ATM program starts 
+Wed Oct 31 23:11:29 2018 Program Closed
+Wed Oct 31 23:11:33 2018 ATM program starts 
+Wed Oct 31 23:11:40 2018 Program Closed
+Wed Oct 31 23:11:43 2018 ATM program starts 
+Wed Oct 31 23:11:54 2018 Program Closed
+Wed Oct 31 23:12:01 2018 ATM program starts 
+Wed Oct 31 23:12:09 2018 Program Closed
+Wed Oct 31 23:12:39 2018 ATM program starts 
+Wed Oct 31 23:12:45 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Wed Oct 31 23:12:49 2018 Program Closed
+Wed Oct 31 23:13:02 2018 ATM program starts 
+Wed Oct 31 23:13:05 2018 Program Closed
+Wed Oct 31 23:13:09 2018 ATM program starts 
+Wed Oct 31 23:13:13 2018 Program Closed
+Wed Oct 31 23:13:29 2018 ATM program starts 
+Wed Oct 31 23:13:31 2018 Program Closed
+Wed Oct 31 23:13:35 2018 ATM program starts 
+Wed Oct 31 23:13:38 2018 Program Closed
+Wed Oct 31 23:13:42 2018 ATM program starts 
+Wed Oct 31 23:14:03 2018 Program Closed
+Wed Oct 31 23:14:14 2018 ATM program starts 
+Wed Oct 31 23:14:19 2018 Program Closed
+Wed Oct 31 23:14:43 2018 ATM program starts 
+Wed Oct 31 23:14:49 2018 Program Closed
+Wed Oct 31 23:16:30 2018 ATM program starts 
+Wed Oct 31 23:16:35 2018 Program Closed
+Wed Oct 31 23:16:42 2018 ATM program starts 
+Wed Oct 31 23:16:51 2018 Program Closed
+Wed Oct 31 23:17:38 2018 ATM program starts 
+Wed Oct 31 23:17:49 2018 Program Closed
+Wed Oct 31 23:21:56 2018 ATM program starts 
+Wed Oct 31 23:25:46 2018 Program Closed
+Wed Oct 31 23:26:27 2018 ATM program starts 
+Wed Oct 31 23:26:46 2018 Program Closed
+Wed Oct 31 23:27:07 2018 ATM program starts 
+Wed Oct 31 23:27:44 2018 Program Closed
+Wed Oct 31 23:34:09 2018 ATM program starts 
+Wed Oct 31 23:34:13 2018 Program Closed
+Wed Oct 31 23:34:26 2018 ATM program starts 
+Wed Oct 31 23:34:30 2018 Program Closed
+Wed Oct 31 23:34:33 2018 ATM program starts 
+Wed Oct 31 23:34:39 2018 Program Closed
+Wed Oct 31 23:34:43 2018 ATM program starts 
+Wed Oct 31 23:34:46 2018 Program Closed
+Wed Oct 31 23:34:49 2018 ATM program starts 
+Wed Oct 31 23:34:52 2018 Program Closed
+Wed Oct 31 23:34:55 2018 ATM program starts 
+Wed Oct 31 23:35:03 2018 Program Closed
+Wed Oct 31 23:35:18 2018 ATM program starts 
+Wed Oct 31 23:38:36 2018 Program Closed
+Thu Nov  1 00:35:44 2018 ATM program starts 
+Thu Nov  1 00:36:13 2018 Program Closed
+Thu Nov  1 00:38:01 2018 ATM program starts 
+Thu Nov  1 00:38:23 2018 Program Closed
+Thu Nov  1 00:40:50 2018 ATM program starts 
+Thu Nov  1 00:41:20 2018 Program Closed
+Thu Nov  1 00:42:48 2018 ATM program starts 
+Thu Nov  1 00:43:04 2018 Program Closed
+Thu Nov  1 01:04:22 2018 ATM program starts 
+Thu Nov  1 01:06:32 2018 Program Closed
+Thu Nov  1 01:08:01 2018 ATM program starts 
+Thu Nov  1 01:08:27 2018 Program Closed
+Thu Nov  1 01:09:46 2018 ATM program starts 
+Thu Nov  1 01:10:05 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:10:07 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:10:09 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:10:10 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:10:11 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:10:12 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:10:33 2018 Program Closed
+Thu Nov  1 01:12:24 2018 ATM program starts 
+Thu Nov  1 01:12:38 2018 Program Closed
+Thu Nov  1 01:12:53 2018 ATM program starts 
+Thu Nov  1 01:13:06 2018 Program Closed
+Thu Nov  1 01:14:50 2018 ATM program starts 
+Thu Nov  1 01:15:15 2018 Program Closed
+Thu Nov  1 01:19:18 2018 ATM program starts 
+Thu Nov  1 01:21:11 2018 Program Closed
+Thu Nov  1 01:21:49 2018 ATM program starts 
+Thu Nov  1 01:21:58 2018 Program Closed
+Thu Nov  1 01:23:48 2018 ATM program starts 
+Thu Nov  1 01:24:05 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:24:27 2018 Program Closed
+Thu Nov  1 01:27:01 2018 ATM program starts 
+Thu Nov  1 01:28:01 2018 Program Closed
+Thu Nov  1 01:31:53 2018 ATM program starts 
+Thu Nov  1 01:32:13 2018 Program Closed
+Thu Nov  1 01:32:15 2018 ATM program starts 
+Thu Nov  1 01:32:33 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 01:32:35 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 01:32:38 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 01:32:47 2018 Program Closed
+Thu Nov  1 01:33:15 2018 ATM program starts 
+Thu Nov  1 01:33:34 2018 Program Closed
+Thu Nov  1 01:33:37 2018 ATM program starts 
+Thu Nov  1 01:33:54 2018 Invalid PIN!
+Thu Nov  1 01:33:59 2018 Program Closed
+Thu Nov  1 01:39:03 2018 ATM program starts 
+Thu Nov  1 01:39:26 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:39:31 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:40:22 2018 Program Closed
+Thu Nov  1 01:40:29 2018 ATM program starts 
+Thu Nov  1 01:40:50 2018 Program Closed
