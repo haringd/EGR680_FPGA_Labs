@@ -9,7 +9,6 @@ Created on Thu Oct 25 19:22:21 2018
 import tkinter as tk
 import turtle
 import re
-import atm_class
 from time import asctime
 import webbrowser
 #from tkinter import Tk, Label, Button, messagebox\
@@ -371,7 +370,4 @@ class ATM_GUI(tk.Frame):
         
         
 #GUI =Tk()
-root = tk.Tk()
-ATM = ATM_GUI(root)
-ATM.main_window.mainloop()
 #GUI.mainloop()

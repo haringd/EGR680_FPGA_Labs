@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="impl_1" LaunchDir="C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream"/>
+</Runs>
+

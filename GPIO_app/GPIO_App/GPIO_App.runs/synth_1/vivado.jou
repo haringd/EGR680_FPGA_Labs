@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Sep 21 22:07:26 2018
+# Process ID: 6908
+# Current directory: C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.runs/synth_1/system_wrapper.vds
+# Journal file: C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

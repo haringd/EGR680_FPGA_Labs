@@ -279,3 +279,24 @@ Thu Nov  1 01:39:31 2018 Withdraw amount too big or not anouth balance
 Thu Nov  1 01:40:22 2018 Program Closed
 Thu Nov  1 01:40:29 2018 ATM program starts 
 Thu Nov  1 01:40:50 2018 Program Closed
+Thu Nov  1 11:06:25 2018 ATM program starts 
+Thu Nov  1 11:06:58 2018 Program Closed
+Thu Nov  1 11:13:43 2018 ATM program starts 
+Thu Nov  1 11:21:39 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 11:21:44 2018 Program Closed
+Thu Nov  1 11:22:02 2018 ATM program starts 
+Thu Nov  1 18:08:23 2018 Program Closed
+Thu Nov  1 19:03:45 2018 ATM program starts 
+Thu Nov  1 19:04:30 2018 Program Closed
+Thu Nov  1 19:04:47 2018 ATM program starts 
+Thu Nov  1 19:05:04 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 19:05:21 2018 Invalid PIN!
+Thu Nov  1 19:05:23 2018 Invalid PIN!
+Thu Nov  1 19:06:45 2018 Program Closed
+Thu Nov  1 19:10:25 2018 ATM program starts 
+Thu Nov  1 19:10:59 2018 Invalid PIN!
+Thu Nov  1 19:11:04 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 19:11:21 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 19:11:36 2018 Program Closed
+Mon Nov  5 16:16:11 2018 ATM program starts 
+Mon Nov  5 16:16:23 2018 Program Closed

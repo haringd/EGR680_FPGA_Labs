@@ -1,0 +1,168 @@
+\section{Design}\label{sec: Design}
+In this section the design and decisions that where made to achieve the laboratory are discussed.
+
+\subsection{Tkinter}\label{subsec: Tkinter}
+According to wiki.python.org 
+Tkinter is Python's de-facto standard GUI (Graphical User Interface) package. It is a thin object-oriented layer on top of Tcl/Tk.
+
+Tkinter is not the only GuiProgramming toolkit for Python. It is however the most commonly used one. CameronLaird calls the yearly decision to keep TkInter "one of the minor traditions of the Python world."
+
+\begin{wrapfigure}{r}{0.7\textwidth}
+	%\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{01_images/frames.PNG}
+	\caption{Frames arranged with pack.}
+	\label{fig: frames}
+	%\end{figure}
+\end{wrapfigure}
+Tkinter provides a canvas to draw in it and place widgets that allows simple interaction with the user. Widgets are Buttons, Labels, Entrys, and Frams to name some of the most commonly used ones. Important of tinker is to understand that it provides three layout managing systems as the are pack, grid and place. In the lab pack was used because it is the most discussed and if it is properly understood most likely the most power full among the three. Pack does group objects in containers as example the main window, a canvas or a frame. now the trick is that frames can be cascade and and placed in order which allows the organization of objects most commonly widgets. Figure \ref{fig: frames} shows how the main window which is the window him self with title encloses the canvas. Then packed on top is a turtle animation followed by the control frame. In the control frame is on top a welcome frame that packes a welcome text or the pin entry wiggeds. Followed by three frames left center and right that show labels, input output, and commands. And the last one is a frame packed to the bottom of the control frame.
+
+An example code example for a empty tkinter window is shown in Listing \ref{lst: Python tkinter example code to create an empty window}.
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code to create an empty window.},label=lst: Python tkinter example code to create an empty window]
+# import module
+import tkinter as tk
+
+# define class with an empty main window
+my_class(tk.Frame)
+    def __init__(self, master=None):
+		self.main_window = master
+		self.main_window.title("ATM Bank Me")
+
+# instanciate class		
+root = tk.Tk()
+class_instance = my_class(root)
+class_instance.main_window.mainloop()
+
+\end{lstlisting}
+
+An example code example for a canvas is shown in Listing \ref{lst: Python tkinter example code canvas}.
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code to create a canvas.},label=lst: Python tkinter example code canvas]
+	#Make canvaas child of root
+	canvas = tk.Canvas(master = main_window, width = 500, height = 300, bg = 'green')
+	canvas.pack(side = 'top', fill = 'both', expand = 'yes')
+\end{lstlisting}
+An example code example for a frame is shown in Listing \ref{lst: Python tkinter example code for a frame}.
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code for a frame.},label=lst: Python tkinter example code for a frame ]
+	# A frame is an invisible widget that holds other widgets. This frame goes 
+	# on the right hand side of the window and holds the buttons and Entry widgets.
+	self.frameControl = tk.Frame(master = main_window, width=500, height=100, background="green")
+	self.frameControl.pack(side = tk.TOP,fill=tk.BOTH, ipady = 50)
+\end{lstlisting}
+
+An example code example for a button and callback is shown in Listing \ref{lst: Python tkinter example code for a Button}. The call back opens a pop up message box with a title and a text message that can be used to inform a user about an event as example. Furthermore it contains code for an Entry and a Label widget.
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code for a Button with callabck that opens a message box.},label=lst: Python tkinter example code for a Button]
+	# callback for button 
+    def messagebox(self): 
+		tk.messagebox.showinfo('Title','Text Message')
+	# Button
+	# With command = lambda: self.callback(arg1, arg2) a command with arguments is possible
+	# without being executed at once on instantiation of the class.
+    btTEST = tk.Button(master = self.frameControl, text = "Test", command = self.messagebox) 
+    btTEST.pack(side = tk.LEFT, anchor='w', ipadx=20)   
+    # Entry
+    # with .bind('<return>', self.handler ) an callback can be restiered 
+    # which would be executed on a return key press as further example
+    enDeposit = tk.Entry(master = self.frameControl)
+    enDeposit.pack(side = tk.TOP, anchor='w', ipadx=20, expand=True)
+    enDeposit.insert(0, '$0') # set default value  
+    # Label
+    # A label can also be used a s placeholder to maintain order with using of .pack()
+    lbBalanceAmount = tk.Label(master = self.frameControl, text='balance')
+    lbBalanceAmount.pack(side = tk.TOP, anchor='w', ipadx=20, expand=True)
+\end{lstlisting}
+
+
+\subsection{Turtle}\label{subsec: Turtle}
+According to \href{https://docs.python.org/3.3/library/turtle.html?highlight=turtle}{docs.python.org/3.3/library/turtle}, Turtle graphics is a popular way for introducing programming to kids. It was part of the original Logo programming language developed by Wally Feurzig and Seymour Papert in 1966.
+Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an import turtle, give it the command turtle.forward(15), and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves. Give it the command turtle.right(25), and it rotates in-place 25 degrees clockwise.
+
+The Bank Me Logo of the ATM is animated with turtle that allows a simple and fast way for a simple animation. Listening \ref{lst: Python turtle example code} shows an example code that uses turtle to draw the letter 'B'.
+
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python turtle example code for a letter 'B'.},label=lst: Python turtle example code]
+import turtle
+
+self.t = turtle.RawTurtle(canvas) # creatse a canvas to draw on
+screen = self.t.getscreen() # returns the screen object 
+# print(t.Screen().screensize()) 
+
+# This sets the lower left corner to 0,0 and the upper right corner to 600,600. 
+screen.setworldcoordinates(0,0,250,200)
+screen.bgcolor("green")
+
+# With the lines below, the "turtle" will look like a dollar sign 
+# and can be placed wit t.stamp().
+screen.register_shape("dollar_resize.gif")
+self.t.shape("dollar_resize.gif")
+
+# Animation
+t.pencolor("#FFFFFF") # WHITE
+t.pensize(2)
+
+t.penup()   # Regarding one of the comments
+t.forward(10)
+t.left(90)
+t.forward(10)
+t.pendown() # Regarding one of the comments
+# writes the letter 'B'
+t.right(90)
+t.circle(40, 180)
+t.right(180)
+t.circle(40, 180)
+t.stamp()
+\end{lstlisting}
+
+\subsection{ATM machine}\label{subsec: ATM machine }
+\begin{wrapfigure}[21]{r}{0.48\textwidth}
+	\centering
+	\vspace{-1cm}\includegraphics[width=0.48\textwidth]{01_images/gui_pin.PNG}
+	\caption{GUI at start time after animation is done.}
+	\label{fig: gui_pin}
+\end{wrapfigure}
+The ATM gui was build with tkinter and turtle. The error log and receipt print out is made with file I/O. The logic because it of simple logic flow could be drastically reduced compared to the previous lab. Therefore, no additional class was written. A complete code listening can be found in the appendix Section \ref{subsec: Python code Listings}. 
+
+Figure \ref{fig: gui_pin} shows the program after the animation is done and the user ask to enter the his personal identification number (PIN). After the pin has been entered in the Entry field the user can press the Enter button which will call the PIN verification method. Notice, that with the Goodbye button the program can be closed at any time. 
+
+As the user entered a valid PIN the pin entry objects are forgotten and destroyed because there is no need anymore for them. Instead the welcome message is shown and the objects to make a withdraw deposit and balance appear. By making an entry in one of the Entry fields for deposit or withdraw and pressing the button the user can either withdraw an amount of money from his account, not more then it contains or deposit amount of money.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{01_images/gui.PNG}
+	\caption{GUI after successful PIN entry.}
+	\label{fig: gui}
+\end{figure}
+
+
+The following listening shows the error log output file content. This can be easily used to check which errors has been tested or for debugging. The error log is continuously appended into a text file and has to be managed manually. This could be automated with a script. 
+\begin{lstlisting}[ caption={Error log saved as log\_error.txt file.},label=lst: Error log]
+Thu Nov  1 01:32:15 2018 ATM program starts 
+Thu Nov  1 01:32:33 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 01:32:35 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 01:32:38 2018 Error! Make sure you only use numbers from 0-9 in PIN
+Thu Nov  1 01:32:47 2018 Program Closed
+Thu Nov  1 01:33:15 2018 ATM program starts 
+Thu Nov  1 01:33:34 2018 Program Closed
+Thu Nov  1 01:33:37 2018 ATM program starts 
+Thu Nov  1 01:33:54 2018 Invalid PIN!
+Thu Nov  1 01:33:59 2018 Program Closed
+Thu Nov  1 01:39:03 2018 ATM program starts 
+Thu Nov  1 01:39:26 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:39:31 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 01:40:22 2018 Program Closed
+Thu Nov  1 01:40:29 2018 ATM program starts 
+Thu Nov  1 01:40:50 2018 Program Closed
+Thu Nov  1 11:06:25 2018 ATM program starts 
+Thu Nov  1 11:06:58 2018 Program Closed
+Thu Nov  1 11:13:43 2018 ATM program starts 
+Thu Nov  1 11:21:39 2018 Withdraw amount too big or not anouth balance
+Thu Nov  1 11:21:44 2018 Program Closed
+\end{lstlisting}
+\newpage
+Figure \ref{fig: printed_receipt} shows the receipt output generated by the program and opened in notepad by exiting the program by clicking the "Goodby!" button.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{01_images/printed_receipt.PNG}
+	\caption{Printed receipt.}
+	\label{fig: printed_receipt}
+\end{figure}
+
+Further work would be to write a better GUI class and separate logic and GUI a more distinguishably. 

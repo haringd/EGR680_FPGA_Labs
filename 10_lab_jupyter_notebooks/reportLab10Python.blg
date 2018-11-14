@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'reportLab10Python.blg'
+[67] biber-MSWIN64:313> INFO - === 
+[143] Biber.pm:371> INFO - Reading 'reportLab10Python.bcf'
+[276] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[288] Utils.pm:193> WARN - The file 'reportLab10Python.bcf' does not contain any citations!
+[298] bbl.pm:617> INFO - Writing 'reportLab10Python.bbl' with encoding 'UTF-8'
+[298] bbl.pm:720> INFO - Output to reportLab10Python.bbl
+[302] Biber.pm:110> INFO - WARNINGS: 1

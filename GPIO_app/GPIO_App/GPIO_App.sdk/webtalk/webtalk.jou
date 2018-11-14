@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# 
+# Start of session at: Fri Sep 21 22:20:55 2018
+# Process ID: 3372
+# Current directory: C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.sdk/webtalk/webtalk.log
+# Journal file: C:/Chirag/Fall18/EGR680_PYNQ/Labs/Lab4_Week4/GPIO_App/GPIO_App.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
