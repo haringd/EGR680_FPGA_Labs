@@ -1,0 +1,20 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Design}{3}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Part I - RGB LED Driver}{3}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Part II - LED Groove Bar}{4}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Conclusion}{4}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Appendix}{5}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Python code Listings Part I - RGB LED Driver}{5}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Python code Listings Part II - LED Groove Bar}{12}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Python code Listings Part III - Music Synthesizer}{13}{subsection.4.3}

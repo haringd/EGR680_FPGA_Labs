@@ -42,7 +42,17 @@ The description of part three of the lab is as followed.
 
 A Jupyter Notebook is not limited to just text output. By using the iPywidgets library, an interactive GUI can be
 created to interact with the I/O of the PYNQ board. For more information on ipywidgets, you can refer to the
-document “ipywidgets_Userguide.pdf” available on the course website.
+document “ipywidgets\_Userguide.pdf” available on the course website.
+
+Figure \ref{fig: part3_screen} shows the view programmed for part three which is used to control the LEDs. The first four buttons control LED zero to three and the status is shown with a label below the button. The two sliders control the RGB LEDs and can be used to change the color of each LED independently. Further more it shows how GUI elements are embedded in code and will appear after the cell where the display function is called. This gives the user an interesting interfacing option where he can adjust a code snipe and only execute the cell instead of the entire program.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{01_images/part3_screen.PNG}
+	\caption{Buttons and slider for LED control.}
+	\label{fig: part3_screen}
+\end{figure}
+
 %\begin{lstlisting}[ caption={Error log saved as log\_error.txt file.},label=lst: Error log]
 %Thu Nov  1 01:32:15 2018 ATM program starts 
 %Thu Nov  1 01:32:33 2018 Error! Make sure you only use numbers from 0-9 in PIN
