@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  2 DEC 2018 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  5 DEC 2018 02:18
 entering extended mode
 **./reportLab11Python.tex
 (reportLab11Python.tex
@@ -686,12 +686,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count327
 \@quotereset=\count328
-(reportLab11Python.aux
-
-LaTeX Warning: Label `lst: Python tkinter example code to create an empty windo
-w' multiply defined.
-
-(02_sections/Appendix.aux))
+(reportLab11Python.aux (02_sections/Appendix.aux))
 \openout1 = `reportLab11Python.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
@@ -820,7 +815,7 @@ Package biblatex Info: ... file 'reportLab11Python.bbl' found.
  (reportLab11Python.bbl)
 Package biblatex Info: Reference section=0 on input line 130.
 Package biblatex Info: Reference segment=0 on input line 130.
-<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=39, 969.6225pt x 755.82375pt>
+<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=43, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
@@ -899,31 +894,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-<01_images/p1_terminal_cp.png, id=86, 599.23875pt x 237.13594pt>
-File: 01_images/p1_terminal_cp.png Graphic file (type png)
-<use 01_images/p1_terminal_cp.png>
-Package pdftex.def Info: 01_images/p1_terminal_cp.png  used on input line 23.
-(pdftex.def)             Requested size: 469.75502pt x 185.89882pt.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 29.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
 sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
-) [3 <./01_images/p1_terminal_cp.png>]
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 22.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+<01_images/p1_terminal_cp.png, id=102, 599.23875pt x 237.13594pt>
+File: 01_images/p1_terminal_cp.png Graphic file (type png)
+<use 01_images/p1_terminal_cp.png>
+Package pdftex.def Info: 01_images/p1_terminal_cp.png  used on input line 39.
+(pdftex.def)             Requested size: 469.75502pt x 185.89882pt.
+ [3]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 45--47
+[]
+ []
 
-
-LaTeX Warning: Reference `lst: Python Part 2' on page 4 undefined on input line
- 44.
-
-<01_images/p2_gui.png, id=98, 259.7203pt x 67.0003pt>
+<01_images/p1_gui.png, id=118, 678.28406pt x 295.85532pt>
+File: 01_images/p1_gui.png Graphic file (type png)
+<use 01_images/p1_gui.png>
+Package pdftex.def Info: 01_images/p1_gui.png  used on input line 86.
+(pdftex.def)             Requested size: 469.75502pt x 204.89879pt.
+[4 <./01_images/p1_terminal_cp.png>]
+<01_images/p2_gui.png, id=159, 259.7203pt x 67.0003pt>
 File: 01_images/p2_gui.png Graphic file (type png)
 <use 01_images/p2_gui.png>
-Package pdftex.def Info: 01_images/p2_gui.png  used on input line 49.
+Package pdftex.def Info: 01_images/p2_gui.png  used on input line 102.
 (pdftex.def)             Requested size: 281.85587pt x 72.70988pt.
-) (02_sections/Conclusion.tex) [4 <./01_images/p2_gui.png>]
+ [5 <./01_images/p1_gui.png>])
+(02_sections/Conclusion.tex) [6 <./01_images/p2_gui.png>]
 \openout2 = `02_sections/Appendix.aux'.
 
 
@@ -931,11 +933,13 @@ Package pdftex.def Info: 01_images/p2_gui.png  used on input line 49.
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2018/04/06 v1.3b Input encoding file
 )
-(03_listings/__init__.py [5
+(03_listings/__init__.py [7
 
-]) (03_listings/base.py [6]) [7]
-(03_listings/myrgbled.py [8] [9] [10] [11]) (03_listings/LEDBar_Grove.py
-[12])) [13]
+]) (03_listings/base.py [8]) [9]
+(03_listings/myrgbled.py [10] [11] [12] [13] [14])
+(03_listings/LED_ctrl_myrgbled.py [15] [16] [17] [18])
+(03_listings/LEDBar_Grove.py [19]) (03_listings/MusicSynthesizer.md [20]
+[21] [22] [23] [24] [25] [26])) [27]
 
 LaTeX Warning: Empty bibliography on input line 149.
 
@@ -945,30 +949,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `reportLab11Python.out' has not changed.
-(rerunfilecheck)             Checksum: E4B959C9C90873F64A64391E2A6D4AAB;615.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: ECD92932C86B3ED49ECBACED50F7794E;694.
 Package logreq Info: Writing requests to 'reportLab11Python.run.xml'.
 \openout1 = `reportLab11Python.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 18380 strings out of 492973
- 297947 string characters out of 3126692
- 1039215 words of memory out of 3000000
- 21399 multiletter control sequences out of 15000+200000
+ 19778 strings out of 492973
+ 317551 string characters out of 3126692
+ 1037876 words of memory out of 3000000
+ 21975 multiletter control sequences out of 15000+200000
  14578 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,49p,962b,2049s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,49p,963b,2049s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
 \jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts
 \pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX
 \2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\schwa\AppData\Lo
@@ -976,11 +973,12 @@ cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\schwa\
 AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
 ers\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.
 pk><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy8.pfb>
-Output written on reportLab11Python.pdf (13 pages, 334090 bytes).
+s/cm/cmr6.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on reportLab11Python.pdf (27 pages, 520342 bytes).
 PDF statistics:
- 1160 PDF objects out of 1200 (max. 8388607)
- 593 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2232 PDF objects out of 2487 (max. 8388607)
+ 1407 named destinations out of 1440 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -41,11 +41,57 @@ root@pynq:/home/xilinx# cp /home/xilinx/pynq/myrgbled.py /home/xilinx/pynq/lib/m
 	\label{fig: part1_terminal}
 \end{figure}
 %\end{wrapfigure}
+\fbox{\begin{minipage}{\linewidth}\large\textbf{Notice:} The original functions of the driver remind. This provides back works compatibility for previous written programs.
+\end{minipage}}
+\vspace{11pt}
 
-To the driver a method for pulse width modulation (PWM) is added, shown in Listing \ref{lst: p1_pwm_rgb}.
-\begin{lstlisting}[language=python, caption={PWM for RGB LED.},label=lst: p1_pwm_rgb]
-
+To the driver a method for pulse width modulation (PWM) is added, shown in Listing \ref{lst: p1_pwm_rgb}. As inputs of the pwm() method a color can be defined which is either value 1, 2, or 4. Define a duty circle and a frequency to define the pulse length and period of the generated signal.
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={RGB LED driver PWM  method.},label=lst: p1_pwm_rgb]
+def pwm(self, color, duty_cycle, frequency):    
+    """PWM for single RGB LED color.
+    
+    Parameters
+    ----------
+    color : int 1, 2 or 3
+    Color of RGB specified by a 3-bit RGB integer value.
+    Blue  = 1
+    Green = 2
+    Red = 4
+    duty_cycle : int between 0 and 100
+    Duty cycle is an integer value between 0 and 100 %
+    ____+----+____+----+____+ is a duty cyle of 50 %
+    frequency : int
+    Frequency defines the length of the intervall
+    
+    Returns
+    -------
+    None
+    
+    """        
+    if color not in [1, 2, 4]:
+    raise ValueError("color should be an integer value from 1, 2, and 4.")
+    
+    try:
+        self.rgb_on(color)
+        time.sleep( duty_cycle / frequency )
+        self.rgb_off(color)
+        time.sleep( (100-duty_cycle) / frequency)   
+    except ZeroDivisionError:
+        print "division by zero!"
 \end{lstlisting}
+
+The pwm() method is used in the program in an independent process so it can be run in a while loop and does not interfere with the running graphical user interface (GUI) which operates event driven. The designed GUI is shown in Figure \ref{fig: part1_gui}. The first sections controls the four green LEDs and returns the status of LED0 to LED3. The light green framed section controls the green LEDs flashing rate with the slider to the right. The four check boxes are used to enable or disable the flashing of the green led. The third section controls the RGB LED LD4 and allows color mixing with the three sliders to the right, changes the PWMs duty cycle. The slider to the left controls the frequency of the PWM. At the end is an red exit button which is used to terminate the running processes properly so that the program can be restarted without restarting or interrupting the kernel.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{01_images/p1_gui}
+	\caption{Jupiter Notebook GUI to control the green LEDs and a RGB LED.}
+	\label{fig: part1_gui}
+\end{figure}
+
+It turns out that running each single color of the RGB LED is an issue if done so with three processes. The problem is that due to different duty cycles it can occur that one process invokes as example blue twice and then red only once and maybe green is not called at all. This causes the RGB color to fade in different colors then to be a stable color mixing. Therefore, the approach was changed to one process which runs the three colors sequentially. Turns out, this method works quite well.
+Due to the fact that two different process where used and each process has an independent Heap global variables aren't shared anymore and the class Value had to be used to synchronize those. For a larger project certainly a queue would be more appropriate to handle values between processes. An different approach would be instead of using processes to start two threads which would have the same Heap but might come with the price of decreased performance. By using a process it is important to implement a small delay from time.sleep. 
+
+The full code is shown in the appendix Section \ref{subsec: Python code Listings Part I}.
 
 \subsection{Part II - LED Groove Bar}\label{subsec: Part II - LED Groove Bar}
 The Groove LED Bar can be turned on in level increments from 0 to 10 where 0 is off and 10 all segments on. The brightness of the leds can be defined independently with an value from 0 to 3 where 0 is off, 1 is low, 2 is medium, and 3 is led brightness high. As graphical user interface (GUI) two integer slider are used SL1 and SL2 as shown in Figure \ref{fig: part2_output}. The source code is shown in Listing \ref{lst: Python Part 2} in Section \ref{subsec: Python code Listings Part II} of the appendix.

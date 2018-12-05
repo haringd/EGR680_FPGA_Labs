@@ -26,7 +26,9 @@
 #   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR 
 #   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 #   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
+#
+#   edited by Dimitri Haring
+#   date 12/04/2018
 
 from pynq import MMIO
 from pynq import PL
@@ -138,7 +140,7 @@ class MYRGBLED(object):
         self._set_rgbleds_value(new_val)
         
     def red_off(self):
-        """Turn on a single RGB LED with color value red.
+        """Turn off a single RGB LED with color value red.
         
         Parameters
         ----------
@@ -176,7 +178,7 @@ class MYRGBLED(object):
         self._set_rgbleds_value(new_val)
         
     def green_off(self):
-        """Turn on a single RGB LED with color value red.
+        """Turn off a single RGB LED with color value green.
         
         Parameters
         ----------
@@ -214,7 +216,7 @@ class MYRGBLED(object):
         self._set_rgbleds_value(new_val)
         
     def blue_off(self):
-        """Turn on a single RGB LED with color value red.
+        """Turn off a single RGB LED with color value blue.
         
         Parameters
         ----------
@@ -237,7 +239,7 @@ class MYRGBLED(object):
         return ((MYRGBLED._rgbleds_val )& ~rgb_mask)
     
     def rgb_on(self, color):
-        """Turn on a single RGB LED with color value blue.
+        """Turn on a single RGB LED color.
         
         Parameters
         ----------
@@ -259,7 +261,7 @@ class MYRGBLED(object):
         self._set_rgbleds_value(new_val)
         
     def rgb_off(self, color):
-        """Turn on a single RGB LED with color value red.
+        """Turn off a single RGB LED color.
         
         Parameters
         ----------
@@ -280,23 +282,29 @@ class MYRGBLED(object):
         self._set_rgbleds_value(new_val)
 
     def pwm(self, color, duty_cycle, frequency):
-        """Turn on a single RGB LED with color value red.
-        
-        Parameters
-        ----------
-        color : int
-           Color of RGB specified by a 3-bit RGB integer value.
-        duty_cycle : int
-           Duty cycle is an integer value between 0 and 100 %
-           ____+----+____+----+____+ is a duty cyle of 50 %
-        frequency : int
-            Frequency defines the length of the intervall
-            1 - 100
+		"""PWM for single RGB LED color.
+	
+		Parameters
+		----------
+		color : int 1, 2 or 3
+			Color of RGB specified by a 3-bit RGB integer value.
+				Blue  = 1
+				Green = 2
+				Red = 4
+		duty_cycle : int between 0 and 100
+			Duty cycle is an integer value between 0 and 100 %
+			____+----+____+----+____+ is a duty cyle of 50 %
+		frequency : int
+			Frequency defines the length of the intervall
+
         Returns
         -------
         None
         
         """        
+        if color not in [1, 2, 4]:
+            raise ValueError("color should be an integer value from 1, 2, and 4.")
+
         self.rgb_on(color)
         time.sleep( duty_cycle / frequency )
         self.rgb_off(color)
