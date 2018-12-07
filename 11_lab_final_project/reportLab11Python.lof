@@ -1,8 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Jupiter Notebook terminal, copy a file.\relax }}{4}{figure.caption.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Xilinx PYNQ-Z1 development board SoC \cite {XUP}.\relax }}{3}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Jupiter Notebook GUI to control the green LEDs and a RGB LED.\relax }}{5}{figure.caption.5}
+\contentsline {figure}{\numberline {2}{\ignorespaces PYNQ-Z1 block diagram of the MicroBlaze subsystem \cite {pynq_dr}.\relax }}{3}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Groove LED Bar program output.\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {3}{\ignorespaces Jupiter Notebook terminal, copy a file.\relax }}{5}{figure.caption.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces Jupiter Notebook GUI to control the green LEDs and a RGB LED.\relax }}{7}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces Groove LED Bar program output.\relax }}{7}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces GUI for an simple music synthesizer that allows the composer to design a melody.\relax }}{10}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7}{\ignorespaces GUI for an simple music synthesizer that allows the composer to design a melody.\relax }}{11}{figure.caption.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8}{\ignorespaces Inconsistent wrapping of C functions.\relax }}{12}{figure.caption.11}

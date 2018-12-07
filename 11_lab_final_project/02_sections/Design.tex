@@ -2,8 +2,7 @@
 In this section the design and decisions that where made to achieve the laboratory are discussed.
 
 \subsection{Part I - RGB LED Driver}\label{subsec: Jupyter Notebook}
-From project description, create the RGB LED color mixer using the ipywidgets integer or float slider. In theory, you should be able to create an infinite amount of colors with the combination of red, blue, and green LEDs. However,
-with digital electronics, we are limited to the width of the driving data bus or processing system to create the colors. \\
+From project description, create the RGB LED color mixer using the ipywidgets integer or float slider. In theory, you should be able to create an infinite amount of colors with the combination of red, blue, and green LEDs. However, with digital electronics, we are limited to the width of the driving data bus or processing system to create the colors. The Project description states the following \cite{Parikh2018}\\
 
 • Create individual methods for enabling/disabling RED, GREEN and BLUE color of the RGB LED.\\
 
@@ -41,7 +40,7 @@ root@pynq:/home/xilinx# cp /home/xilinx/pynq/myrgbled.py /home/xilinx/pynq/lib/m
 	\label{fig: part1_terminal}
 \end{figure}
 %\end{wrapfigure}
-\fbox{\begin{minipage}{\linewidth}\large\textbf{Notice:} The original functions of the driver remind. This provides back works compatibility for previous written programs.
+\fbox{\begin{minipage}{\linewidth}\large\textbf{Notice:} The original functions of the driver remind. This provides back words compatibility for previous written programs.
 \end{minipage}}
 \vspace{11pt}
 
@@ -80,7 +79,45 @@ def pwm(self, color, duty_cycle, frequency):
         print "division by zero!"
 \end{lstlisting}
 
-The pwm() method is used in the program in an independent process so it can be run in a while loop and does not interfere with the running graphical user interface (GUI) which operates event driven. The designed GUI is shown in Figure \ref{fig: part1_gui}. The first sections controls the four green LEDs and returns the status of LED0 to LED3. The light green framed section controls the green LEDs flashing rate with the slider to the right. The four check boxes are used to enable or disable the flashing of the green led. The third section controls the RGB LED LD4 and allows color mixing with the three sliders to the right, changes the PWMs duty cycle. The slider to the left controls the frequency of the PWM. At the end is an red exit button which is used to terminate the running processes properly so that the program can be restarted without restarting or interrupting the kernel.
+The pwm() method is used in the program in an independent process so it can be run in a while loop and does not interfere with the running graphical user interface (GUI) which operates event driven, the code to build processes is shown in Listing \ref{lst: p1_pwm_rgb_overwiev}. 
+
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={RGB LED driver PWM overwiev.},label=lst: p1_pwm_rgb_overwiev]
+from multiprocessing import Process
+from multiprocessing.sharedctypes import Value
+    
+def run_pwm2():  
+	# prvides PWM for RGB LED        
+	try:           
+		while( 1 ):
+			if red_duty.value != 0:
+			base.rgbleds[4].pwmd(red.value, red_duty.value, frequency.value)
+			if green_duty.value != 0:
+			base.rgbleds[4].pwmd(green.value, green_duty.value, frequency.value)
+			if blue_duty.value != 0:
+			base.rgbleds[4].pwmd(blue.value, blue_duty.value, frequency.value)
+			# terminate process
+			if exit.value:
+			break
+	except KeyboardInterrupt:
+		raise
+
+# running pwm in seperate process
+try:           
+	p_pwm = Process(target=run_pwm2, args=(), name='pwm2')
+	p_pwm.start()
+except:
+	raise
+
+# running led flash in seperate process
+try:           
+	p_led_flash = Process(target=run_leds, args=(), name='led_flash')
+	p_led_flash.start()
+except:
+	raise
+\end{lstlisting}
+
+
+The designed GUI is shown in Figure \ref{fig: part1_gui}. The first sections controls the four green LEDs and returns the status of LED0 to LED3. The light green framed section controls the green LEDs flashing rate with the slider to the right. The four check boxes are used to enable or disable the flashing of the green led. The third section controls the RGB LED LD4 and allows color mixing with the three sliders to the right, changes the PWMs duty cycle. The slider to the left controls the frequency of the PWM. At the end is an red exit button which is used to terminate the running processes properly so that the program can be restarted without restarting or interrupting the kernel.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{01_images/p1_gui}
@@ -106,215 +143,138 @@ The Groove LED Bar can be turned on in level increments from 0 to 10 where 0 is 
 %\end{wrapfigure}
 
 \subsection{Part III - Music Synthesizer}\label{subsec: Part III - Music Synthesizer}
-%In part two the Jupyter Notebook is used to program the game Let's Make a Deal. Is a game where a player can choose between four different doors. The computer decides behind which door win is placed.\\
-%\\
-%You can do the following to control the game:\\
-%\\
-%Button 0 pressed: \hfil       Door 1\\
-%Button 1 pressed:   \hfil     Door 2\\
-%Button 2 pressed: \hfil       Door 3\\
-%Button 3 pressed: \hfil       Door 4\\
-%\\
-%Switch 0 on:   \hfil          Exit program\\
-%Switch 1 on:    \hfil         Exit program\\
-%\\
-%Figure \ref{fig: part2_output} shows the console output shown in the web browser after executing the file with "Run All" and multiple rounds of choosing a door.
-%%\begin{wrapfigure}{r}{0.7\textwidth}
-%	\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=0.8\textwidth]{01_images/part2_output.PNG}
-%	\caption{Let's Make a Deal program output.}
-%	\label{fig: part2_output}
-%	\end{figure}
-%%\end{wrapfigure}
-%
-%\subsection{Part III - Jupyter Notebook GUI using ipywidgets }
-%The description of part three of the lab is as followed. 
-%
-%A Jupyter Notebook is not limited to just text output. By using the iPywidgets library, an interactive GUI can be
-%created to interact with the I/O of the PYNQ board. For more information on ipywidgets, you can refer to the
-%document “ipywidgets\_Userguide.pdf” available on the course website.
-%
-%Figure \ref{fig: part3_screen} shows the view programmed for part three which is used to control the LEDs. The first four buttons control LED zero to three and the status is shown with a label below the button. The two sliders control the RGB LEDs and can be used to change the color of each LED independently. Further more it shows how GUI elements are embedded in code and will appear after the cell where the display function is called. This gives the user an interesting interfacing option where he can adjust a code snipe and only execute the cell instead of the entire program.
-%
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=0.9\textwidth]{01_images/part3_screen.PNG}
-%	\caption{Buttons and slider for LED control.}
-%	\label{fig: part3_screen}
-%\end{figure}
-%
-%%\begin{lstlisting}[ caption={Error log saved as log\_error.txt file.},label=lst: Error log]
-%%Thu Nov  1 01:32:15 2018 ATM program starts 
-%%Thu Nov  1 01:32:33 2018 Error! Make sure you only use numbers from 0-9 in PIN
-%%Thu Nov  1 01:32:35 2018 Error! Make sure you only use numbers from 0-9 in PIN
-%%Thu Nov  1 01:32:38 2018 Error! Make sure you only use numbers from 0-9 in PIN
-%%Thu Nov  1 01:32:47 2018 Program Closed
-%%Thu Nov  1 01:33:15 2018 ATM program starts 
-%%Thu Nov  1 01:33:34 2018 Program Closed
-%%Thu Nov  1 01:33:37 2018 ATM program starts 
-%%Thu Nov  1 01:33:54 2018 Invalid PIN!
-%%Thu Nov  1 01:33:59 2018 Program Closed
-%%Thu Nov  1 01:39:03 2018 ATM program starts 
-%%Thu Nov  1 01:39:26 2018 Withdraw amount too big or not anouth balance
-%%Thu Nov  1 01:39:31 2018 Withdraw amount too big or not anouth balance
-%%Thu Nov  1 01:40:22 2018 Program Closed
-%%Thu Nov  1 01:40:29 2018 ATM program starts 
-%%Thu Nov  1 01:40:50 2018 Program Closed
-%%Thu Nov  1 11:06:25 2018 ATM program starts 
-%%Thu Nov  1 11:06:58 2018 Program Closed
-%%Thu Nov  1 11:13:43 2018 ATM program starts 
-%%Thu Nov  1 11:21:39 2018 Withdraw amount too big or not anouth balance
-%%Thu Nov  1 11:21:44 2018 Program Closed
-%%\end{lstlisting}
-%
-%%
-%%An example code example for a empty tkinter window is shown in Listing \ref{lst: Python tkinter example code to create an empty window}.
-%%\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code to create an empty window.},label=lst: Python tkinter example code to create an empty window]
-%%# import module
-%%import tkinter as tk
-%%
-%%# define class with an empty main window
-%%my_class(tk.Frame)
-%%    def __init__(self, master=None):
-%%		self.main_window = master
-%%		self.main_window.title("ATM Bank Me")
-%%
-%%# instanciate class		
-%%root = tk.Tk()
-%%class_instance = my_class(root)
-%%class_instance.main_window.mainloop()
-%%
-%%\end{lstlisting}
-%%
-%%An example code example for a canvas is shown in Listing \ref{lst: Python tkinter example code canvas}.
-%%\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code to create a canvas.},label=lst: Python tkinter example code canvas]
-%%	#Make canvaas child of root
-%%	canvas = tk.Canvas(master = main_window, width = 500, height = 300, bg = 'green')
-%%	canvas.pack(side = 'top', fill = 'both', expand = 'yes')
-%%\end{lstlisting}
-%%An example code example for a frame is shown in Listing \ref{lst: Python tkinter example code for a frame}.
-%%\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code for a frame.},label=lst: Python tkinter example code for a frame ]
-%%	# A frame is an invisible widget that holds other widgets. This frame goes 
-%%	# on the right hand side of the window and holds the buttons and Entry widgets.
-%%	self.frameControl = tk.Frame(master = main_window, width=500, height=100, background="green")
-%%	self.frameControl.pack(side = tk.TOP,fill=tk.BOTH, ipady = 50)
-%%\end{lstlisting}
-%%
-%%An example code example for a button and callback is shown in Listing \ref{lst: Python tkinter example code for a Button}. The call back opens a pop up message box with a title and a text message that can be used to inform a user about an event as example. Furthermore it contains code for an Entry and a Label widget.
-%%\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python tkinter example code for a Button with callabck that opens a message box.},label=lst: Python tkinter example code for a Button]
-%%	# callback for button 
-%%    def messagebox(self): 
-%%		tk.messagebox.showinfo('Title','Text Message')
-%%	# Button
-%%	# With command = lambda: self.callback(arg1, arg2) a command with arguments is possible
-%%	# without being executed at once on instantiation of the class.
-%%    btTEST = tk.Button(master = self.frameControl, text = "Test", command = self.messagebox) 
-%%    btTEST.pack(side = tk.LEFT, anchor='w', ipadx=20)   
-%%    # Entry
-%%    # with .bind('<return>', self.handler ) an callback can be restiered 
-%%    # which would be executed on a return key press as further example
-%%    enDeposit = tk.Entry(master = self.frameControl)
-%%    enDeposit.pack(side = tk.TOP, anchor='w', ipadx=20, expand=True)
-%%    enDeposit.insert(0, '$0') # set default value  
-%%    # Label
-%%    # A label can also be used a s placeholder to maintain order with using of .pack()
-%%    lbBalanceAmount = tk.Label(master = self.frameControl, text='balance')
-%%    lbBalanceAmount.pack(side = tk.TOP, anchor='w', ipadx=20, expand=True)
-%%\end{lstlisting}
-%%
-%%
-%%\subsection{Turtle}\label{subsec: Turtle}
-%%According to \href{https://docs.python.org/3.3/library/turtle.html?highlight=turtle}{docs.python.org/3.3/library/turtle}, Turtle graphics is a popular way for introducing programming to kids. It was part of the original Logo programming language developed by Wally Feurzig and Seymour Papert in 1966.
-%%Imagine a robotic turtle starting at (0, 0) in the x-y plane. After an import turtle, give it the command turtle.forward(15), and it moves (on-screen!) 15 pixels in the direction it is facing, drawing a line as it moves. Give it the command turtle.right(25), and it rotates in-place 25 degrees clockwise.
-%%
-%%The Bank Me Logo of the ATM is animated with turtle that allows a simple and fast way for a simple animation. Listening \ref{lst: Python turtle example code} shows an example code that uses turtle to draw the letter 'B'.
-%%
-%%\begin{lstlisting}[style=PythonStyle, language=Python, caption={Python turtle example code for a letter 'B'.},label=lst: Python turtle example code]
-%%import turtle
-%%
-%%self.t = turtle.RawTurtle(canvas) # creatse a canvas to draw on
-%%screen = self.t.getscreen() # returns the screen object 
-%%# print(t.Screen().screensize()) 
-%%
-%%# This sets the lower left corner to 0,0 and the upper right corner to 600,600. 
-%%screen.setworldcoordinates(0,0,250,200)
-%%screen.bgcolor("green")
-%%
-%%# With the lines below, the "turtle" will look like a dollar sign 
-%%# and can be placed wit t.stamp().
-%%screen.register_shape("dollar_resize.gif")
-%%self.t.shape("dollar_resize.gif")
-%%
-%%# Animation
-%%t.pencolor("#FFFFFF") # WHITE
-%%t.pensize(2)
-%%
-%%t.penup()   # Regarding one of the comments
-%%t.forward(10)
-%%t.left(90)
-%%t.forward(10)
-%%t.pendown() # Regarding one of the comments
-%%# writes the letter 'B'
-%%t.right(90)
-%%t.circle(40, 180)
-%%t.right(180)
-%%t.circle(40, 180)
-%%t.stamp()
-%%\end{lstlisting}
-%%
-%%\subsection{ATM machine}\label{subsec: ATM machine }
-%%\begin{wrapfigure}[21]{r}{0.48\textwidth}
-%%	\centering
-%%	\vspace{-1cm}\includegraphics[width=0.48\textwidth]{01_images/gui_pin.PNG}
-%%	\caption{GUI at start time after animation is done.}
-%%	\label{fig: gui_pin}
-%%\end{wrapfigure}
-%%The ATM gui was build with tkinter and turtle. The error log and receipt print out is made with file I/O. The logic because it of simple logic flow could be drastically reduced compared to the previous lab. Therefore, no additional class was written. A complete code listening can be found in the appendix Section \ref{subsec: Python code Listings}. 
-%%
-%%Figure \ref{fig: gui_pin} shows the program after the animation is done and the user ask to enter the his personal identification number (PIN). After the pin has been entered in the Entry field the user can press the Enter button which will call the PIN verification method. Notice, that with the Goodbye button the program can be closed at any time. 
-%%
-%%As the user entered a valid PIN the pin entry objects are forgotten and destroyed because there is no need anymore for them. Instead the welcome message is shown and the objects to make a withdraw deposit and balance appear. By making an entry in one of the Entry fields for deposit or withdraw and pressing the button the user can either withdraw an amount of money from his account, not more then it contains or deposit amount of money.
-%%
-%%\begin{figure}[H]
-%%	\centering
-%%	\includegraphics[width=0.5\textwidth]{01_images/gui.PNG}
-%%	\caption{GUI after successful PIN entry.}
-%%	\label{fig: gui}
-%%\end{figure}
-%%
-%%
-%%The following listening shows the error log output file content. This can be easily used to check which errors has been tested or for debugging. The error log is continuously appended into a text file and has to be managed manually. This could be automated with a script. 
-%%\begin{lstlisting}[ caption={Error log saved as log\_error.txt file.},label=lst: Error log]
-%%Thu Nov  1 01:32:15 2018 ATM program starts 
-%%Thu Nov  1 01:32:33 2018 Error! Make sure you only use numbers from 0-9 in PIN
-%%Thu Nov  1 01:32:35 2018 Error! Make sure you only use numbers from 0-9 in PIN
-%%Thu Nov  1 01:32:38 2018 Error! Make sure you only use numbers from 0-9 in PIN
-%%Thu Nov  1 01:32:47 2018 Program Closed
-%%Thu Nov  1 01:33:15 2018 ATM program starts 
-%%Thu Nov  1 01:33:34 2018 Program Closed
-%%Thu Nov  1 01:33:37 2018 ATM program starts 
-%%Thu Nov  1 01:33:54 2018 Invalid PIN!
-%%Thu Nov  1 01:33:59 2018 Program Closed
-%%Thu Nov  1 01:39:03 2018 ATM program starts 
-%%Thu Nov  1 01:39:26 2018 Withdraw amount too big or not anouth balance
-%%Thu Nov  1 01:39:31 2018 Withdraw amount too big or not anouth balance
-%%Thu Nov  1 01:40:22 2018 Program Closed
-%%Thu Nov  1 01:40:29 2018 ATM program starts 
-%%Thu Nov  1 01:40:50 2018 Program Closed
-%Thu Nov  1 11:06:25 2018 ATM program starts 
-%Thu Nov  1 11:06:58 2018 Program Closed
-%Thu Nov  1 11:13:43 2018 ATM program starts 
-%Thu Nov  1 11:21:39 2018 Withdraw amount too big or not anouth balance
-%Thu Nov  1 11:21:44 2018 Program Closed
-%\end{lstlisting}
-%\newpage
-%Figure \ref{fig: printed_receipt} shows the receipt output generated by the program and opened in notepad by exiting the program by clicking the "Goodby!" button.
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=0.5\textwidth]{01_images/printed_receipt.PNG}
-%	\caption{Printed receipt.}
-%	\label{fig: printed_receipt}
-%\end{figure}
-%
-%Further work would be to write a better GUI class and separate logic and GUI a more distinguishably. 
+
+To build a music synthesizer first the overlay and necessary python functions are loaded in the first cell. 
+
+\subsubsection{MicroBlaze Softcore for PMODA} 
+Second, a magic cell is build with the magic MicroBlaze command, shown in Listing \ref{lst: p3_microblaze}. The microblaze cell works as a C wrapper for python as well as it allows to write C code and function which will be compiled, flashed, and executed on the MicroBlaze softcore.
+
+The cell compiles, flashes, and executes C code on the MicroBlaze softcore. Each peripheral outlet, as they are PMODA, PMODB, and ARDUINO has there own MicroBlaze.
+
+The cell uses the PMODA MicroBlaze to execute driver code which allows the programmer to invoke C functions directly in python code. This works of because of cell magic, where the MicroBlaze cell wraps the C function to make it accessible for python.
+
+Due to the fact that there is only one MicroBlaze per outlet a notebook can only have one cell per each MicroBlaze. if there more the first code will be compiled, flashed, and executed. As the the second MicroBlaze cell with the same outlet is run the C code of that cell is compiled, flashed, and executed on the MicroBlaze. 
+
+\begin{lstlisting}[style=PythonStyle, language=Python, caption={Magic microblaze command.},label=lst: p3_microblaze]
+%%microblaze base.PMODA
+\end{lstlisting}
+
+\subsubsection{C code in MicroBlaze to Play a Melody} 
+The MicroBlaze cell is used to run C code that builds the drivers for the connected peripherals to the PMODA. In this case the Groove connector is connected to the PMODA and is equipped with the Groove LED Bar on connector G1 and the Groove Buzzer is connected to G4.
+
+The init functions for buzzer and LEDs had to be written or modified because usually the driver would be compiled and run as program on the platform. Therefore,general purpose input outputs (GPIO)s had to be initialized directly as shown in Listing \ref{lst: p3_C_init}. Interesting is that the led  bar init has an counter intuitive GPIO assignment where someone would assume that clock (clk) would be pin A but pin A is the data pin and pin B is the clock pin. 
+\lstset{style=CStyle}
+ \begin{lstlisting}[language=C, basicstyle=\footnotesize, caption={Magic microblaze C code for buzzer and ledbar initialization .},label=lst: p3_C_init]
+ void buzzer_init(){
+     pb_speaker = gpio_open(PMOD_G4_A);
+     gpio_set_direction(pb_speaker, GPIO_OUT);
+ }
+ void ledbar_init(){  
+    gpio_clk = gpio_open(PMOD_G1_B);
+    gpio_data = gpio_open(PMOD_G1_A);
+    gpio_set_direction(gpio_clk, GPIO_OUT);
+    gpio_set_direction(gpio_data, GPIO_OUT);
+ }
+ \end{lstlisting}
+ 
+ To be able to play 10 tunes the buzzer function playNote() had to be expanded with one extra tune which is the lower B and the the maximum value of the for loop had to be increased from 8 to 10 as shown in Listing \ref{lst: p3_C_playNote}. In addition, the set\_bits() function is used to turn on the appropriate value on the ledbar that corresponds to the note which is buzzed.
+
+\begin{lstlisting}[ language=C, basicstyle=\footnotesize, caption={Magic microblaze C code for playing a note.},label=lst: p3_C_playNote]
+void playNote(char note, int duration) {
+	
+	char names[] = { 'B', 'c',  'd',  'e',  'f',  'g',  'a',  'b', 'C',  'D'  };
+	int tones[] = {  2010, 1916, 1700, 1519, 1432, 1275, 1136, 1014, 956, 836 };
+	int i;
+	
+	// play the tone corresponding to the note name
+	for (i = 0; i < 10; i++) { // haringd changed to 10
+		if (names[i] == note) {
+			set_bits(reverse_data(0b00000000001 << i));
+			playTone(tones[i], duration);
+			
+		}
+	}
+}
+\end{lstlisting}
+
+To play a melody the function melody\_demo() is changed with an individual melody the 'A-Team' theme, shown in Listing \ref{lst: p3_C_melody_demo}. The notes and beats array are changed accordingly. To turn of the ledbar the function set\_bits(0) is used if condition which handles a pause where note is played. Further adjustments where made to the tempo variable which is set to seventy two. The length is defined by the size function of the notes array. To improve a stable use by all users it is recommended to check that the length of beats and notes are equal. Note, this is done in the python version of the program.
+
+\begin{lstlisting}[ language=C, basicstyle=\footnotesize, caption={Magic microblaze C code for playing the A-Team theme.},label=lst: p3_C_melody_demo]
+void melody_demo(void) {
+	// The number of notes to play
+	int length = 20;
+
+	/*  A-Team theme */
+	char notes[] = {' ','C','C','g','C','f','g','c','e','g','C','g','D','C','b','a','g','f','g', ' ',\
+		'C','C','g','C','e','f','d','g','c','e','f','a','b','b','a',' ','f','c','a',\
+		' ','d','f','g','C','g','f',' ','g','f','f','e','c','B','c',' ',\
+		'e','e','d','e',' ','d',' ','e',' ','d',' ','d','a','g',
+		'e','e','d','e',' ','d',' ','c',' ','c',' ','c','d', ' '};
+	int beats[] = {  8,  3,  1,  2, 18,  2,  8, 10,  1,  1,  2,  2,  2, 18,  3,  1,  1,  3, 16,  1, \ 
+		3 , 1 , 2 , 18, 2 , 2 , 2 , 2 , 16, 3 , 1 , 2 , 50, 2 , 2 , 2 , 2 , 8 , 8, \
+		8 , 3 , 1 , 2 , 18, 2 , 2 , 2 , 8 , 8 , 2 , 2,  2,  2,  16, 2, \
+		2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2,  8,  8, \
+		2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2 , 2,  16,  1 };
+
+	length = sizeof(notes);
+	int tempo = 73;
+	int i;
+	
+	for(i = 0; i < length; i++) {
+		if(notes[i] == ' ') {
+			set_bits((0b00000000000));
+			delay_ms(beats[i] * tempo);
+		} else {
+			playNote(notes[i], beats[i] * tempo);
+		}
+		// Delay between notes
+		delay_ms(tempo / 2);
+	}
+}
+\end{lstlisting}
+
+For simple use a main function named c\_music\_play() is programmed that initializes the ledbar and the buzzer GPIOs. A one second blink of five leds shows the initialization was successful. The melody function is called to play the melody. The described code is shown in Listing \ref{lst: p3_C_c_music_play}.
+\begin{lstlisting}[ language=C, basicstyle=\footnotesize, caption={Magic microblaze C code for playing the A-Team theme.},label=lst: p3_C_c_music_play]
+void c_music_play(){
+	buzzer_init();
+	ledbar_init();
+	set_bits(0b1111100000);
+	delay_ms(1000);
+	melody_demo();
+}
+\end{lstlisting}
+
+After executing the MicroBlaze cell which compiles, flashes, and executes the code onto the MicroBlaze, builds python wrappers for the C functions so they can be called in python in a cell of the Jupiter notebook, the function c\_music\_play() can be used in the next cell with pressing Shift+Return the melody sounds on the buzzer and the led lights up to the corresponding note.
+
+\subsubsection{Python melody}
+In addition to the C implementation the same function was build with python by using the basic C driver functions provided by the magic MicroBlaze cell. 
+
+Now that python is used a dictionary seems appropriate to access notes which can be made as a list as well.
+
+To check that the LEDs are ordered and inconsistency with the led bar a gamut is programmed that also prints out the current values in console, shown in Figure \ref{fig: p3_gamut_print}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{01_images/p3_gamut_print}
+	\caption{GUI for an simple music synthesizer that allows the composer to design a melody.}
+	\label{fig: p3_gamut_print}
+\end{figure}
+\newpage
+Due to the simple handling of the high programming language in terms of GUIs a cooler approximation of an music synthesizer was build, shown in Figure \ref{fig: part3_gui}. The GUi allows the user to pres any combination of notes and pause with the desired beat to build his own melody. The melody build is printed out below the GUI as the 'Play Awesome' button is pressed. This allows the user to copy paste his composition so no valuable tunes are lost. further work would be a clear button or a play awesome log book (donations welcome). 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{01_images/p3_gui}
+	\caption{GUI for an simple music synthesizer that allows the composer to design a melody.}
+	\label{fig: part3_gui}
+\end{figure}
+
+The complete code for Part III can be found in Listing \ref{lst: MusicSynthesizer} or Section \ref{subsec: Python code Listings Part III} of the appendix.
+\newpage
+\subsubsection{MicroBlaze wrapper behavior}
+By the programming the MicroBlaze showed interesting behavior in form that not every function was wrapped. Although, tremendous efforts where made to enlighten the mystery, no conclusive statement could be made why a function is wrapped or not. Figure \ref{fig: p3_microblaze_wrapper} shows the an example of wrapped functions and a function that would be assumed to be wrapped but is not
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{01_images/p3_microblaze_wrapper}
+	\caption{Inconsistent wrapping of C functions.}
+	\label{fig: p3_microblaze_wrapper}
+\end{figure}

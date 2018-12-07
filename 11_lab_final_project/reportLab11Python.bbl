@@ -16,5 +16,75 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{XUP}{misc}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labeltitlesource}{title}
+      \field{title}{{XUP PYNQ}}
+      \field{urlday}{4}
+      \field{urlmonth}{12}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.xilinx.com/support/university/boards-portfolio/xup-boards/XUPPYNQ.html
+      \endverb
+      \verb{url}
+      \verb https://www.xilinx.com/support/university/boards-portfolio/xup-boards/XUPPYNQ.html
+      \endverb
+    \endentry
+    \entry{pynq_dr}{report}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labeltitlesource}{title}
+      \field{title}{{Python productivity for Zynq (Pynq) Documentation Release 2.2 Xilinx}}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{file}
+      \verb :C$\backslash$:/Users/schwa/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Unknown - 2018 - Python productivity for Zynq (Pynq) Documentation Release 2.2 Xilinx.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://media.readthedocs.org/pdf/pynq-testing/image{\_}v2.2/pynq-testing.pdf
+      \endverb
+      \verb{url}
+      \verb https://media.readthedocs.org/pdf/pynq-testing/image%7B%5C_%7Dv2.2/pynq-testing.pdf
+      \endverb
+    \endentry
+    \entry{Parikh2018}{article}{}
+      \name{author}{1}{}{%
+        {{hash=250bb140de2ba176c9526a20568b0687}{%
+           family={Parikh},
+           familyi={P\bibinitperiod},
+           given={Chirag},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{250bb140de2ba176c9526a20568b0687}
+      \strng{fullhash}{250bb140de2ba176c9526a20568b0687}
+      \strng{bibnamehash}{250bb140de2ba176c9526a20568b0687}
+      \strng{authorbibnamehash}{250bb140de2ba176c9526a20568b0687}
+      \strng{authornamehash}{250bb140de2ba176c9526a20568b0687}
+      \strng{authorfullhash}{250bb140de2ba176c9526a20568b0687}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{EGR 680 Fall 2018 Final Project PYNQ Embedded Design using Jupyter Notebooks}}
+      \field{year}{2018}
+      \field{pages}{6}
+      \range{pages}{1}
+      \verb{file}
+      \verb :C$\backslash$:/FPGA{\_}EGR680/EGR680{\_}FinalProject{\_}PYNQ.pdf:pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.egr.gvsu.edu/{~}parikhc/Chirag{\_}EGR680.html
+      \endverb
+      \verb{url}
+      \verb http://www.egr.gvsu.edu/%7B~%7Dparikhc/Chirag%7B%5C_%7DEGR680.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

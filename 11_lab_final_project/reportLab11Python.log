@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  5 DEC 2018 02:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.9.10)  6 DEC 2018 11:31
 entering extended mode
 **./reportLab11Python.tex
 (reportLab11Python.tex
@@ -689,22 +689,22 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (reportLab11Python.aux (02_sections/Appendix.aux))
 \openout1 = `reportLab11Python.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 130.
+Package hyperref Info: Link coloring OFF on input line 140.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -716,9 +716,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count329
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
  (reportLab11Python.out) (reportLab11Python.out)
 \@outlinefile=\write5
 \openout5 = `reportLab11Python.out'.
@@ -813,21 +813,21 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'reportLab11Python.bbl' found.
  (reportLab11Python.bbl)
-Package biblatex Info: Reference section=0 on input line 130.
-Package biblatex Info: Reference segment=0 on input line 130.
-<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=43, 969.6225pt x 755.82375pt>
+Package biblatex Info: Reference section=0 on input line 140.
+Package biblatex Info: Reference segment=0 on input line 140.
+<01_images/gvsu_logo_marktop_SEPCEC_K_R.png, id=59, 969.6225pt x 755.82375pt>
 File: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png Graphic file (type png)
 <use 01_images/gvsu_logo_marktop_SEPCEC_K_R.png>
 Package pdftex.def Info: 01_images/gvsu_logo_marktop_SEPCEC_K_R.png  used on in
-put line 132.
+put line 142.
 (pdftex.def)             Requested size: 193.92107pt x 151.16206pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 132.
+(Font)              <12> on input line 142.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 132.
+(Font)              <8> on input line 142.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 132.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 132.
+(Font)              <6> on input line 142.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 142.
 
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -853,44 +853,60 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout8 = `reportLab11Python.lol'.
 
  [2]
-(02_sections/Introduction.tex) (02_sections/Design.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
+(02_sections/Introduction.tex
+<01_images/PYNQ_Hardware_Xilinx.jpg, id=147, 602.25pt x 438.63875pt>
+File: 01_images/PYNQ_Hardware_Xilinx.jpg Graphic file (type jpg)
+<use 01_images/PYNQ_Hardware_Xilinx.jpg>
+Package pdftex.def Info: 01_images/PYNQ_Hardware_Xilinx.jpg  used on input line
+ 6.
+(pdftex.def)             Requested size: 281.85587pt x 205.29013pt.
+<01_images/PYNQ_Microblaze_Subsystem_Block_Diagram.png, id=150, 514.92375pt x 3
+35.00156pt>
+File: 01_images/PYNQ_Microblaze_Subsystem_Block_Diagram.png Graphic file (type 
+png)
+<use 01_images/PYNQ_Microblaze_Subsystem_Block_Diagram.png>
+Package pdftex.def Info: 01_images/PYNQ_Microblaze_Subsystem_Block_Diagram.png 
+ used on input line 12.
+(pdftex.def)             Requested size: 375.80544pt x 244.49799pt.
+) (02_sections/Design.tex [3 <./01_images/PYNQ_Hardware_Xilinx.jpg> <./01_image
+s/PYNQ_Microblaze_Subsystem_Block_Diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
@@ -900,32 +916,59 @@ sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 22.
+nput line 21.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
-<01_images/p1_terminal_cp.png, id=102, 599.23875pt x 237.13594pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+<01_images/p1_terminal_cp.png, id=161, 599.23875pt x 237.13594pt>
 File: 01_images/p1_terminal_cp.png Graphic file (type png)
 <use 01_images/p1_terminal_cp.png>
-Package pdftex.def Info: 01_images/p1_terminal_cp.png  used on input line 39.
+Package pdftex.def Info: 01_images/p1_terminal_cp.png  used on input line 38.
 (pdftex.def)             Requested size: 469.75502pt x 185.89882pt.
- [3]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 45--47
+ [4]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 44--46
 []
  []
 
-<01_images/p1_gui.png, id=118, 678.28406pt x 295.85532pt>
+[5 <./01_images/p1_terminal_cp.png>]
+<01_images/p1_gui.png, id=215, 678.28406pt x 295.85532pt>
 File: 01_images/p1_gui.png Graphic file (type png)
 <use 01_images/p1_gui.png>
-Package pdftex.def Info: 01_images/p1_gui.png  used on input line 86.
+Package pdftex.def Info: 01_images/p1_gui.png  used on input line 123.
 (pdftex.def)             Requested size: 469.75502pt x 204.89879pt.
-[4 <./01_images/p1_terminal_cp.png>]
-<01_images/p2_gui.png, id=159, 259.7203pt x 67.0003pt>
+ [6]
+<01_images/p2_gui.png, id=256, 259.7203pt x 67.0003pt>
 File: 01_images/p2_gui.png Graphic file (type png)
 <use 01_images/p2_gui.png>
-Package pdftex.def Info: 01_images/p2_gui.png  used on input line 102.
+Package pdftex.def Info: 01_images/p2_gui.png  used on input line 139.
 (pdftex.def)             Requested size: 281.85587pt x 72.70988pt.
- [5 <./01_images/p1_gui.png>])
-(02_sections/Conclusion.tex) [6 <./01_images/p2_gui.png>]
+ [7 <./01_images/p1_gui.png> <./01_images/p2_gui.png>]
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
+sty"
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+) [8] [9]
+<01_images/p3_gamut_print.png, id=343, 740.0147pt x 156.585pt>
+File: 01_images/p3_gamut_print.png Graphic file (type png)
+<use 01_images/p3_gamut_print.png>
+Package pdftex.def Info: 01_images/p3_gamut_print.png  used on input line 258.
+(pdftex.def)             Requested size: 469.75502pt x 99.39929pt.
+ [10 <./01_images/p3_gamut_print.png>]
+<01_images/p3_gui.png, id=349, 561.59813pt x 377.91188pt>
+File: 01_images/p3_gui.png Graphic file (type png)
+<use 01_images/p3_gui.png>
+Package pdftex.def Info: 01_images/p3_gui.png  used on input line 266.
+(pdftex.def)             Requested size: 469.75502pt x 316.10599pt.
+ [11 <./01_images/p3_gui.png>]
+<01_images/p3_microblaze_wrapper.png, id=357, 750.55406pt x 383.93437pt>
+File: 01_images/p3_microblaze_wrapper.png Graphic file (type png)
+<use 01_images/p3_microblaze_wrapper.png>
+Package pdftex.def Info: 01_images/p3_microblaze_wrapper.png  used on input lin
+e 277.
+(pdftex.def)             Requested size: 469.75502pt x 240.29817pt.
+) (02_sections/Conclusion.tex) [12 <./01_images/p3_microblaze_wrapper.png>]
 \openout2 = `02_sections/Appendix.aux'.
 
 
@@ -933,52 +976,66 @@ Package pdftex.def Info: 01_images/p2_gui.png  used on input line 102.
 ("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2018/04/06 v1.3b Input encoding file
 )
-(03_listings/__init__.py [7
+(03_listings/__init__.py [13
 
-]) (03_listings/base.py [8]) [9]
-(03_listings/myrgbled.py [10] [11] [12] [13] [14])
-(03_listings/LED_ctrl_myrgbled.py [15] [16] [17] [18])
-(03_listings/LEDBar_Grove.py [19]) (03_listings/MusicSynthesizer.md [20]
-[21] [22] [23] [24] [25] [26])) [27]
+]) (03_listings/base.py [14]) [15]
+(03_listings/myrgbled.py [16] [17] [18] [19] [20])
+(03_listings/LED_ctrl_myrgbled.py [21] [22] [23] [24])
+(03_listings/LEDBar_Grove.py [25]) (03_listings/MusicSynthesizer.md [26]
+[27] [28] [29] [30] [31] [32] [33] [34] [35] [36])) [37]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 159.
 
-LaTeX Warning: Empty bibliography on input line 149.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
-(reportLab11Python.aux (02_sections/Appendix.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+("C:\Users\schwa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (3.35858pt too wide) in paragraph at lines 160--160
+[]\T1/cmr/m/it/10 XUP PYNQ\T1/cmr/m/n/10 . [On-line]. Avail-able: []$\T1/cmtt/m
+/n/10 https : / / www . xilinx . com / support / university / boards -[] portfo
+lio /
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+[38
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+ (reportLab11Python.aux (02_sections/Appendix.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `reportLab11Python.out' has not changed.
-(rerunfilecheck)             Checksum: ECD92932C86B3ED49ECBACED50F7794E;694.
+(rerunfilecheck)             Checksum: EDDA5B5BD87DC08472537C62EC4964B1;1044.
 Package logreq Info: Writing requests to 'reportLab11Python.run.xml'.
 \openout1 = `reportLab11Python.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 19778 strings out of 492973
- 317551 string characters out of 3126692
- 1037876 words of memory out of 3000000
- 21975 multiletter control sequences out of 15000+200000
- 14578 words of font info for 38 fonts, out of 3000000 for 9000
+ 21476 strings out of 492973
+ 343550 string characters out of 3126692
+ 1136114 words of memory out of 3000000
+ 23273 multiletter control sequences out of 15000+200000
+ 15577 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,49p,963b,2049s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,56p,962b,2729s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
-\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\schwa\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\schwa\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Us
-ers\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.
-pk><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on reportLab11Python.pdf (27 pages, 520342 bytes).
+ectt1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
+ec\dpi600\ecti1000.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts
+\pk\ljfour\jknappen\ec\dpi600\ecrm0500.pk> <C:\Users\schwa\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\schwa\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\schwa\
+AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Us
+ers\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.
+pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
+\ecrm1200.pk> <C:\Users\schwa\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen
+\ec\dpi600\ecrm1728.pk><C:/Users/schwa/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><C:/Users/schwa/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/schwa/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on reportLab11Python.pdf (38 pages, 918810 bytes).
 PDF statistics:
- 2232 PDF objects out of 2487 (max. 8388607)
- 1407 named destinations out of 1440 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2871 PDF objects out of 2984 (max. 8388607)
+ 1792 named destinations out of 2073 (max. 500000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

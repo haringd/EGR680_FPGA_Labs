@@ -1975,6 +1975,11 @@
     <bcf:datasource type="file" datatype="bibtex">reportLab11Python.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="3">XUP</bcf:citekey>
+    <bcf:citekey order="4">XUP</bcf:citekey>
+    <bcf:citekey order="5">pynq_dr</bcf:citekey>
+    <bcf:citekey order="6">pynq_dr</bcf:citekey>
+    <bcf:citekey order="7">Parikh2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
